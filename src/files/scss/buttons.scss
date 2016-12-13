@@ -61,3 +61,19 @@
   }
 }
 
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media screen and (max-width: 1200px){
+
+  .btn{
+    min-width: $btn-size-small*2;
+    height: $btn-size-small;
+    line-height: $btn-size-small - 2px;
+    padding: 0 $ui-el-size/3;
+    font-size: 10px;
+    i{
+      font-size: $ui-el-size/3.2 - 1px;
+    }
+  }
+}

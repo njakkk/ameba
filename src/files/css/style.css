@@ -3205,6 +3205,16 @@ tiny-space {
     .btn.small i {
       font-size: 14.625px; }
 
+@media screen and (max-width: 1200px) {
+  .btn {
+    min-width: 76px;
+    height: 38px;
+    line-height: 36px;
+    padding: 0 16.66667px;
+    font-size: 10px; }
+    .btn i {
+      font-size: 14.625px; } }
+
 /*OWL SLIDER DEFAULTS*/
 .owl-wrapper:after {
   content: ".";
@@ -3864,12 +3874,16 @@ body.active .lines {
   .home-slide .slide-content {
     zoom: 1;
     color: #d1d1d1;
-    text-align: left;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 70vw;
-    max-width: 600px; }
+    max-width: 900px;
+    transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0); }
     .home-slide .slide-content:before, .home-slide .slide-content:after {
       content: "\0020";
       display: block;
@@ -3898,8 +3912,7 @@ body.active .lines {
       font-size: 12.4vmin;
       line-height: 0.7em;
       letter-spacing: -0.02em;
-      white-space: nowrap;
-      float: left; }
+      white-space: nowrap; }
       .home-slide .slide-content h1 span {
         white-space: normal; }
     .home-slide .slide-content h2 {
@@ -3925,7 +3938,7 @@ body.active .lines {
   color: #d1d1d1;
   position: absolute;
   top: 50%;
-  left: 2.2vmin;
+  right: 2.2vmin;
   text-align: center; }
 
 .home-slider .owl-buttons > div {
@@ -3959,12 +3972,12 @@ body.active .lines {
 
 .home-slider .owl-buttons > article .active-slide {
   font-family: "evelethclean_regular", sans-serif;
-  font-size: 50vmin;
+  font-size: 40px;
   width: 1em;
   text-align: right; }
 
 .home-slider .owl-buttons > article .slides-count {
-  font-size: 12.3vmin;
+  font-size: 32px;
   position: relative;
   margin-left: 15px;
   font-weight: 100; }
@@ -3974,16 +3987,15 @@ body.active .lines {
     width: 2em;
     height: 1px;
     background: #fff;
-    transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    top: 0.1em;
-    left: -0.5em; }
+    top: 10px;
+    left: -30px;
+    transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg); }
 
 @media screen and (max-width: 1200px) {
   .home-slide .slide-content {
-    right: 18vw;
     width: 70vw; }
     .home-slide .slide-content h1 {
       font-size: 12.4vmin; }
@@ -4299,7 +4311,7 @@ body.active .lines {
   height: 100%;
   mix-blend-mode: multiply; }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1030px) {
   .project-box {
     width: 33.3%; }
     .project-box .project-img {
@@ -4310,7 +4322,7 @@ body.active .lines {
     .project-box .project-box-desc .project-type {
       display: none; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
   .project-box {
     width: 50%; }
     .project-box .project-img {
