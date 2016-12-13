@@ -1,0 +1,108 @@
+@import 'variables';
+
+p{
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+b{
+  font-weight: 800;
+}
+
+.full-action{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.link{
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.strong-font{
+  font-family: $strong;
+}
+
+.scroll-down{
+  position: absolute;
+  left: $spacing;
+  bottom: $spacing;
+  z-index: 1;
+  font-size: 11px;
+  letter-spacing: 0.17em;
+  &.light{
+    color: $light-grey;
+  }
+  &.dark{
+    color: $dark;
+  }
+  i{
+    font-size: 28px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+space{
+  display: block;
+  height: 20vh;
+}
+small-space{
+  display: block;
+  height: 10vh;
+}
+tiny-space{
+  display: block;
+  height: 5vh;
+}
+
+.textual-content{
+  margin: auto;
+  max-width: 850px;
+  width: 80%;
+}
+
+.pattern{
+  position: relative;
+    &:before{
+      content:'';
+      background: url('../images/noiz.jpg');
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      opacity: 0.06;
+      pointer-events:none;
+
+    }
+}
+
+[data-display=""], [data-display="false"]{
+  display: none !important;
+}
+
+.drop-shadow{
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.1));
+  -webkit-filter: drop-shadow(0 0 15px rgba(0,0,0,0.1));
+}
+
+.default-content{
+  padding: $spacing*5 $spacing $spacing $spacing;
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+@media screen and (max-width: 1200px){
+  .scroll-down{
+    display: none;
+  }
+}

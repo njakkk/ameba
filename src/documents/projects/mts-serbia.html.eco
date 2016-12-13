@@ -1,0 +1,56 @@
+---
+order: null
+isFeatured: false
+isProject: true
+isPublished: true
+year: 2014
+
+
+name: "mts-serbia"
+title: "mts Serbia"
+description: "Website for the Serbian national telecom."
+longDescription: "Telekom Srbija is largest mobile operator in contry. They have lead in several large telecomunnication segments: Mobile, Landline, Internet, Tv services... For each of these they had separate brand and website. The goal was to place it all under one brand and one united web portal. "
+slide: "mts-serbia/slide.jpg"
+thumb: "mts-serbia/thumb.jpg"
+color: "#e43951"
+
+ux: "true"
+dev: "true"
+
+hasExternalLink: "true"
+externalLinkTitle: "visit website"
+externalLink: "http://mts.rs"
+---
+
+<section data-id="<%= @document.name %>" class="wrapper">
+    <%- @partial('project-header')%>
+
+    <section class="project-content show-up">
+        <span class="project-line"></span>
+
+        <div class="project-tip left"><span>Homepage</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.png" alt="" class="scroll-show"/>
+
+        <div class="project-tip right"><span>Homepage - full view</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.jpg" alt="" class="scroll-show drop-shadow"/>
+
+        <div class="project-tip left"><span>Homepage & selfcare mobile view</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.png" alt="" class="scroll-show"/>
+
+        <div class="project-tip left"><span>User statistics on selfcare portal</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-04.png" alt="" class="scroll-show drop-shadow"/>
+
+        <div class="project-tip left"><span>Current spending per SIM card</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-05.jpg" alt="" class="scroll-show drop-shadow"/>
+
+        <div class="project-tip left"><span>Device page</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-06.png" alt="" class="scroll-show"/>
+
+        <div class="project-tip left"><span>Device page - full view</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-07.jpg" alt="" class="scroll-show drop-shadow"/>
+        <%- @partial('project-footer')%>
+    </section>
+</section>
+
+
+

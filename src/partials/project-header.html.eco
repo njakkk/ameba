@@ -1,0 +1,24 @@
+<header class="project-header show-up left pattern">
+    <div class="float"></div>
+    <article class="vert-center">
+        <aside class="show-up">
+            <!--<div class="stripe blend-multiply" data-bg-color="<%= @document.color %>"></div>-->
+            <h3><%= @document.year %></h3>
+            <h1 data-color="<%= @document.color %>"><%= @document.title %></h1>
+        </aside>
+        <aside class="show-up">
+            <h2><%= @document.description %></h2>
+            <p><%= @document.longDescription %></p>
+            <ul class="project-icons">
+                <li data-display="<%= @document.brand %>"><i class="icon-sailing-boat-water"></i> <span>Branding</span></li>
+                <li data-display="<%= @document.ux %>"><i class="icon-ux-ui"></i> <span>Design & UX</span></li>
+                <li data-display="<%= @document.dev %>"><i class="icon-development"></i> <span>Frontend development</span></li>
+                <li data-display="<%= @document.graphic %>"><i class="icon-target-arrow"></i> <span>Graphic design</span></li>
+            </ul>
+        </aside>
+    </article>
+    <aside class="show-up more-projects">
+        <a data-href="work.html" data-hash="work" class="btn white small">view all work</a>
+        <a data-display="<%= @document.hasExternalLink %>" href="<%= @document.externalLink %>" target="_blank" class="btn white small"><%= @document.externalLinkTitle %> <i class="icon-arrow-right right-icc"></i></a>
+    </aside>
+</header>

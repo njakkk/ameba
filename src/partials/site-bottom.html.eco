@@ -1,0 +1,18 @@
+</div><!--canvas end-->
+<div page>
+    <div page-close class="close"><span></span></div>
+    <div page-content></div>
+</div>
+
+<section ajax-error class="ajax-error">
+    <p>Seems like there has been a problem with your request. Maybe you can try again</p>
+    <a href="#" class="btn white" ajax-error-btn >OK</a>
+</section>
+
+</div><!--wrapper end-->
+
+<!--Scripts-->
+<script src="<%= @site.url %>/js/app-bundle.min.js"></script>
+
+</body>
+</html>

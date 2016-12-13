@@ -1,0 +1,94 @@
+@import 'variables';
+
+.float-me{
+  position: fixed;
+  z-index: 0;
+  width: auto;
+  height: 100vh;
+  pointer-events: none;
+}
+.hero{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+}
+.about{
+  padding: 0 $spacing;
+  position: relative;
+  z-index: 1;
+
+  > article{
+    position: relative;
+
+    h1{
+     font-family: $strong;
+     font-size: 9.5vmin;
+     line-height: 0.80em;
+     letter-spacing: -0.02em;
+     margin: 0;
+     word-wrap: break-word;
+      margin-bottom: 0.5em;
+    }
+    p{
+      font-size: 1.75vmin;
+      letter-spacing: 0.03em;
+      line-height: 1.5em;
+      margin-bottom: $spacing;
+      font-weight: 300;
+    }
+  }
+
+  .stripe{
+    position: absolute;
+    top: 30vh;
+    left: 40%;
+    width: 5px;
+    height: 80vh;
+    transform: rotate(45deg) translate(-50%, -50%);
+    -webkit-transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.8;
+  }
+}
+
+.about-content{
+  position: relative;
+}
+
+.exp{
+  padding: $spacing 0;
+  border-bottom: $light-border;
+  h3{
+    font-size: 2vmin;
+    font-weight: 800;
+  }
+  p{
+    opacity: 0.6;
+  }
+}
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media screen and (max-width: 1200px){
+  .float-me{
+    display: none;
+  }
+  .about{
+    > article{
+      p{
+        font-size: 11px;
+        line-height: 1.6em;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+---
+order: null
+isFeatured: false
+isProject: true
+isPublished: true
+year: 2016
+
+
+name: "bojana-jovetic-brand"
+title: "Bojana Jovetić"
+description: "Logo and visual identity for Serbian Fashion designer Bojana Jovetić"
+longDescription: ""
+slide: "bojana-jovetic-brand/slide.jpg"
+thumb: "bojana-jovetic-brand/thumb.jpg"
+color: "#ddd"
+
+brand: "true"
+---
+
+<section data-id="<%= @document.name %>" class="wrapper">
+    <%- @partial('project-header')%>
+
+    <section class="project-content show-up">
+        <span class="project-line"></span>
+
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.png" alt=""/>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.jpg" alt="" class="full"/>
+
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.jpg" alt="" class="scroll-show full"/>
+
+        <!--<div class="project-tip left"><span>Restaurant's philosophy</span></div>-->
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.png" alt="" class="scroll-show"/>
+        <%- @partial('project-footer')%>
+    </section>
+</section>
+
+
+

@@ -1,0 +1,40 @@
+---
+layout: "main"
+---
+    <div class="wrapper">
+        <div class="magnifier"></div>
+        <p class="scroll-down uppercase light"><i class="icon-arrow-down"></i> scroll for selected work</p>
+        <section class="home-slider">
+
+            <article class="home-slide">
+                <!--<div class="home-background bg"><img src="<%= @site.url %>/images/ameba-home.jpg" alt="" data-bg-img/></div>-->
+                <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
+                    <source src="<%= @site.url %>/images/video-02.mp4" type="video/mp4">
+                </video>
+                <div class="slide-content">
+                    <h1>
+                        <span class="letters">The core of</span>
+                        <span class="letters">simplicity</span>
+                    </h1>
+                    <aside class="slide-content-txt">
+                        <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions she also likes to design and develop.</h2>
+                        <a href="#" class="btn white" data-href="work.html" data-hash="work" tabindex="1">view all work <i class="icon-arrow-right right-icc"></i></a>
+                    </aside>
+                </div>
+            </article>
+
+
+            <% for page in @getCollection("featuredProjects").toJSON(): %>
+            <article class="home-slide">
+                <div class="home-background bg"><img src="<%= @site.url %>/images/projects/<%= page.slide %>" alt="" data-bg-img/></div>
+                <div class="slide-content">
+                    <h1 class="letters"><%= page.title %></h1>
+                    <aside class="slide-content-txt">
+                        <h2><%= page.description %></h2>
+                        <a href="#" class="btn white" data-href="<%= @site.url %><%= page.url %>.html" data-hash="<%= page.name %>" tabindex="1">view project <i class="icon-arrow-right right-icc"></i></a>
+                    </aside>
+                </div>
+            </article>
+            <% end %>
+        </section>
+    </div>

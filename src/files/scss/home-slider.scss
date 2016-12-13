@@ -1,0 +1,255 @@
+@import 'variables';
+
+
+/**** lines****/
+
+.lines{
+  position: absolute;
+  width: auto;
+  height:  100%;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  pointer-events:none;
+    .st0{fill:#fff; height: 100%; opacity: 0.12;}
+    .st1{fill:#fff; height: 100%; opacity: 0.05;}
+}
+
+body.active .lines{
+  display: none;
+}
+
+.magnifier{
+  background: url("../images/ameba-bulb.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  z-index: 10;
+  width: 45vh;
+  height: 45vh;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  opacity: 0.25;
+}
+
+/****home slider****/
+
+.video-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+//  background: url("../images/ameba-home.jpg") no-repeat;
+//  background-size: cover;
+}
+
+.home-slider{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:  100%;
+  overflow: hidden;
+
+  &:before{
+    content:'';
+    background: url('../images/noiz.jpg');
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    opacity: 0.08;
+    pointer-events:none;
+
+  }
+}
+
+.home-slide{
+  position: relative;
+  width:  100%;
+  height:  calc(100vh - #{$container-margin*2});
+
+  .home-background{
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide-content{
+    @include clearfix;
+    color: $light-grey;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+    max-width: 600px;
+
+    .slide-content-txt{
+      opacity: 0;
+      @include translate(0,50px);
+      @include basicTransition(0.8s);
+      &.active{
+        opacity: 1;
+        @include translate(0,0);
+      }
+    }
+
+    h1{
+      font-family: $strong;
+      font-size: 12.4vmin;
+      line-height: 0.7em;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+      float: left;
+      span{
+        white-space: normal;
+      }
+    }
+    h2{
+      clear: right;
+      font-size: 2.5vmin;
+      line-height: 1.2em;
+    }
+    .btn{
+      margin-top: $spacing;
+    }
+  }
+  letter {
+    opacity: 0;
+    @include basicTransition(0.3s);
+    &.active{
+      opacity: 1;
+    }
+  }
+}
+
+.owl-item.active{
+  .home-slide{
+    .home-background{
+      animation: backgroundGrow 15s both;
+    }
+
+  }
+}
+
+/****home slider navigation****/
+
+.home-slider{
+  .owl-buttons{
+    color: $light-grey;
+    position: absolute;
+    top: 50%;
+    left: $spacing;
+    text-align: center;
+  }
+  .owl-buttons > div {
+    display: block;
+    width: $ui-el-size;
+    height: $ui-el-size;
+    line-height: $ui-el-size;
+    position: relative;
+    margin: auto;
+    &:after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      line-height: $ui-el-size;
+      font-family: 'ameba';
+      font-size: $ui-el-size/1.6;
+      text-align: center;
+
+    }
+
+  }
+  .owl-buttons > div.owl-prev:after{
+    content: '\e902';
+  }
+  .owl-buttons > div.owl-next:after{
+    content: '\e905';
+  }
+
+  .owl-buttons > article{
+    span{
+      display: inline-block;
+      vertical-align: baseline;
+      line-height: 0.6em;
+    }
+    .active-slide{
+      font-family: $strong;
+      font-size: 50vmin;
+      width: 1em;
+      text-align: right;
+    }
+    .slides-count{
+      font-size: 12.3vmin;
+      position: relative;
+      margin-left: 15px;
+      font-weight: 100;
+      &:before{
+        content:'';
+        position: absolute;
+        width: 2em;
+        height: 1px;
+        background: $white;
+        @include rotate(-45deg);
+        top: 0.1em;
+        left: -0.5em;
+      }
+    }
+  }
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media screen and (max-width: 1200px){
+  .home-slide{
+    .slide-content{
+      right: 18vw;
+      width: 70vw;
+      h1{
+        font-size: 12.4vmin;
+      }
+      h2{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .home-slide{
+    .slide-content{
+      h1{
+        white-space: normal;
+      }
+    }
+  }
+
+  /****home slider navigation****/
+
+  .home-slider{
+    .owl-buttons > article{
+      .slides-count{
+        display: none;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,84 @@
+@import 'variables';
+
+$tooltip-arrow-size: 8px;
+
+[data-tooltip]{
+  position: relative;
+  overflow: visible !important;
+  &:after{
+    content: attr(data-tooltip);
+    position: absolute;
+    background: darken($dark,3);
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 15px;
+    color: $white;
+    border-radius: 2px;
+    @include basicTransition(0.4s);
+    white-space: nowrap;
+  }
+}
+//top tooltip
+/*---------------------------------*/
+
+[data-tooltip].tooltip-top{
+  &:after{
+    left: 50%;
+    top: 0%;
+    @include translate(-50%, -200%);
+    opacity: 0;
+  }
+  &:hover:after{
+    @include translate(-50%, -100%);
+    opacity: 1;
+  }
+}
+
+//bottom tooltip
+/*---------------------------------*/
+
+[data-tooltip].tooltip-bottom{
+  &:after{
+    left: 50%;
+    bottom: 0;
+    @include translate(-50%, 200%);
+    opacity: 0;
+  }
+  &:hover:after{
+    @include translate(-50%, 100%);
+    opacity: 1;
+  }
+}
+
+//left tooltip
+/*---------------------------------*/
+
+[data-tooltip].tooltip-left{
+  &:after{
+    right: 100%;
+    top: 50%;
+    @include translate(-50%, -50%);
+    opacity: 0;
+  }
+  &:hover:after{
+    @include translate(0%, -50%);
+    opacity: 1;
+  }
+}
+
+//right tooltip
+/*---------------------------------*/
+
+[data-tooltip].tooltip-right{
+  &:after{
+    left: 100%;
+    top: 50%;
+    @include translate(50%, -50%);
+    opacity: 0;
+  }
+  &:hover:after{
+    @include translate(0%, -50%);
+    opacity: 1;
+  }
+}

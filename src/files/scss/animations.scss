@@ -1,0 +1,34 @@
+@import 'variables';
+
+
+@keyframes backgroundGrow {
+  from {
+  transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.15);
+  }
+}
+
+//______________________________________________________________________________________
+
+
+@keyframes scaleMenu {
+  0% {@include scale(0, 1);}
+  80% {@include scale(1.2, 1);}
+  100% {@include scale(1, 1);}
+}
+
+//______________________________________________________________________________________
+
+
+@keyframes loaderAnimation {
+  0%, 100%{
+    @include translate(-40px, 0);
+  }
+
+  50% {
+    @include translate(40px, 0);
+  }
+}

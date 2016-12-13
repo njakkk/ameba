@@ -1,0 +1,328 @@
+@import 'variables';
+
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
+}
+
+html,body {
+  min-height: 100%;
+  background: #F7F7F7;
+}
+
+body {
+  font-family: $main-font;
+  color: $dark;
+  background: $darker;
+  font-size: 13pt;
+  font-weight: 300;
+  line-height: 1.5em;
+  position: relative;
+  margin: $container-margin;
+  overflow: hidden;
+}
+
+.site-wrapper{
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  height:  calc(100vh - #{$container-margin*2});
+}
+
+.page-content{
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+
+h1 { font-size: 300%}
+h2 { font-size: 250%}
+h3 { font-size: 200%}
+h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom: 10px}
+
+@media screen and ( min-width: 1200px){
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+
+
+
+/****************************************/
+[canvas]{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: $light-grey;
+  @include basicTransition(700ms);
+
+  &.active{
+    pointer-events:none;
+    opacity: 0.2;
+    filter: grayscale(100%) contrast(90%) brightness(60%);
+    -webkit-filter: grayscale(100%) contrast(90%) brightness(60%);
+  }
+}
+
+[page]{
+  position: absolute;
+  left: $container-margin;
+  top: $container-margin;
+  width: calc(100% - #{$container-margin*2});
+  height: calc(100% - #{$container-margin*2});
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: $white;
+  color:$dark;
+  @include scale(0,1);
+  transition: transform 800ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+
+  &.active{
+    @include noTransform;
+    opacity: 1;
+  }
+}
+
+[page-content]{
+  margin: $container-margin;
+}
+
+
+[page-loader]{
+  position: fixed;
+  left: $container-margin;
+  top: $container-margin;
+  width: calc(100% - #{$container-margin*2});
+  height: calc(100% - #{$container-margin*2});
+  display: block;
+  z-index: 1000;
+
+  span{
+    position: absolute;
+    width: 1px;
+    background: $white;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    animation: loaderAnimation 1s infinite;
+  }
+  &.back{
+    background: $darker;
+  }
+}
+
+.close{
+  position: fixed;
+  right: $spacing + $container-margin;
+  top: $spacing + $container-margin;
+  z-index: 10;
+  opacity: 0;
+  transform: translate3d(300px, 0, 0);
+  @include basicTransition(.5s);
+
+  display: inline-block;
+  width: $close-size;
+  height: $close-size;
+  cursor: pointer;
+  padding: 3px;
+
+
+  span{
+    position: absolute;
+    top: 50%;
+    width: $close-size - 8px;
+    height: 1px;
+    margin-top: -1px;
+    background: transparent;
+    pointer-events: none;
+
+    &:before, &:after{
+      content:'';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 50%;
+      background: $dark;
+      @include basicTransition(.3s);
+    }
+
+    &:before{
+      @include rotate(-45deg);
+    }
+    &:after{
+      @include rotate(45deg);
+    }
+  }
+
+  &.active{
+    opacity: 1;
+    transform: none;
+    transition-delay: 1s;
+  }
+}
+
+.ajax-error{
+  position: fixed;
+  width: 90%;
+  max-width: 500px;
+  left: 50%;
+  padding: $spacing;
+  background: $darker;
+  color: $white;
+  z-index: 20;
+  bottom: $spacing*2;
+  text-align: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(-50%,120%, 0);
+  @include basicTransition(400ms);
+
+  &.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(-50%,0, 0);
+  }
+
+  .btn{
+    margin-top: $spacing;
+  }
+}
+
+.show-up{
+  transform: translate3d(0,100px, 0);
+  opacity: 0;
+  @include basicTransition(0.6s);
+
+  &.left{
+    transform: translate3d(-100px,0, 0);
+  }
+  &.right{
+    transform: translate3d(100px,0, 0);
+  }
+  &.top{
+    transform: translate3d(0,-100px, 0);
+  }
+  &.active{
+    opacity: 1;
+    transform: none !important;
+  }
+}
+
+.scroll-show {
+  transform: translate3d(0,300px, 0);
+  opacity: 0;
+  @include basicTransition(0.9s);
+
+  &.left{
+    transform: translate3d(-300px,0, 0);
+  }
+  &.right{
+    transform: translate3d(300px,0, 0);
+  }
+  &.top{
+    transform: translate3d(0,-300, 0);
+  }
+  &.active{
+    opacity: 1;
+    transform: none !important;
+  }
+}
+
+.project-tip {
+  transform: translate3d(0,300px, 0);
+  opacity: 0;
+  @include basicTransition(0.9s);
+
+  &.left{
+    transform: translate3d(-300px,0, 0);
+  }
+  &.right{
+    transform: translate3d(300px,0, 0);
+  }
+  &.active{
+    opacity: 1;
+    transform: none !important;
+  }
+}
+
+
+body.dark-page{
+  [page]{
+    background-color: $darker;
+    color:$light-grey;
+  }
+
+  .close{
+    span{
+      &:before, &:after{
+        background: $light-grey;
+      }
+    }
+  }
+}
+
+/***blend modes***/
+.blend-color { mix-blend-mode: color; }
+.blend-color-burn { mix-blend-mode: color-burn; }
+.blend-color-dodge { mix-blend-mode: color-dodge; }
+.blend-darken { mix-blend-mode: darken; }
+.blend-difference { mix-blend-mode: difference; }
+.blend-exclusion { mix-blend-mode: exclusion; }
+.blend-hard-light { mix-blend-mode: hard-light; }
+.blend-hue { mix-blend-mode: hue; }
+.blend-lighten { mix-blend-mode: lighten; }
+.blend-luminosity { mix-blend-mode: luminosity; }
+.blend-multiply { mix-blend-mode: multiply; }
+.blend-overlay { mix-blend-mode: overlay; }
+.blend-saturation { mix-blend-mode: saturation; }
+.blend-screen { mix-blend-mode: screen;}
+.blend-soft-light { mix-blend-mode: soft-light;}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media screen and (max-width: 1200px){
+  .close{
+    span{
+      &:before, &:after{
+        background: $light-grey;
+      }
+    }
+  }
+
+  .scroll-show, .project-tip {
+    transform: none !important;
+    opacity: 1;
+  }
+}
+

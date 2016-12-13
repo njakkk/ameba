@@ -1,0 +1,170 @@
+@mixin clearfix {
+  zoom:1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//FONTS
+$main-font: 'Exo 2', sans-serif;
+$strong: 'evelethclean_regular', sans-serif;
+$thin: 'evelethclean_thin', sans-serif;
+
+//$main-font: 'Droid Serif', serif;
+//$strong: 'Abril Fatface', cursive;;
+//$thin: 'Playfair Display', serif;
+
+
+//SIZES
+$vw: 100vw;
+$vh: 100vh;
+$loader-img-size: 200px;
+
+//COLORS
+
+
+
+$dark: #222;
+$darker: #111;
+$light-grey: #d1d1d1;
+$lightest-grey: #fbfbfb;
+$white: #fff;
+
+
+
+//sizes
+
+$container-margin: 0vmin;
+$spacing: 2.2vmin;
+$container-margin-small: 10px;
+$page-menu-height: 60px;
+$container-max-width: 1550px;
+$ui-el-size: 50px;
+$btn-size: 48px;
+$btn-size-small: 38px;
+$header-size: 3vh;
+$close-size: 30px;
+
+
+//borders
+$light-border: solid 1px rgba(255,255,255,0.06);
+$dark-border: solid 1px rgba(0,0,0,0.06);
+$border-default: solid 1px #eee;
+
+
+//MIXIN'S
+
+
+@mixin uppText() {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@mixin absoluteCenterNoTransform($height) {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: $height;
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  @include translate(-50%, -50%);
+}
+
+@mixin verticalCenter {
+  position: absolute;
+  top: 50%;
+  @include translate(0, -50%);
+}
+
+@mixin basicTransition($time) {
+  -webkit-transition: all $time cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -moz-transition: all $time cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition: all $time cubic-bezier(0.215, 0.610, 0.355, 1.000); /* custom */
+}
+
+@mixin translate($X, $Y) {
+  transform: translate($X, $Y),;
+  -moz-transform: translate($X, $Y);
+  -webkit-transform: translate($X, $Y);
+  -ms-transform: translate($X, $Y);
+}
+
+@mixin scale($X,$Y) {
+  transform: scale($X,$Y);
+  -moz-transform: scale($X,$Y);
+  -webkit-transform: scale($X,$Y);
+  -ms-transform: scale($X,$Y);
+}
+
+@mixin rotate($deg) {
+  transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+}
+
+@mixin rotateX($deg) {
+  transform: rotateX($deg);
+  -moz-transform: rotateX($deg);
+  -webkit-transform: rotateX($deg);
+  -ms-transform: rotateX($deg);
+}
+
+@mixin rotateY($deg) {
+  transform: rotateY($deg);
+  -moz-transform: rotateY($deg);
+  -webkit-transform: rotateY($deg);
+  -ms-transform: rotateY($deg);
+}
+
+
+@mixin shadow($shadow) {
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow
+}
+
+@mixin textShadow($x) {
+  -moz-text-shadow: $x;
+  -webkit-text-shadow: $x;
+  text-shadow: $x
+}
+
+
+@mixin selection-disabled {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin selection-enabled {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+@mixin noTransform {
+  transform: none;
+  -moz-transform: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+}
+

@@ -1,0 +1,4 @@
+<%- @partial('site-head') %>
+    <%- @include('includes/not-found.html') %>
+<%- @partial('site-bottom') %>
+

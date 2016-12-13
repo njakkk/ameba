@@ -1,0 +1,49 @@
+---
+order: 2
+isFeatured: true
+isProject: true
+isPublished: true
+year: 2016
+
+
+name: "dive-and-seek"
+title: "Dive & Seek"
+description: "Platform for diving lovers."
+longDescription: "Platform allows diving lovers to easilly share their experiences, with other members with same interests. Will still be further developed to support browsing and booking for diving tours worldwide."
+slide: "dive-and-seek/slide.jpg"
+thumb: "dive-and-seek/thumb.jpg"
+color: "#335fdd"
+
+dev: "true"
+
+hasExternalLink: "true"
+externalLinkTitle: "view template"
+externalLink: "http://dev.ameba.rs/ds"
+---
+
+<section data-id="<%= @document.name %>" class="wrapper">
+    <%- @partial('project-header')%>
+
+    <section class="project-content show-up">
+        <span class="project-line"></span>
+
+        <div class="project-tip right"><span>Homepage, gallery of most popular images</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.png" alt="" class="scroll-show"/>
+
+        <div class="project-tip left"><span>User's profile with gallery</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.png" alt="" class="drop-shadow scroll-show"/>
+
+        <div class="project-tip left"><span>Collection of members.</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.png" alt="" class="scroll-show"/>
+
+        <div class="project-tip right"><span>Image view</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-04.png" alt="" class="scroll-show"/>
+
+        <div class="project-tip left"><span>User's profile view on mobile</span></div>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-05.png" alt="" class="scroll-show"/>
+        <%- @partial('project-footer')%>
+    </section>
+</section>
+
+
+
