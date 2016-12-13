@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "postinstall": "gulp production"
+  },
+  "dependencies": {
+    "docpad": "~6.78.4",
+    "docpad-plugin-cleanurls": "~2.8.1",
+    "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-partials": "~2.9.2",
+    "express": "3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.5",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "sendgrid": "1.6.0"
+  },
+  "engines": {
+    "node": "0.10.33"
+  },
+  "devDependencies": {}
+}
