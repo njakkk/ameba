@@ -200,7 +200,7 @@ function scrollShow(){
     if($(window).width() > 1200) {
         $('.scroll-show, .project-tip').viewportChecker({
             classToAdd: 'active',
-            offset: -100,
+            offset: -50,
             repeat: false,
             scrollBox: $('[page]')
         });
