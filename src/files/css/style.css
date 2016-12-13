@@ -3918,10 +3918,9 @@ body.active .lines {
         -ms-transform: translate(0, 0); }
     .home-slide .slide-content h1 {
       font-family: "evelethclean_regular", sans-serif;
-      font-size: 12.4vmin;
+      font-size: 16.4vmin;
       line-height: 0.7em;
-      letter-spacing: -0.02em;
-      white-space: nowrap; }
+      letter-spacing: -0.02em; }
       .home-slide .slide-content h1 span {
         white-space: normal; }
     .home-slide .slide-content h2 {
