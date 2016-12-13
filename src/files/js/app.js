@@ -162,6 +162,23 @@ function moveMeAround(){
     });
 }
 
+function moveLines(){
+
+    var parentElement = $('body');
+    var el = $('.static-lines');
+
+    parentElement.mousemove(function(event){
+        var x = event.pageX/10;
+        var y = event.pageY/10;
+
+        el.stop().animate({'top': -y, 'left': -x},200, 'easeOutCubic');
+    });
+
+    parentElement.mouseleave(function(){
+        el.removeAttr('style');
+    });
+}
+
 function floatingAmeba() {
     var ameba = $(".float"),
         theContainer = $(".project-header"),
@@ -224,6 +241,7 @@ $(document).ready( function() {
     $('.home-slider .owl-buttons').verticalCenter();
     wrapWord();
     moveMeAround();
+    moveLines();
     dropDown();
 //    gotoUrl();
     attrBgColor();

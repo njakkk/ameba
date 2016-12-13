@@ -4,6 +4,7 @@ layout: "main"
     <div class="wrapper">
         <div class="magnifier"></div>
         <p class="scroll-down uppercase light"><i class="icon-arrow-down"></i> scroll for selected work</p>
+        <img class="static-lines" src="<%= @site.url %>/images/static-lines.svg" alt=""/>
         <section class="home-slider">
 
             <article class="home-slide">
