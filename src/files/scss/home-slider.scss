@@ -101,13 +101,13 @@ body.active .lines{
   .slide-content{
     @include clearfix;
     color: $light-grey;
-    text-align: center;
+    text-align: left;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 16.8%;
     width: 70vw;
-    max-width: 900px;
-    @include translate(-50%, 0);
+    max-width: 33.3vw;
+//    @include translate(-50%, 0);
 
     .slide-content-txt{
       opacity: 0;
@@ -121,9 +121,10 @@ body.active .lines{
 
     h1{
       font-family: $strong;
-      font-size: 16.4vmin;
+      font-size: 12.4vmin;
       line-height: 0.7em;
       letter-spacing: -0.02em;
+      max-width: 400px;
 //      white-space: nowrap;
       span{
         white-space: normal;
@@ -131,7 +132,7 @@ body.active .lines{
     }
     h2{
       clear: right;
-      font-size: 2.5vmin;
+      font-size: 2vmin;
       line-height: 1.2em;
     }
     .btn{
