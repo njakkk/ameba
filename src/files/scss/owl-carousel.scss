@@ -31,7 +31,8 @@
 }
 
 .owl-item {
-  float: left
+  float: left;
+  overflow: hidden;
 }
 
 .owl-page, .owl-controls .owl-buttons div {

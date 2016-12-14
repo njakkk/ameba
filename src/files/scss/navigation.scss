@@ -4,8 +4,8 @@
 /**** lines****/
 .header{
   position: fixed;
-  top: $container-margin;
-  left: $container-margin;
+  top: 0;
+  left: 0;
   z-index: 20;
   padding: $spacing;
   width: 100%;
@@ -97,7 +97,7 @@
   top: 0;
   left: 0;
   width: 50vw;
-  height: calc(100vh - #{$container-margin*2});
+  height: $vh;
   background: $darker;
   overflow: hidden;
   color: $light-grey;
@@ -261,7 +261,7 @@
 
 @media screen and (max-width: 900px){
   .main-menu{
-    width: calc(100vw - #{$container-margin*2});
+    width: $vw;
   }
 }
 

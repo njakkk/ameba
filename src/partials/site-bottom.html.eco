@@ -1,3 +1,10 @@
+<div class="static-lines">
+    <line></line>
+    <line></line>
+    <line></line>
+    <line></line>
+    <line></line>
+</div>
 </div><!--canvas end-->
 <div page>
     <div page-content></div>

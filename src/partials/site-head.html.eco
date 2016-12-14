@@ -43,7 +43,7 @@
 </head>
 
 <body class="<%= @document.bodyClass %>">
-<%- @partial('lines-static')%>
+<!--<%- @partial('lines')%>-->
 <div class="site-wrapper">
     <%- @partial('main-menu')%>
     <div page-loader class="back"><span></span></div>
