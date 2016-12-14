@@ -103,8 +103,9 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
   overflow-x: hidden;
   background-color: $white;
   color:$dark;
+  opacity: 0;
   @include scale(0,1);
-  transition: transform 800ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition: all 800ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
   &.active{
     @include noTransform;
@@ -138,56 +139,6 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
   }
   &.back{
     background: $darker;
-  }
-}
-
-.close{
-  position: fixed;
-  right: $spacing + $container-margin;
-  top: $spacing + $container-margin;
-  z-index: 10;
-  opacity: 0;
-  transform: translate3d(300px, 0, 0);
-  @include basicTransition(.5s);
-
-  display: inline-block;
-  width: $close-size;
-  height: $close-size;
-  cursor: pointer;
-  padding: 3px;
-
-
-  span{
-    position: absolute;
-    top: 50%;
-    width: $close-size - 8px;
-    height: 1px;
-    margin-top: -1px;
-    background: transparent;
-    pointer-events: none;
-
-    &:before, &:after{
-      content:'';
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      top: 50%;
-      background: $dark;
-      @include basicTransition(.3s);
-    }
-
-    &:before{
-      @include rotate(-45deg);
-    }
-    &:after{
-      @include rotate(45deg);
-    }
-  }
-
-  &.active{
-    opacity: 1;
-    transform: none;
-    transition-delay: 1s;
   }
 }
 
@@ -312,13 +263,6 @@ body.dark-page{
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 
 @media screen and (max-width: 1200px){
-  .close{
-    span{
-      &:before, &:after{
-        background: $light-grey;
-      }
-    }
-  }
 
   .scroll-show, .project-tip {
     transform: none !important;

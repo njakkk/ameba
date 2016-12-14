@@ -34,4 +34,6 @@
             </li>
         </ul>
     </nav>
+
+    <div page-close class="close"><span></span></div>
 </header>

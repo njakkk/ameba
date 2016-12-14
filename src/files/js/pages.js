@@ -64,9 +64,13 @@ function pageAction() {
         $('#bg-video').get(0).pause();
         $('.home-slider').trigger('owl.jumpTo', 0);
 
-        $([page, canvas, close, body]).each(function () {
+        $([page, canvas, body]).each(function () {
             $(this).addClass(activeClass);
         });
+
+        setTimeout(function (){
+            close.addClass(activeClass);
+        }, 1000);
 
         setTimeout(function (){
             content.find('[data-id]').addClass(activeClass);

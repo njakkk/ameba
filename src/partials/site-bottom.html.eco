@@ -1,6 +1,5 @@
 </div><!--canvas end-->
 <div page>
-    <div page-close class="close"><span></span></div>
     <div page-content></div>
 </div>
 

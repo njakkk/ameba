@@ -168,3 +168,9 @@ $border-default: solid 1px #eee;
   -ms-transform: none;
 }
 
+
+@mixin bgCover {
+  background-position: center center;
+  background-size: cover;
+}
+

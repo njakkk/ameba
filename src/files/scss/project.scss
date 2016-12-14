@@ -126,8 +126,44 @@
 ///////////////////////////////////////////////////////////////////
 
 .project-footer{
-  padding: $spacing*2 $spacing;
+//  padding-top: $spacing*2;
   text-align: center;
+}
+.projects-nav{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  .project-btn{
+    position: relative;
+    display: table-cell;
+    width: 50%;
+    height: $ui-el-size*2;
+    line-height: $ui-el-size*2;
+    overflow: hidden;
+    background: $dark;
+    span, i{
+      vertical-align: middle;
+      margin: 0 5px;
+    }
+    > div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      @include bgCover;
+      @include basicTransition(500ms);
+      opacity: 0.02;
+    }
+    &:hover > div{
+      @include scale(1.2,1.2);
+      opacity: 0.4;
+    }
+  }
+  .project-btn:last-child{
+    background: $darker;
+  }
 }
 ///////////////////////////////////////////////////////////////////
 

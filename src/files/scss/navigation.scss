@@ -8,11 +8,14 @@
   left: $container-margin;
   z-index: 20;
   padding: $spacing;
+  width: 100%;
 }
+
 [data-trigger="main-menu"]{
   cursor: pointer;
   position: relative;
   z-index: 1;
+  float: left;
 }
 
 .logo{
@@ -184,14 +187,75 @@
   li:nth-child(4){ transition-delay: 600ms}
 }
 
+//** close*//
+.close{
+  position: relative;
+  float: right;
+  opacity: 0;
+  transform: translate3d(300px, 0, 0);
+  @include basicTransition(.5s);
+
+  display: inline-block;
+  width: $close-size;
+  height: $close-size;
+  cursor: pointer;
+  padding: 3px;
 
 
-//////////////////////////////////////////////////
+  span{
+    position: absolute;
+    top: 50%;
+    width: $close-size - 8px;
+    height: 1px;
+    margin-top: -1px;
+    background: transparent;
+    pointer-events: none;
 
+    &:before, &:after{
+      content:'';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 50%;
+      background: $dark;
+      @include basicTransition(.3s);
+    }
+
+    &:before{
+      @include rotate(-45deg);
+    }
+    &:after{
+      @include rotate(45deg);
+    }
+  }
+
+  &.active{
+    opacity: 1;
+    transform: none;
+  }
+  &:hover{
+    @include rotate(360deg);
+  }
+}
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
 
 @media screen and (max-width: 1300px){
   .main-menu{
     width: 80vw;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .close{
+    span{
+      &:before, &:after{
+        background: $light-grey;
+      }
+    }
   }
 }
 
