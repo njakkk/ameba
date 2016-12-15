@@ -3871,7 +3871,7 @@ body.active .lines {
     transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
     /* custom */ }
   .home-slide .home-background {
-    background-position: 90% center;
+    background-position: 95% center;
     background-size: cover;
     position: absolute;
     left: -20px;
