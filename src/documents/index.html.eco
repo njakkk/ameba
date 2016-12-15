@@ -10,7 +10,7 @@ layout: "main"
             <article class="home-slide">
                 <!--<div class="home-background bg"><img src="<%= @site.url %>/images/ameba-home.jpg" alt="" data-bg-img/></div>-->
                 <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
-                    <source src="<%= @site.url %>/images/video-03.mp4" type="video/mp4">
+                    <source src="<%= @site.url %>/images/video-04.mp4" type="video/mp4">
                 </video>
                 <div class="slide-content">
                     <div class="slide-num" data-color="<%= @document.color %>">
