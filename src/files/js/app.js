@@ -100,11 +100,11 @@ function homeSlider(){
         var slidesNum = $('.home-slider .owl-item').length;
         var activeSlide = $('.home-slider .owl-item.active').index()+1;
 
-        if (e.deltaY > 0 && activeSlide != 1) {
+        if (e.deltaY > 0) {
             slider.trigger('owl.prev');
 
         }
-        if (e.deltaY < 0 && activeSlide != slidesNum) {
+        if (e.deltaY < 0) {
             slider.trigger('owl.next');
 
         }
@@ -119,10 +119,10 @@ function homeSlider(){
         var slidesNum = $('.home-slider .owl-item').length;
         var activeSlide = $('.home-slider .owl-item.active').index()+1;
 
-        if (e.keyCode == 38 && activeSlide != 1) {
+        if (e.keyCode == 38) {
             slider.trigger('owl.prev')
         }
-        if (e.keyCode == 40 && activeSlide != slidesNum) {
+        if (e.keyCode == 40) {
             slider.trigger('owl.next')
         }
         e.preventDefault();
