@@ -3292,9 +3292,9 @@ tiny-space {
 /* line 18, ../scss/owl-transitions.scss */
 .owl-fade-out {
   z-index: 10;
-  -webkit-animation: fadeOut .0s both ease;
-  -moz-animation: fadeOut .0s both ease;
-  animation: fadeOut .0s both ease; }
+  -webkit-animation: fadeOut .5s both ease;
+  -moz-animation: fadeOut .5s both ease;
+  animation: fadeOut .5s both ease; }
 
 /* line 24, ../scss/owl-transitions.scss */
 .owl-fade-in {
@@ -3877,9 +3877,9 @@ body.active .lines {
     width: 66.66667%;
     height: 0;
     overflow: hidden;
-    -webkit-transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -moz-transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     /* custom */ }
   .home-slide .home-background {
     background-position: 95% center;
@@ -4034,7 +4034,8 @@ body.active .lines {
 @media screen and (max-width: 960px) {
   .home-slide .home-background-holder {
     left: 0;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   .home-slide .home-background {
     background-position: center center;
     left: 0;
