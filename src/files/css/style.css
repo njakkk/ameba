@@ -2777,7 +2777,7 @@ html, body {
 body {
   font-family: "Exo 2", sans-serif;
   color: #222;
-  background: #111;
+  background: #222;
   font-size: 13pt;
   font-weight: 300;
   line-height: 1.5em;
@@ -2891,7 +2891,18 @@ h4 {
     z-index: 1;
     animation: loaderAnimation 1s infinite; }
   [page-loader].back {
-    background: #111; }
+    background: #151515; }
+    [page-loader].back:before {
+      content: '';
+      background: url("../images/noiz.jpg");
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      opacity: 0.04;
+      pointer-events: none; }
 
 .ajax-error {
   position: fixed;
