@@ -3292,9 +3292,9 @@ tiny-space {
 /* line 18, ../scss/owl-transitions.scss */
 .owl-fade-out {
   z-index: 10;
-  -webkit-animation: fadeOut .5s both ease;
-  -moz-animation: fadeOut .5s both ease;
-  animation: fadeOut .5s both ease; }
+  -webkit-animation: fadeOut .0s both ease;
+  -moz-animation: fadeOut .0s both ease;
+  animation: fadeOut .0s both ease; }
 
 /* line 24, ../scss/owl-transitions.scss */
 .owl-fade-in {
@@ -3875,12 +3875,34 @@ body.active .lines {
     top: 0;
     left: 33.33333vw;
     width: 66.66667%;
-    height: 0;
+    height: 100%;
     overflow: hidden;
     -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     -moz-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     /* custom */ }
+    .home-slide .home-background-holder .stripe {
+      position: absolute;
+      height: 100%;
+      background: #222;
+      z-index: 1;
+      width: 16.66667vw;
+      -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      -moz-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      /* custom */ }
+      .home-slide .home-background-holder .stripe:nth-child(1) {
+        left: 0;
+        bottom: 0; }
+      .home-slide .home-background-holder .stripe:nth-child(2) {
+        left: 16.66667vw;
+        bottom: 0; }
+      .home-slide .home-background-holder .stripe:nth-child(3) {
+        left: 33.33333vw;
+        top: 0; }
+      .home-slide .home-background-holder .stripe:nth-child(4) {
+        left: 50vw;
+        bottom: 0; }
   .home-slide .home-background {
     background-position: 95% center;
     background-size: cover;
@@ -3958,8 +3980,14 @@ body.active .lines {
     .home-slide letter.active {
       opacity: 1; }
 
-.owl-item.active .home-slide .home-background-holder {
-  height: 100%; }
+.owl-item.active .home-slide .home-background-holder .stripe {
+  height: 0; }
+  .owl-item.active .home-slide .home-background-holder .stripe:nth-child(2) {
+    transition-delay: 0.15s; }
+  .owl-item.active .home-slide .home-background-holder .stripe:nth-child(3) {
+    transition-delay: 0.60s; }
+  .owl-item.active .home-slide .home-background-holder .stripe:nth-child(4) {
+    transition-delay: 0.45s; }
 
 /****home slider navigation****/
 .home-slider .owl-buttons {
@@ -4045,6 +4073,8 @@ body.active .lines {
       height: 100%;
       background: #222;
       opacity: 0.3; }
+    .home-slide .home-background-holder .stripe {
+      display: none; }
   .home-slide .home-background {
     background-position: center center;
     left: 0;

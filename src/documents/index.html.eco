@@ -32,7 +32,11 @@ layout: "main"
             <% for page in @getCollection("featuredProjects").toJSON(): %>
             <article class="home-slide">
                 <div class="home-background-holder">
-                    <div class="home-background bg"><img src="<%= @site.url %>/images/projects/<%= page.slide %>" alt="" data-bg-img/></div>
+                    <span class="stripe"></span>
+                    <span class="stripe"></span>
+                    <span class="stripe"></span>
+                    <span class="stripe"></span>
+                   <div class="home-background bg"><img src="<%= @site.url %>/images/projects/<%= page.slide %>" alt="" data-bg-img/></div>
                 </div>
                 <div class="slide-content">
                     <div class="slide-num" data-color="<%= page.color %>">
