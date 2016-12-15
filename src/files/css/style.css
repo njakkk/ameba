@@ -2727,6 +2727,12 @@ table {
   to {
     transform: scale(1.15); } }
 
+@keyframes backgroundSlide {
+  0%, 100% {
+    transform: translate(-20px, 0); }
+  50% {
+    transform: translate(20px, 0); } }
+
 @keyframes scaleMenu {
   0% {
     transform: scale(0, 1);
@@ -3275,15 +3281,15 @@ tiny-space {
 /* line 18, ../scss/owl-transitions.scss */
 .owl-fade-out {
   z-index: 10;
-  -webkit-animation: fadeOut .7s both ease;
-  -moz-animation: fadeOut .7s both ease;
-  animation: fadeOut .7s both ease; }
+  -webkit-animation: fadeOut .0s both ease;
+  -moz-animation: fadeOut .0s both ease;
+  animation: fadeOut .0s both ease; }
 
 /* line 24, ../scss/owl-transitions.scss */
 .owl-fade-in {
-  -webkit-animation: fadeIn .7s both ease;
-  -moz-animation: fadeIn .7s both ease;
-  animation: fadeIn .7s both ease; }
+  -webkit-animation: fadeIn .0s both ease;
+  -moz-animation: fadeIn .0s both ease;
+  animation: fadeIn .0s both ease; }
 
 /* backSlide */
 /* line 30, ../scss/owl-transitions.scss */
@@ -3851,23 +3857,28 @@ body.active .lines {
 .home-slide {
   position: relative;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  background-color: #222; }
+  .home-slide .home-background-holder {
+    position: absolute;
+    top: 0;
+    left: 33.33333vw;
+    width: 66.66667%;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
+    /* custom */ }
   .home-slide .home-background {
-    background-position: center center;
+    background-position: 90% center;
     background-size: cover;
     position: absolute;
-    left: 0;
+    left: -20px;
     top: 0;
-    width: 100%;
-    height: 100%;
-    transform: scale(1.05, 1.05);
-    -moz-transform: scale(1.05, 1.05);
-    -webkit-transform: scale(1.05, 1.05);
-    -ms-transform: scale(1.05, 1.05);
-    -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -moz-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-    /* custom */ }
+    width: 68.96552vw;
+    height: 100vh;
+    animation: backgroundSlide 5s infinite; }
   .home-slide .slide-content {
     zoom: 1;
     color: #f4f4f4;
@@ -3937,6 +3948,9 @@ body.active .lines {
     .home-slide letter.active {
       opacity: 1; }
 
+.owl-item.active .home-slide .home-background-holder {
+  height: 100%; }
+
 /****home slider navigation****/
 .home-slider .owl-buttons {
   color: #f4f4f4;
@@ -4000,11 +4014,22 @@ body.active .lines {
 
 @media screen and (max-width: 1200px) {
   .home-slide .slide-content {
-    width: 70vw; }
+    width: 70vw;
+    max-width: 70vw; }
     .home-slide .slide-content h1 {
       font-size: 12.4vmin; }
     .home-slide .slide-content h2 {
       font-size: 14px; } }
+
+@media screen and (max-width: 960px) {
+  .home-slide .home-background-holder {
+    left: 0;
+    width: 100%; }
+  .home-slide .home-background {
+    background-position: center center;
+    left: 0;
+    width: 100%;
+    animation: none; } }
 
 @media screen and (max-width: 600px) {
   .home-slide .slide-content h1 {
