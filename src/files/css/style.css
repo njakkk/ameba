@@ -4063,6 +4063,12 @@ body.active .lines {
   .home-slider .owl-buttons > article .slides-count {
     display: none; } }
 
+body.dark-logo .logo svg {
+  fill: #222; }
+
+body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark-logo .hamburger span:after {
+  background: #222; }
+
 /**** lines****/
 .header {
   position: fixed;

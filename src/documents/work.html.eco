@@ -2,12 +2,13 @@
 isFeatured: false
 isProject: false
 isPublished: false
+pageClass: "dark-logo"
 
 name: "work"
 title: "Work"
 ---
 
-<section data-id="<%= @document.name %>" class="wrapper">
+<section data-id="<%= @document.name %>" class="wrapper" page-class="<%= @document.pageClass %>">
 
     <div class="all-projects">
         <% for page in @getCollection("projects").toJSON(): %>

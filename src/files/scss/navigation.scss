@@ -1,5 +1,18 @@
 @import 'variables';
 
+body.dark-logo{
+  .logo{
+    svg{
+      fill: $dark;
+    }
+  }
+  .hamburger{
+    span, span:before, span:after{
+      background: $dark;
+    }
+  }
+}
+
 
 /**** lines****/
 .header{
