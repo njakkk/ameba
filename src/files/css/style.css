@@ -2729,9 +2729,9 @@ table {
 
 @keyframes backgroundSlide {
   0%, 100% {
-    transform: translate(-20px, 0); }
+    transform: translate(-15px, 0); }
   50% {
-    transform: translate(20px, 0); } }
+    transform: translate(15px, 0); } }
 
 @keyframes scaleMenu {
   0% {
@@ -3887,7 +3887,7 @@ body.active .lines {
     position: absolute;
     left: -20px;
     top: 0;
-    width: 68.96552vw;
+    width: 70.17544vw;
     height: 100vh;
     animation: backgroundSlide 5s infinite; }
   .home-slide .slide-content {

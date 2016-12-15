@@ -4,13 +4,12 @@ layout: "main"
     <div class="wrapper">
         <div class="magnifier"></div>
         <p class="scroll-down uppercase light"><i class="icon-arrow-down"></i> scroll for selected work</p>
-        <img class="overlay-lines" src="<%= @site.url %>/images/static-lines.svg" alt=""/>
+        <img class="overlay-lines" src="<%= @site.url %>/images/overlay-lines.svg" alt=""/>
         <section class="home-slider">
 
             <article class="home-slide">
-                <!--<div class="home-background bg"><img src="<%= @site.url %>/images/ameba-home.jpg" alt="" data-bg-img/></div>-->
                 <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
-                    <source src="<%= @site.url %>/images/video-04.mp4" type="video/mp4">
+                    <source src="<%= @site.url %>/images/ameba.mp4" type="video/mp4">
                 </video>
                 <div class="slide-content">
                     <div class="slide-num" data-color="<%= @document.color %>">
