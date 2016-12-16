@@ -39,10 +39,10 @@
 
 @keyframes loaderAnimation {
   0%, 100%{
-    @include translate(-40px, 0);
+    @include scale(1, 0);
   }
 
   50% {
-    @include translate(40px, 0);
+    @include scale(1, 1);
   }
 }

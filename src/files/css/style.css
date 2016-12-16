@@ -2752,15 +2752,15 @@ table {
 
 @keyframes loaderAnimation {
   0%, 100% {
-    transform: translate(-40px, 0);
-    -moz-transform: translate(-40px, 0);
-    -webkit-transform: translate(-40px, 0);
-    -ms-transform: translate(-40px, 0); }
+    transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0); }
   50% {
-    transform: translate(40px, 0);
-    -moz-transform: translate(40px, 0);
-    -webkit-transform: translate(40px, 0);
-    -ms-transform: translate(40px, 0); } }
+    transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1); } }
 
 * {
   box-sizing: border-box; }
@@ -2843,9 +2843,7 @@ h4 {
   /* custom */ }
   [canvas].active {
     pointer-events: none;
-    opacity: 0.2;
-    filter: grayscale(100%) contrast(90%) brightness(60%);
-    -webkit-filter: grayscale(100%) contrast(90%) brightness(60%); }
+    opacity: 0; }
 
 [page] {
   position: absolute;
@@ -2862,7 +2860,7 @@ h4 {
   -moz-transform: scale(0, 1);
   -webkit-transform: scale(0, 1);
   -ms-transform: scale(0, 1);
-  transition: all 800ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+  transition: all 700ms cubic-bezier(0.215, 0.61, 0.355, 1); }
   [page].active {
     transform: none;
     -moz-transform: none;
@@ -2891,18 +2889,7 @@ h4 {
     z-index: 1;
     animation: loaderAnimation 1s infinite; }
   [page-loader].back {
-    background: #151515; }
-    [page-loader].back:before {
-      content: '';
-      background: url("../images/noiz.jpg");
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 3;
-      opacity: 0.04;
-      pointer-events: none; }
+    background: #222; }
 
 .ajax-error {
   position: fixed;
