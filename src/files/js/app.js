@@ -159,12 +159,12 @@ function moveMeAround(){
         var y = event.pageY - elx;
         var x = event.pageX - elx;
 
-        el.stop().animate({'top': y, 'left': x},200, 'easeOutCubic');
+        el.stop().animate({'top': y, 'left': x},500, 'easeOutCubic');
     });
 
-    parentElement.mouseleave(function(){
-       el.stop().animate({'top': startY, 'left': startX},800, 'easeOutCubic');
-    });
+//    parentElement.mouseleave(function(){
+//       el.stop().animate({'top': startY, 'left': startX},800, 'easeOutCubic');
+//    });
 }
 
 function moveLines(){
