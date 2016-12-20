@@ -5,22 +5,16 @@
         <% if @document.id is document.id: %>
 
         <% if documentIndex >= 1: %>
-        <a class="project-btn" data-href="<%= @site.url %><%= @getCollection('projects').toJSON()[documentIndex-1].url %>.html" data-hash="<%= @getCollection('projects').toJSON()[documentIndex-1].name %>">
-            <div class="bg">
-                <img data-bg-img src="<%= @site.url %>/images/projects/<%= @getCollection('projects').toJSON()[documentIndex-1].thumb %>" alt=""/>
-            </div>
+        <a class="btn small dark" data-href="<%= @site.url %><%= @getCollection('projects').toJSON()[documentIndex-1].url %>.html" data-hash="<%= @getCollection('projects').toJSON()[documentIndex-1].name %>">
             <i class="icon-arrow-left left-icc"></i>
-            <span><%= @getCollection('projects').toJSON()[documentIndex-1].title %></span>
+            <%= @getCollection('projects').toJSON()[documentIndex-1].title %>
         </a>
         <% end %>
 
         <!-- Check if we have a next page -->
         <% if documentIndex < @getCollection('projects').length - 1: %>
-        <a class="project-btn" data-href="<%= @site.url %><%= @getCollection('projects').toJSON()[documentIndex+1].url %>.html" data-hash="<%= @getCollection('projects').toJSON()[documentIndex+1].name %>">
-            <div class="bg">
-                <img data-bg-img src="<%= @site.url %>/images/projects/<%= @getCollection('projects').toJSON()[documentIndex+1].thumb %>" alt=""/>
-            </div>
-            <span><%= @getCollection('projects').toJSON()[documentIndex+1].title %></span>
+        <a class="btn small dark" data-href="<%= @site.url %><%= @getCollection('projects').toJSON()[documentIndex+1].url %>.html" data-hash="<%= @getCollection('projects').toJSON()[documentIndex+1].name %>">
+            <%= @getCollection('projects').toJSON()[documentIndex+1].title %>
             <i class="icon-arrow-right right-icc"></i>
         </a>
         <% end %>
