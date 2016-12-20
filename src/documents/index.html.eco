@@ -3,7 +3,7 @@ layout: "main"
 ---
     <div class="wrapper">
         <div class="magnifier"></div>
-        <p class="scroll-down uppercase light"><i class="icon-arrow-down"></i> scroll for selected work</p>
+        <p class="scroll-down uppercase light"><i class="icon-scroll"></i> scroll for selected work</p>
         <!--<img class="overlay-lines" src="<%= @site.url %>/images/overlay-lines.svg" alt=""/>-->
         <section class="home-slider">
 

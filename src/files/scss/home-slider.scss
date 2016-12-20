@@ -163,7 +163,7 @@ body.active .lines{
     .slide-content-txt{
       opacity: 0;
       @include translate(0,50px);
-      @include basicTransition(0.8s);
+      @include basicTransition(0.5s);
       &.active{
         opacity: 1;
         @include translate(0,0);
