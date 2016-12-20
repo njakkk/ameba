@@ -8,9 +8,21 @@ layout: "main"
         <section class="home-slider">
 
             <article class="home-slide">
-                <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
-                    <source src="<%= @site.url %>/images/ameba.mp4" type="video/mp4">
-                </video>
+                <!--<video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">-->
+                    <!--<source src="<%= @site.url %>/images/ameba.mp4" type="video/mp4">-->
+                <!--</video>-->
+
+                <div class="home-background-holder">
+                    <span class="stripe"></span>
+                    <span class="stripe"></span>
+                    <span class="stripe"></span>
+                    <span class="stripe"></span>
+                    <span class="stripe"></span>
+                    <span class="stripe"></span>
+                    <div class="home-background" id="ameba-home">
+                        <canvas></canvas>
+                    </div>
+                </div>
                 <div class="slide-content">
                     <div class="slide-num" data-color="<%= @document.color %>">
                         <span class="current"></span>
@@ -36,10 +48,12 @@ layout: "main"
                     <span class="stripe"></span>
                     <span class="stripe"></span>
                     <span class="stripe"></span>
+                    <span class="stripe"></span>
+                    <span class="stripe"></span>
                    <div class="home-background bg"><img src="<%= @site.url %>/images/projects/<%= page.slide %>" alt="" data-bg-img/></div>
                 </div>
                 <div class="slide-content">
-                    <div class="slide-num" data-color="<%= page.color %>">
+                    <div class="slide-num">
                         <span class="current"></span>
                         <span>/</span>
                         <span class="of"></span>

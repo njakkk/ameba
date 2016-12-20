@@ -61,9 +61,8 @@ function pageAction() {
 
     function showPageCanvas() {
         pageLoader.hide();
-        $('#bg-video').get(0).pause();
+//        $('#bg-video').get(0).pause();
         $('.home-slider').trigger('owl.jumpTo', 0);
-
         $([page, canvas, body]).each(function () {
             $(this).addClass(activeClass);
         });
@@ -130,7 +129,7 @@ function pageAction() {
         content.empty();
         window.location.hash = '';
         page.scrollTop(0);
-        $('#bg-video').get(0).play();
+//        $('#bg-video').get(0).play();
 
     }
 
