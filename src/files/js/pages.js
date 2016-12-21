@@ -19,7 +19,7 @@ function pageAction() {
 
 
     function beforeShowPage(){
-        pageLoader.show();
+        pageLoader.fadeIn(500);
         canvas.addClass(activeClass);
         $([otherTrigger, otherDrop]).each(function () {
             $(this).removeClass(activeClass);
@@ -48,7 +48,7 @@ function pageAction() {
             },
             error: function(){
                 ajaxError.addClass(activeClass);
-                pageLoader.hide();
+                pageLoader.fadeOut(500);
                 ajaxErrorBtn.click(function(e){
                     e.preventDefault();
                     ajaxError.removeClass(activeClass);
@@ -60,7 +60,7 @@ function pageAction() {
 
 
     function showPageCanvas() {
-        pageLoader.hide();
+        pageLoader.fadeOut(500);
 //        $('#bg-video').get(0).pause();
         $('.home-slider').trigger('owl.jumpTo', 0);
         $([page, canvas, body]).each(function () {

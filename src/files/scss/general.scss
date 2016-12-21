@@ -125,20 +125,22 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
   height: 100%;
   display: block;
   z-index: 1000;
+  background: #111;
 
   span{
     position: absolute;
-    width: 1px;
-    background: $white;
-    height: 100%;
+    width: 500px;
+    background: url('../images/loader.gif');
+    background-size: cover;
+    height: 500px;
     left: 50%;
-    top: 0;
+    top: 50%;
+    margin: -250px 0 0 -250px;
     z-index: 1;
-    animation: loaderAnimation 1s infinite;
   }
-  &.back{
-    background: $dark;
-  }
+//  &.back{
+//    background: $dark;
+//  }
 }
 
 .ajax-error{
