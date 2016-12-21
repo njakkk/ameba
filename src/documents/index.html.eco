@@ -4,7 +4,6 @@ layout: "main"
     <div class="wrapper">
         <div class="magnifier"></div>
         <p class="scroll-down uppercase light"><i class="icon-scroll"></i> scroll for selected work</p>
-        <!--<img class="overlay-lines" src="<%= @site.url %>/images/overlay-lines.svg" alt=""/>-->
         <section class="home-slider">
 
             <article class="home-slide">
@@ -30,8 +29,8 @@ layout: "main"
                         <span class="of"></span>
                     </div>
                     <h1>
-                        <span class="letters">The core of</span>
-                        <span class="letters">simplicity</span>
+                        <!--<span class="letters">The core of simplicity</span>-->
+                        <span class="letters">The simplest one</span>
                     </h1>
                     <aside class="slide-content-txt">
                         <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions she also likes to design and develop.</h2>
