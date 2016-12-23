@@ -80,7 +80,7 @@ function pageAction() {
                     $el.addClass(activeClass);
                 }, i * 200);
             });
-        }, 600);
+        }, 700);
 
     }
 
