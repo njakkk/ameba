@@ -52,11 +52,8 @@ function homeSlider(){
             touchDrag: true,
             mouseDrag: false,
             rewindNav : true,
-            afterMove: showLetters,
-            afterUpdate:pagination,
-            afterAction: function(){
-                $('#bg-video').get(0).play();
-            }
+            afterAction: showLetters,
+            afterUpdate:pagination
         });
     });
 
@@ -94,6 +91,13 @@ function homeSlider(){
 //        if( $('.owl-item.active').index() === 0){
 //            smokyBG.data('waterpipe').generate();
 //        }
+
+        if( $('.owl-item.active').index() === 0){
+            $('#bg-video').get(0).play();
+        }
+        else{
+            $('#bg-video').get(0).pause();
+        }
     }
     showLetters();
 
