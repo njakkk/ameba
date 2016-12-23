@@ -53,7 +53,10 @@ function homeSlider(){
             mouseDrag: false,
             rewindNav : true,
             afterMove: showLetters,
-            afterUpdate:pagination
+            afterUpdate:pagination,
+            afterAction: function(){
+                $('#bg-video').get(0).play();
+            }
         });
     });
 
@@ -88,9 +91,9 @@ function homeSlider(){
             setTimeout(function() {text.addClass('active')}, letterCount*80);
         },30);
 
-        if( $('.owl-item.active').index() === 0){
-            smokyBG.data('waterpipe').generate();
-        }
+//        if( $('.owl-item.active').index() === 0){
+//            smokyBG.data('waterpipe').generate();
+//        }
     }
     showLetters();
 
