@@ -61,6 +61,15 @@
   }
 }
 
+.btn:hover{
+  .right-icc{
+    animation: rightIconAnimation 0.8s both;
+  }
+  .left-icc{
+    animation: leftIconAnimation 0.8s both;
+  }
+}
+
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 

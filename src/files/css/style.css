@@ -2762,6 +2762,30 @@ table {
     -webkit-transform: scale(1, 0.5);
     -ms-transform: scale(1, 0.5); } }
 
+@keyframes rightIconAnimation {
+  0%, 100% {
+    transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0); }
+  50% {
+    transform: translate(6px, 0);
+    -moz-transform: translate(6px, 0);
+    -webkit-transform: translate(6px, 0);
+    -ms-transform: translate(6px, 0); } }
+
+@keyframes leftIconAnimation {
+  0%, 100% {
+    transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0); }
+  50% {
+    transform: translate(-6px, 0);
+    -moz-transform: translate(-6px, 0);
+    -webkit-transform: translate(-6px, 0);
+    -ms-transform: translate(-6px, 0); } }
+
 * {
   box-sizing: border-box; }
 
@@ -3151,6 +3175,12 @@ tiny-space {
     font-size: 10px; }
     .btn.small i {
       font-size: 13.0625px; }
+
+.btn:hover .right-icc {
+  animation: rightIconAnimation 0.8s both; }
+
+.btn:hover .left-icc {
+  animation: leftIconAnimation 0.8s both; }
 
 @media screen and (max-width: 1200px) {
   .btn {
