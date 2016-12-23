@@ -2879,18 +2879,18 @@ h4 {
   width: 100%;
   height: 100%;
   display: block;
-  z-index: 1000;
-  background: #111; }
+  z-index: 1000; }
   [page-loader] span {
     position: absolute;
-    width: 500px;
-    background: url("../images/loader.gif");
-    background-size: cover;
-    height: 500px;
+    width: 1px;
+    height: 100%;
     left: 50%;
-    top: 50%;
-    margin: -250px 0 0 -250px;
-    z-index: 1; }
+    top: 0;
+    background: #fff;
+    animation: loaderAnimation 2s infinite;
+    -webkit-animation: loaderAnimation 2s infinite; }
+  [page-loader].back {
+    background: #222; }
 
 .ajax-error {
   position: fixed;
