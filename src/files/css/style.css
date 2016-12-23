@@ -2881,16 +2881,18 @@ h4 {
   background-color: #fff;
   color: #222;
   opacity: 0;
+  border-radius: 50vh;
   transform: scale(0, 1);
   -moz-transform: scale(0, 1);
   -webkit-transform: scale(0, 1);
   -ms-transform: scale(0, 1);
-  transition: all 700ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+  transition: transform 700ms 0ms cubic-bezier(0.215, 0.61, 0.355, 1), opacity 700ms 0ms cubic-bezier(0.215, 0.61, 0.355, 1), border-radius 700ms 300ms cubic-bezier(0.215, 0.61, 0.355, 1); }
   [page].active {
     transform: none;
     -moz-transform: none;
     -webkit-transform: none;
     -ms-transform: none;
+    border-radius: 0;
     opacity: 1; }
 
 [page-content] {
