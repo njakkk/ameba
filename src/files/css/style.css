@@ -4168,7 +4168,7 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
 [data-trigger="main-menu"] {
   cursor: pointer;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   float: left; }
 
 .logo {
