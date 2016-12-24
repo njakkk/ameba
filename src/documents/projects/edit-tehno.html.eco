@@ -20,7 +20,7 @@ graphic: "true"
 <section data-id="<%= @document.name %>" class="wrapper">
     <%- @partial('project-header')%>
 
-    <section class="project-content show-up">
+    <section class="project-content show-up right">
         <span class="project-line"></span>
 
         <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.jpg" alt="" class="full"/>

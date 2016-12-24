@@ -2860,15 +2860,13 @@ h4 {
   overflow-x: hidden;
   overflow-y: auto;
   background: #f4f4f4;
-  -webkit-transition: all 700ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  -moz-transition: all 700ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: all 700ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  /* custom */ }
+  transition: all 900ms 0ms cubic-bezier(0.215, 0.61, 0.355, 1); }
   [canvas].active {
     pointer-events: none;
-    opacity: 0.2;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
+    transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0); }
 
 [page] {
   position: absolute;
@@ -2880,12 +2878,11 @@ h4 {
   overflow-x: hidden;
   background-color: #fff;
   color: #222;
-  transform: scale(0, 1);
-  -moz-transform: scale(0, 1);
-  -webkit-transform: scale(0, 1);
-  -ms-transform: scale(0, 1);
-  transform-origin: 100% 0;
-  transition: all 700ms 0ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+  transform: translate(100%, 0);
+  -moz-transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  transition: all 900ms 0ms cubic-bezier(0.215, 0.61, 0.355, 1); }
   [page].active {
     transform: none;
     -moz-transform: none;
@@ -2902,8 +2899,30 @@ h4 {
   width: 100%;
   height: 100%;
   display: block;
+  background: #fff;
   z-index: 1000; }
   [page-loader] span {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background: #222;
+    animation: loaderAnimation 2s infinite;
+    -webkit-animation: loaderAnimation 2s infinite; }
+  [page-loader].back {
+    background: #222; }
+
+[site-loader] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1000;
+  background: #222; }
+  [site-loader] span {
     position: absolute;
     width: 1px;
     height: 100%;
@@ -2912,8 +2931,6 @@ h4 {
     background: #fff;
     animation: loaderAnimation 2s infinite;
     -webkit-animation: loaderAnimation 2s infinite; }
-  [page-loader].back {
-    background: #222; }
 
 .ajax-error {
   position: fixed;
@@ -2986,8 +3003,8 @@ body.dark-page [page] {
   background-color: #111;
   color: #f4f4f4; }
 
-body.dark-page .close span:before, body.dark-page .close span:after {
-  background: #f4f4f4; }
+body.dark-page .close {
+  color: #f4f4f4; }
 
 /***blend modes***/
 .blend-color {
@@ -4348,47 +4365,25 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   /* custom */
   display: inline-block;
-  width: 30px;
   height: 30px;
+  line-height: 30px;
   cursor: pointer;
-  padding: 3px; }
+  font-size: 31px;
+  color: #222; }
   .close span {
-    position: absolute;
-    top: 50%;
-    width: 22px;
-    height: 1px;
-    margin-top: -1px;
-    background: transparent;
-    pointer-events: none; }
-    .close span:before, .close span:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      top: 50%;
-      background: #222;
-      -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-      -moz-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-      transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-      /* custom */ }
-    .close span:before {
-      transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg); }
-    .close span:after {
-      transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg); }
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    vertical-align: text-top;
+    line-height: 30px;
+    font-family: "Exo 2", sans-serif;
+    letter-spacing: 0.06em;
+    margin-left: 10px; }
   .close.active {
     opacity: 1;
     transform: none; }
   .close:hover {
-    transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg); }
+    animation: leftIconAnimation 0.8s both; }
 
 @media screen and (max-width: 1300px) {
   .main-menu {

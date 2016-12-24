@@ -46,5 +46,5 @@
 <!--<%- @partial('lines')%>-->
 <div class="site-wrapper">
     <%- @partial('main-menu')%>
-    <div page-loader class="back"><span></span></div>
+    <div site-loader><span></span></div>
     <div canvas>

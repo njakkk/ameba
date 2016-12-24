@@ -1,6 +1,6 @@
 
 function pageAction() {
-    var body, trigger,page, canvas, content, id, pageLoader, close, activeClass, otherTrigger, otherDrop, slider, ajaxError, ajaxErrorBtn;
+    var body, trigger,page, canvas, content, id, pageLoader, close, activeClass, otherTrigger, otherDrop, slider, ajaxError, ajaxErrorBtn, header;
 
     body = $('body');
     trigger = $('[data-href]');
@@ -16,13 +16,15 @@ function pageAction() {
     slider = $('.home-slider');
     ajaxError = $('[ajax-error]');
     ajaxErrorBtn = $('[ajax-error-btn]');
+    header = $('.header');
 
 
     function beforeShowPage(){
-//        $('.home-slider').trigger('owl.jumpTo', 0);
         $('#bg-video').get(0).pause();
         pageLoader.fadeIn(500);
+        header.fadeOut(500);
         canvas.addClass(activeClass);
+        page.addClass(activeClass);
         $([otherTrigger, otherDrop]).each(function () {
             $(this).removeClass(activeClass);
         });
@@ -62,14 +64,17 @@ function pageAction() {
 
 
     function showPageCanvas() {
+        page.scrollTop(0);
+        content.fadeIn(500);
         pageLoader.fadeOut(500);
-        $([page, canvas, body]).each(function () {
+        $([canvas, body]).each(function () {
             $(this).addClass(activeClass);
         });
 
         setTimeout(function (){
             close.addClass(activeClass);
         }, 1000);
+        header.fadeIn(500);
 
         setTimeout(function (){
             content.find('[data-id]').addClass(activeClass);
@@ -94,8 +99,9 @@ function pageAction() {
 
          if(url !== pageName){
            if ( self.is($('[data-href]'))) {
-                 hidePage();
-                 showPage(contentData, pageName);
+//                 hidePage();
+               body.removeClass();
+               showPage(contentData, pageName);
              }
          }
          else{
@@ -126,9 +132,10 @@ function pageAction() {
     function hidePage() {
         $([page,canvas,close,body, trigger]).each( function(){$(this).removeClass(activeClass);});
         body.removeClass();
-        content.empty();
+        setTimeout(function (){
+            content.empty();
+        }, 900);
         window.location.hash = '';
-        page.scrollTop(0);
         $('#bg-video').get(0).play();
 
     }

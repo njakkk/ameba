@@ -10,6 +10,7 @@
 
 <div page>
     <div page-content></div>
+    <div page-loader><span></span></div>
 </div>
 
 <section ajax-error class="ajax-error">

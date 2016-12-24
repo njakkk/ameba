@@ -36,5 +36,5 @@
     </nav>
     <div class="main-menu-overlay"></div>
 
-    <div page-close class="close"><span></span></div>
+    <div page-close class="close icon-arrow-left"><span page-close>home</span></div>
 </header>

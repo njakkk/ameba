@@ -260,11 +260,8 @@ function scrollShow(){
 $(document).ready( function() {
     $('.home-slider').imagesLoaded( function() {
         setTimeout(function() {
-            $('[page-loader]').fadeOut(400);
+            $('[site-loader]').fadeOut(500);
         },300);
-        setTimeout(function() {
-            $('[page-loader]').removeClass('back');
-        },1000);
     });
 
     pageAction();

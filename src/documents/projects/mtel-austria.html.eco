@@ -25,7 +25,7 @@ externalLink: "http://mtel.at"
 <section data-id="<%= @document.name %>" class="wrapper">
     <%- @partial('project-header')%>
 
-    <section class="project-content show-up">
+    <section class="project-content show-up right">
         <span class="project-line"></span>
 
         <div class="project-tip left"><span>Homepage</span></div>
