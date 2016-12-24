@@ -1,5 +1,19 @@
 @import 'variables';
 
+.page-stripe{
+  position: absolute;
+  width: 15px;
+  height: 80vh;
+  left: 50%;
+  top: 50vh;
+  margin-top: -40vh;
+  background: $main;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  opacity: 0.8;
+  z-index: 5;
+}
+
 .about{
   padding: 0 $spacing;
   position: relative;
@@ -15,25 +29,15 @@
    word-wrap: break-word;
     margin-bottom: 0.5em;
   }
+  h2{
+    line-height: 0.8em;
+  }
   p{
-    font-size: 1.75vmin;
+    font-size: 15px;
     letter-spacing: 0.03em;
     line-height: 1.5em;
     margin-bottom: $spacing;
-    font-weight: 300;
-  }
-
-  .stripe{
-    position: absolute;
-    width: 15px;
-    height: 30vh;
-    left: 50%;
-    top: 50vh;
-    margin-top: -15vh;
-    background: $main;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    opacity: 0.8;
+    font-weight: 400;
   }
 }
 
@@ -45,8 +49,8 @@
   padding: $spacing 0;
   border-bottom: $dark-border;
   h3{
-    font-size: 2vmin;
-    font-weight: 800;
+    font-size: 17px;
+    font-weight: 600;
   }
   p{
     opacity: 0.6;
@@ -63,7 +67,7 @@
   }
   .about{
     p{
-      font-size: 11px;
+      font-size: 13px;
       line-height: 1.6em;
     }
   }

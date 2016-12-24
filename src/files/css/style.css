@@ -4868,6 +4868,19 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
   .project-header > article h3 {
     font-size: 2em; } }
 
+.page-stripe {
+  position: absolute;
+  width: 15px;
+  height: 80vh;
+  left: 50%;
+  top: 50vh;
+  margin-top: -40vh;
+  background: #3c64ff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  opacity: 0.8;
+  z-index: 5; }
+
 .about {
   padding: 0 2.2vmin;
   position: relative;
@@ -4880,23 +4893,14 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
     margin: 0;
     word-wrap: break-word;
     margin-bottom: 0.5em; }
+  .about h2 {
+    line-height: 0.8em; }
   .about p {
-    font-size: 1.75vmin;
+    font-size: 15px;
     letter-spacing: 0.03em;
     line-height: 1.5em;
     margin-bottom: 2.2vmin;
-    font-weight: 300; }
-  .about .stripe {
-    position: absolute;
-    width: 15px;
-    height: 30vh;
-    left: 50%;
-    top: 50vh;
-    margin-top: -15vh;
-    background: #3c64ff;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    opacity: 0.8; }
+    font-weight: 400; }
 
 .about-content {
   position: relative; }
@@ -4905,8 +4909,8 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
   padding: 2.2vmin 0;
   border-bottom: solid 1px rgba(0, 0, 0, 0.06); }
   .exp h3 {
-    font-size: 2vmin;
-    font-weight: 800; }
+    font-size: 17px;
+    font-weight: 600; }
   .exp p {
     opacity: 0.6; }
 
@@ -4914,7 +4918,7 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
   .float-me {
     display: none; }
   .about p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.6em; } }
 
 [data-tooltip] {
