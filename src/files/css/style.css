@@ -4646,7 +4646,7 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
   opacity: 0.06; }
 
 .project-header {
-  position: fixed;
+  position: absolute;
   width: 25%;
   height: 100%;
   left: 0;
@@ -4748,7 +4748,10 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
 .project-content {
   position: relative;
   top: 0;
-  margin-left: 25%; }
+  margin-left: 25%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; }
   .project-content > * {
     position: relative;
     z-index: 1; }
@@ -4767,7 +4770,7 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
 .project-line {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 62.4%;
   margin-left: -1px;
   width: 1px;
   height: 100%;
@@ -4858,7 +4861,11 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
       left: auto; }
   .project-content {
     position: relative;
-    margin-left: 0; } }
+    margin-left: 0;
+    height: auto; }
+  .project-line {
+    left: 50%;
+    position: fixed; } }
 
 @media screen and (max-width: 500px) {
   .project-header > article h1 {

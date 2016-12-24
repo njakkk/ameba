@@ -22,10 +22,10 @@ externalLink: "http://dev.ameba.rs/ds"
 ---
 
 <section data-id="<%= @document.name %>" class="wrapper">
+    <span class="project-line"></span>
     <%- @partial('project-header')%>
 
     <section class="project-content show-up right">
-        <span class="project-line"></span>
 
         <div class="project-tip right"><span>Homepage, gallery of most popular images</span></div>
         <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.png" alt="" class="scroll-show"/>

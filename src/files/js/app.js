@@ -252,6 +252,16 @@ function scrollShow(){
             scrollBox: $('[page]')
         });
     }
+
+    if($(window).width() > 1200) {
+        $('.scroll-show, .project-tip').viewportChecker({
+            classToAdd: 'active',
+            offset: 0,
+            repeat: false,
+            scrollBox: $('.project-content')
+        });
+    }
+
 }
 
 
