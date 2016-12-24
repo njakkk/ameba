@@ -48,7 +48,7 @@ function pageAction() {
                         pageLoaded();
                         location.hash = pageName;
                     });
-                }, 800);
+                }, 500);
             },
             error: function(){
                 ajaxError.addClass(activeClass);

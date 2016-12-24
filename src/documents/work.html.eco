@@ -16,8 +16,6 @@ title: "Work"
             <div class="project-color" data-bg-color="<%= page.color %>"></div>
 
             <div class="project-img">
-                <img class="static-mask" src="<%= @site.url %>/images/static-mask.svg" alt=""/>
-
                 <div class="bg pattern">
                     <img src="<%= @site.url %>/images/projects/<%= page.thumb %>" alt="" data-bg-img/>
                 </div>

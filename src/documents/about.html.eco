@@ -4,18 +4,18 @@ isProject: false
 isPublished: false
 
 name: "about"
-pageClass: "dark-page"
-title: "Ameba's name is Marija, she is Designer & Developer."
+pageClass: "dark-logo"
+title: "Ameba's name is Marija, she is a Designer & Developer."
 
 color: "#3c64ff"
 ---
 
 <section data-id="<%= @document.name %>" page-class="<%= @document.pageClass %>">
-    <section class="about pattern">
+    <section class="about">
             <space></space>
              <div class="stripe blend-multiply" data-bg-color="<%= @document.color %>"></div>
              <article class="textual-content show-up">
-                 <h1><span data-bg-color="<%= @document.color %>"><%= @document.title %></span></h1>
+                 <h1><%= @document.title %></h1>
                  <p>I design and build websites to communicate a feeling of comfort that shall invite the user to come back. For me, it's not only the Design, but also the frontend development including HTML & CSS, JS.</p>
                  <p>The development is really important to me, because while developing design I made, I constantly improve my skills and stay up-to-date with the technology.</p>
              </article>
@@ -109,7 +109,7 @@ color: "#3c64ff"
             </div>
 
             <tiny-space></tiny-space>
-            <a class="btn white" href="mailto:matovic.marija@gmail.com">Say hello</a>
+            <a class="btn dark" href="mailto:matovic.marija@gmail.com">Say hello</a>
             <small-space></small-space>
         </div>
         </section>

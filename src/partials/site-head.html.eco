@@ -43,7 +43,6 @@
 </head>
 
 <body class="<%= @document.bodyClass %>">
-<!--<%- @partial('lines')%>-->
 <div class="site-wrapper">
     <%- @partial('main-menu')%>
     <div site-loader><span></span></div>

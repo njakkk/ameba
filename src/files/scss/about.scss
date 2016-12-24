@@ -1,22 +1,5 @@
 @import 'variables';
 
-.float-me{
-  position: fixed;
-  z-index: 0;
-  width: auto;
-  height: 100vh;
-  pointer-events: none;
-}
-.hero{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-position: center center;
-  background-size: cover;
-  z-index: 0;
-}
 .about{
   padding: 0 $spacing;
   position: relative;
@@ -44,17 +27,15 @@
   }
 
   .stripe{
-    position: absolute;
-    top: 30vh;
-    left: 40%;
-    width: 5px;
-    height: 80vh;
-    transform: rotate(45deg) translate(-50%, -50%);
-    -webkit-transform: rotate(45deg) translate(-50%, -50%);
-    transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    z-index: 1;
-    pointer-events: none;
+    position: fixed;
+    width: 15px;
+    height: 30vh;
+    left: 50%;
+    top: 50%;
+    margin-top: -15vh;
+    background: $main;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     opacity: 0.8;
   }
 }
@@ -65,7 +46,7 @@
 
 .exp{
   padding: $spacing 0;
-  border-bottom: $light-border;
+  border-bottom: $dark-border;
   h3{
     font-size: 2vmin;
     font-weight: 800;

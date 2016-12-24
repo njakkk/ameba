@@ -234,21 +234,26 @@ body.dark-logo{
   color: $dark;
   span{
     display: inline-block;
+    width: 0;
+    overflow: hidden;
     font-size: 12px;
     text-transform: uppercase;
     vertical-align: text-top;
     line-height: $close-size;
     font-family: $main-font;
     letter-spacing: 0.06em;
-    margin-left: 10px;
+    margin-left: 0;
+    @include basicTransition(0.4s);
   }
-
   &.active{
     opacity: 1;
     transform: none;
   }
   &:hover{
-    animation: leftIconAnimation 0.8s both;
+    span{
+      width: 40px;
+      margin-left: 10px;
+    }
   }
 
 }
