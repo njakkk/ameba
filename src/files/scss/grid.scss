@@ -1,0 +1,150 @@
+//SETUP
+
+$main-unit:       100%; //Defines fill width of the grid, needs to have same mesurement unit as "$margin-unit"
+$margin-unit:     $spacing; //Defines margin of grid column, needs to have same mesurement unit as "$main-unit"
+$box-pdd:         20px; //Defines padding of column with class .column-padding
+
+//DEFINITIONS________________________________________________________________
+
+
+@mixin grid-margin {
+  margin:0 0 #{$margin-unit} #{$margin-unit};
+}
+
+.row {
+  @include clearfix;
+  margin-left:-$margin-unit
+}
+
+[class*="column"] {
+  @include grid-margin;
+  float: left;
+  img{
+    max-width: 100%;
+  }
+}
+
+[class*="column"].column-padding {
+  padding: $box-pdd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class*="column"].no-margin {
+  margin: 0 !important;
+}
+
+//GRID________________________________________________________________
+
+.column-2 {
+  width: calc(#{$main-unit/2} - #{$margin-unit});
+}
+
+.column-3 {
+  width: calc(#{$main-unit/3} - #{$margin-unit});
+}
+
+.column-4 {
+  width: calc(#{$main-unit/4} - #{$margin-unit});
+}
+
+.column-5 {
+  width: calc(#{$main-unit/5} - #{$margin-unit});
+}
+
+.column-6 {
+  width: calc(#{$main-unit/6} - #{$margin-unit});
+}
+
+.column-3x2 {
+  width: calc(#{($main-unit/3 )*2} - #{$margin-unit});
+}
+
+.column-4x3 {
+  width: calc(#{($main-unit/4 )*3} - #{$margin-unit});
+}
+
+
+//RESPONSIVE________________________________________________________
+
+
+
+@media screen and (max-width: $smallDesktop){
+
+}
+
+@media screen and (max-width: $tabLandscape) {
+
+  .column-6 {
+    width: calc(#{$main-unit/4} - #{$margin-unit});
+  }
+
+}
+
+@media screen and (max-width: $tabPortrait) {
+
+}
+
+@media screen and (max-width: $smallTab){
+  .column-3 {
+    width: calc(#{$main-unit/2} - #{$margin-unit});
+  }
+
+  .column-4 {
+    width: calc(#{$main-unit/2} - #{$margin-unit});
+  }
+
+  .column-5 {
+    width: calc(#{$main-unit/2} - #{$margin-unit});
+  }
+
+  .column-6 {
+    width: calc(#{$main-unit/3} - #{$margin-unit});
+  }
+
+  .column-3x2 {
+    width: calc(#{$main-unit} - #{$margin-unit});
+  }
+
+  .column-4x3 {
+    width: calc(#{$main-unit} - #{$margin-unit});
+  }
+
+}
+
+@media screen and (max-width: $mobile){
+  .column-2 {
+    width: calc(#{$main-unit} - #{$margin-unit});
+  }
+
+  .column-3 {
+    width: calc(#{$main-unit} - #{$margin-unit});
+  }
+
+  .column-4 {
+    width: calc(#{$main-unit} - #{$margin-unit});
+  }
+
+  .column-6 {
+    width: calc(#{$main-unit} - #{$margin-unit});
+  }
+
+  .column-5 {
+    width: calc(#{$main-unit} - #{$margin-unit});
+  }
+
+  .column-3x2 {
+    width: calc(#{$main-unit} - #{$margin-unit});
+  }
+
+  .column-4x3 {
+    width: calc(#{$main-unit} - #{$margin-unit});
+  }
+}
+
+
+
+
+
+
+

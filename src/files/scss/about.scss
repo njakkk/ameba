@@ -5,33 +5,30 @@
   position: relative;
   z-index: 1;
 
-  > article{
-    position: relative;
 
-    h1{
-     font-family: $strong;
-     font-size: 9.5vmin;
-     line-height: 0.80em;
-     letter-spacing: -0.02em;
-     margin: 0;
-     word-wrap: break-word;
-      margin-bottom: 0.5em;
-    }
-    p{
-      font-size: 1.75vmin;
-      letter-spacing: 0.03em;
-      line-height: 1.5em;
-      margin-bottom: $spacing;
-      font-weight: 300;
-    }
+  h1{
+   font-family: $strong;
+   font-size: 9.5vmin;
+   line-height: 0.80em;
+   letter-spacing: -0.02em;
+   margin: 0;
+   word-wrap: break-word;
+    margin-bottom: 0.5em;
+  }
+  p{
+    font-size: 1.75vmin;
+    letter-spacing: 0.03em;
+    line-height: 1.5em;
+    margin-bottom: $spacing;
+    font-weight: 300;
   }
 
   .stripe{
-    position: fixed;
+    position: absolute;
     width: 15px;
     height: 30vh;
     left: 50%;
-    top: 50%;
+    top: 50vh;
     margin-top: -15vh;
     background: $main;
     transform: rotate(45deg);
@@ -65,11 +62,9 @@
     display: none;
   }
   .about{
-    > article{
-      p{
-        font-size: 11px;
-        line-height: 1.6em;
-      }
+    p{
+      font-size: 11px;
+      line-height: 1.6em;
     }
   }
 }

@@ -16,10 +16,6 @@ $main-font: 'Exo 2', sans-serif;
 $strong: 'evelethclean_regular', sans-serif;
 $thin: 'evelethclean_thin', sans-serif;
 
-//$main-font: 'Droid Serif', serif;
-//$strong: 'Abril Fatface', cursive;;
-//$thin: 'Playfair Display', serif;
-
 
 //SIZES
 $vw: 100vw;
@@ -48,6 +44,15 @@ $btn-size: 48px;
 $btn-size-small: 38px;
 $header-size: 3vh;
 $close-size: 30px;
+
+//SCREEN SIZES_______________________________________________
+
+$_1080p:          1950px;
+$smallDesktop:    1500px;
+$tabLandscape:    1200px;
+$tabPortrait:     900px;
+$smallTab:        700px;
+$mobile:          500px;
 
 
 //borders
