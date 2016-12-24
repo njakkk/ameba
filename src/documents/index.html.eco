@@ -10,18 +10,6 @@ layout: "main"
                 <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
                     <source src="<%= @site.url %>/images/ameba.mp4" type="video/mp4">
                 </video>
-
-                <div class="home-background-holder">
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <!--<div class="home-background" id="ameba-home">-->
-                        <!--<canvas></canvas>-->
-                    <!--</div>-->
-                </div>
                 <div class="slide-content">
                     <div class="slide-num" data-color="<%= @document.color %>">
                         <span class="current"></span>
@@ -29,8 +17,8 @@ layout: "main"
                         <span class="of"></span>
                     </div>
                     <h1>
-                        <!--<span class="letters">The core of simplicity</span>-->
-                        <span class="letters">The simplest one</span>
+                        <span class="letters">The core of simplicity</span>
+                        <!--<span class="letters">The simplest one</span>-->
                     </h1>
                     <aside class="slide-content-txt">
                         <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions she also likes to design and develop.</h2>
@@ -43,12 +31,6 @@ layout: "main"
             <% for page in @getCollection("featuredProjects").toJSON(): %>
             <article class="home-slide">
                 <div class="home-background-holder">
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
                    <div class="home-background bg"><img src="<%= @site.url %>/images/projects/<%= page.slide %>" alt="" data-bg-img/></div>
                 </div>
                 <div class="slide-content">

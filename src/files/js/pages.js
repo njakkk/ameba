@@ -65,7 +65,6 @@ function pageAction() {
 
     function showPageCanvas() {
         page.scrollTop(0);
-        content.fadeIn(500);
         pageLoader.fadeOut(500);
         $([canvas, body]).each(function () {
             $(this).addClass(activeClass);
