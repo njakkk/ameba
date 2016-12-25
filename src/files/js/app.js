@@ -264,6 +264,42 @@ function scrollShow(){
 
 }
 
+$.fn.changeOnScroll = function () {
+
+    var  $el = $(this);
+    var scrollEl = $('[page]');
+
+    function changeEl(){
+        $el.each(function() {
+            var self = $(this);
+            var top = self.offset().top;
+
+            scrollEl.on('scroll', function() {
+                if ($(this).scrollTop() > top && $(window).width()<1200){
+                    self.addClass("filled");
+                }
+                else{
+                    self.removeClass("filled");
+                }
+            });
+        });
+
+    }
+    changeEl();
+    $(window).on('resize',function() {
+        changeEl();
+    });
+};
+
+
+//function fillHeader(){
+//    var color =  $('.project-header').attr('data-bg-color');
+//
+//    $('.project-content').scroll(function(){
+//        $('.header').css({ 'background-color': color})
+//    })
+//}
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -285,6 +321,7 @@ $(document).ready( function() {
     attrBgColor();
     attrColor();
     floatingAmeba();
+    $('.header').changeOnScroll();
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

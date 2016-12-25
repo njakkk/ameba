@@ -11,6 +11,9 @@ body.dark-logo{
       background: $dark;
     }
   }
+  .close{
+    color: $dark;
+  }
 }
 
 
@@ -22,6 +25,25 @@ body.dark-logo{
   z-index: 20;
   padding: $spacing;
   width: 100%;
+  @include basicTransition(0.5s);
+}
+
+body.active{
+  .header.filled{
+    background-color: $light-grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08), 0 0 25px rgba(0, 0, 0, 0.1);
+    .logo svg{
+      fill: $dark;
+    }
+    .hamburger{
+      span, span:before, span:after{
+        background: $dark;
+      }
+    }
+    .close{
+      color: $dark;
+    }
+  }
 }
 
 [data-trigger="main-menu"]{
@@ -271,10 +293,9 @@ body.dark-logo{
 
 @media screen and (max-width: 1200px){
   .close{
+    color: $light-grey;
     span{
-      &:before, &:after{
-        background: $light-grey;
-      }
+      display: none;
     }
   }
 }

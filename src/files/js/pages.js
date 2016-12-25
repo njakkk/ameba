@@ -171,6 +171,7 @@ function pageLoaded() {
     attrBgColor();
     attrColor();
     scrollShow();
+    $('.header').changeOnScroll();
 }
 
 

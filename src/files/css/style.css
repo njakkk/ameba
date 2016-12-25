@@ -4248,6 +4248,9 @@ body.dark-logo .logo svg {
 body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark-logo .hamburger span:after {
   background: #222; }
 
+body.dark-logo .close {
+  color: #222; }
+
 /**** lines****/
 .header {
   position: fixed;
@@ -4255,7 +4258,21 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
   left: 0;
   z-index: 20;
   padding: 2.2vmin;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  /* custom */ }
+
+body.active .header.filled {
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08), 0 0 25px rgba(0, 0, 0, 0.1); }
+  body.active .header.filled .logo svg {
+    fill: #222; }
+  body.active .header.filled .hamburger span, body.active .header.filled .hamburger span:before, body.active .header.filled .hamburger span:after {
+    background: #222; }
+  body.active .header.filled .close {
+    color: #222; }
 
 [data-trigger="main-menu"] {
   cursor: pointer;
@@ -4472,8 +4489,10 @@ body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark
     width: 80vw; } }
 
 @media screen and (max-width: 1200px) {
-  .close span:before, .close span:after {
-    background: #f4f4f4; } }
+  .close {
+    color: #f4f4f4; }
+    .close span {
+      display: none; } }
 
 @media screen and (max-width: 900px) {
   .main-menu {
