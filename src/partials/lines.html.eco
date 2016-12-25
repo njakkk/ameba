@@ -45,12 +45,8 @@
         <animate attributeName="x" from="50" to="300" dur="4s" repeatCount="indefinite" />
     </rect>
 
-     <rect x="1900" y="0" height="1080" class="st0" width="1">
+    <rect x="1900" y="0" height="1080" class="st0" width="1">
         <animate attributeName="x" from="1900" to="1700" dur="4s" repeatCount="indefinite" />
     </rect>
-
-    <rect x="1690" y="0" height="1080" class="st0" width="1"></rect>
-    <rect x="250" y="0" height="1080" class="st0" width="1"></rect>
-    <rect x="650" y="0" height="1080" class="st0" width="1"></rect>
 
 </svg>

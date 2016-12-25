@@ -21,6 +21,7 @@
   top: 0;
   background: $dark;
   color: $white;
+  z-index: 2;
 
   > article{
     position: absolute;

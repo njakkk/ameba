@@ -11,7 +11,7 @@
   top: 0;
   z-index: 3;
   pointer-events:none;
-    .st0{fill:#fff; height: 100%; opacity: 0.12;}
+    .st0{fill:#fff; height: 100%; opacity: 0.08;}
     .st1{fill:#fff; height: 100%; opacity: 0.05;}
 }
 
@@ -45,11 +45,11 @@ body.active .lines{
     width: 1px;
     background: $white;
     height: 100%;
-    opacity: 0.07;
+    opacity: 0.1;
   }
   line:nth-child(1){ left: $vw/6; opacity: 0.2}
   line:nth-child(2){ left: $vw/6*2}
-  line:nth-child(3){ left: $vw/6*3; opacity: 0.1}
+  line:nth-child(3){ left: $vw/6*3; opacity: 0.15}
   line:nth-child(4){ left: $vw/6*4}
   line:nth-child(5){ left: $vw/6*5}
 }
