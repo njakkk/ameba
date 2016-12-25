@@ -210,8 +210,8 @@ function moveMeAround(){
 }
 
 function floatingAmeba() {
-    var ameba = $(".float"),
-        theContainer = $(".project-header"),
+    var ameba = $("[data-float]"),
+        theContainer = ameba.parents("[data-float-parent]"),
         maxLeft = theContainer.width() - ameba.width(),
         maxTop = theContainer.height() - ameba.height(),
 
@@ -284,6 +284,7 @@ $(document).ready( function() {
     dropDown();
     attrBgColor();
     attrColor();
+    floatingAmeba();
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

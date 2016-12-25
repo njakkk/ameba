@@ -185,7 +185,7 @@ body.active .lines{
     }
   }
   letter {
-    left: -20px;
+    left: -10px;
     opacity: 0;
     position: relative;
     @include basicTransition(0.2s);

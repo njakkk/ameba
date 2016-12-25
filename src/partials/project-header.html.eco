@@ -1,8 +1,7 @@
-<header class="project-header show-up left pattern">
-    <div class="float"></div>
+<header class="project-header show-up left pattern" data-float-parent>
+    <div class="float" data-float></div>
     <article class="vert-center">
         <aside class="show-up">
-            <!--<div class="stripe blend-multiply" data-bg-color="<%= @document.color %>"></div>-->
             <h3><%= @document.year %></h3>
             <h1 data-color="<%= @document.color %>"><%= @document.title %></h1>
         </aside>
