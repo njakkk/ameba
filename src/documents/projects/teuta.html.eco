@@ -12,7 +12,7 @@ description: "Wbsite for Teuta - Unique Mediterranean cousine"
 longDescription: "Quisque eget arcu ut lacus aliquet tempor. Morbi ac dui sit amet nulla venenatis cursus quis nec nisl. Morbi nec leo mauris. Maecenas tellus lacus, fermentum id venenatis quis, fringilla non ligula."
 slide: "teuta/slide.jpg"
 thumb: "teuta/thumb.jpg"
-color: "#c69c73"
+color: "#ad8b6b"
 
 brand: "true"
 ux: "true"

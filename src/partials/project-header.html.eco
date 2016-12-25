@@ -1,9 +1,9 @@
-<header class="project-header show-up left pattern" data-float-parent>
+<header class="project-header show-up left pattern" data-float-parent  data-bg-color="<%= @document.color %>">
     <div class="float" data-float></div>
     <article class="vert-center">
         <aside class="show-up">
             <h3><%= @document.year %></h3>
-            <h1 data-color="<%= @document.color %>"><%= @document.title %></h1>
+            <h1><%= @document.title %></h1>
         </aside>
         <aside class="show-up">
             <h2><%= @document.description %></h2>
