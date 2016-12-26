@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="lines"
 	 viewBox="0 0 1920 1080" xml:space="preserve">
+    <style type="text/css">
+	     .st0{fill:#fff; height: 100%; opacity: 0.08;}
+         .st1{fill:#fff; height: 100%; opacity: 0.05;}
+    </style>
 
     <rect x="65" y="0" height="1080" class="st1" width="1">
         <animate attributeName="x" from="65" to="500" dur="12s" repeatCount="indefinite" />

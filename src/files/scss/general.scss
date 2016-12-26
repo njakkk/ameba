@@ -115,12 +115,12 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
 
 
 [page-loader]{
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  display: block;
+  height: 100vh;
+  display: none;
   background: $lightest-grey;
   z-index: 1000;
 
