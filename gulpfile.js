@@ -15,7 +15,6 @@ var paths = {
             'src/files/js/vendor/owl.carousel.min.js',
             'src/files/js/vendor/jquery.mousewheel.js',
             'src/files/js/vendor/jquery.viewportchecker.min.js',
-            'src/files/js/vendor/waterpipe.js',
             'src/files/js/bgImg.js',
             'src/files/js/typewriter.js',
             'src/files/js/vertical-center.js',

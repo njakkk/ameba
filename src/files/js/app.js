@@ -57,22 +57,6 @@ function homeSlider(){
         });
     });
 
-    var smokyBG = $('#ameba-home').waterpipe({
-        gradientStart: '#000cff',
-        gradientEnd: '#00a8ff',
-        smokeOpacity: 0.1,
-        numCircles: 1,
-        maxMaxRad: 'auto',
-        minMaxRad: 'auto',
-        minRadFactor: 0,
-        iterations: 2,
-        drawsPerFrame: 20,
-        lineWidth: 2,
-        speed: 0.2,
-        bgColorInner: "#222222",
-        bgColorOuter: "#111111"
-    });
-
     function showLetters(){
         $('.letters letter, .slide-content-txt').removeClass('active');
 
@@ -87,10 +71,6 @@ function homeSlider(){
             var letterCount = letter.length;
             setTimeout(function() {text.addClass('active')}, letterCount*80);
         },30);
-
-//        if( $('.owl-item.active').index() === 0){
-//            smokyBG.data('waterpipe').generate();
-//        }
 
         if( $('.owl-item.active').index() === 0){
             $('#bg-video').get(0).play();
