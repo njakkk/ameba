@@ -2812,7 +2812,8 @@ body {
 
 .wrapper {
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
 
 .page-content {
   position: relative;

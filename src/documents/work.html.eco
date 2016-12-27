@@ -8,7 +8,7 @@ name: "work"
 title: "Work"
 ---
 
-<section data-id="<%= @document.name %>" class="wrapper" page-class="<%= @document.pageClass %>">
+<section data-id="<%= @document.name %>" page-class="<%= @document.pageClass %>">
 
     <div class="all-projects">
         <% for page in @getCollection("projects").toJSON(): %>
