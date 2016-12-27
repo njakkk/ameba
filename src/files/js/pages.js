@@ -33,6 +33,34 @@ function pageAction() {
         });
     }
 
+    function showPageCanvas() {
+        page.scrollTop(0);
+        pageLoader.fadeOut(500);
+        header.fadeIn(500);
+
+        $([canvas, body]).each(function () {
+            $(this).addClass(activeClass);
+        });
+
+        setTimeout(function (){
+            close.addClass(activeClass);
+        }, 1000);
+
+        setTimeout(function (){
+            content.find('[data-id]').addClass(activeClass);
+            var showUp = $('.show-up');
+            showUp.each(function (i) {
+                var $el = $(this);
+                setTimeout(function () {
+                    $el.addClass(activeClass);
+                }, i * 200);
+            });
+        }, 700);
+
+    }
+
+// load page content
+
     function showPage(contentData, pageName) {
         $.ajax({
             type: "get",
@@ -63,33 +91,6 @@ function pageAction() {
             }
 
         });
-    }
-
-
-    function showPageCanvas() {
-        page.scrollTop(0);
-        pageLoader.fadeOut(500);
-        header.fadeIn(500);
-
-        $([canvas, body]).each(function () {
-            $(this).addClass(activeClass);
-        });
-
-        setTimeout(function (){
-            close.addClass(activeClass);
-        }, 1000);
-
-        setTimeout(function (){
-            content.find('[data-id]').addClass(activeClass);
-            var showUp = $('.show-up');
-            showUp.each(function (i) {
-                var $el = $(this);
-                setTimeout(function () {
-                    $el.addClass(activeClass);
-                }, i * 200);
-            });
-        }, 700);
-
     }
 
 //Show page on click
@@ -157,7 +158,7 @@ function pageAction() {
     });
 
     $(window).on("hashchange",function (){
-        var url = location.hash;
+        var url = window.location.hash;
         if(url == ''){
             hidePage();
         }
