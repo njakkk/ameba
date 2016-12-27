@@ -30,7 +30,6 @@
     width: 17vw;
     height: 17vw;
     position: relative;
-    overflow: hidden;
 
     .bg{
       position: absolute;
@@ -78,16 +77,16 @@
 
   .project-color{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 15px;
-    height: 0%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-    transition: height 0.4s ease;
-    z-index: 2;
-    opacity: 0.8;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.9;
+    border-radius: 100%;
     pointer-events:none;
+    @include scale(0.8,0.8);
+    @include basicTransition(0.6s);
   }
 
   .project-box-desc{
@@ -115,9 +114,11 @@
 }
 
 .project-box:hover {
+
   .project-img .bg{
     filter: none;
     -webkit-filter: none;
+//    @include scale(0.9,0.9);
   }
 
   &:after{
@@ -128,8 +129,7 @@
     bottom: 10%;
   }
   .project-color{
-    height: 100%;
-    mix-blend-mode: multiply;
+    @include scale(2.2,2.2);
   }
 }
 
