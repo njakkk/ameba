@@ -12,10 +12,9 @@ color: "#3c64ff"
 
 <section data-id="<%= @document.name %>" page-class="<%= @document.pageClass %>">
     <section class="about">
-        <div class="page-stripe blend-multiply" data-bg-color="<%= @document.color %>"></div>
+        <space></space>
         <div class="row">
             <div class="column-3 show-up">
-                <space></space>
                 <h1 data-color="<%= @document.color %>"><%= @document.title %></h1>
                 <p>I design and build websites to communicate a feeling of comfort that shall invite the user to come back. For me, it's not only the Design, but also the frontend development including HTML & CSS, JS.</p>
                 <p>The development is really important to me, because while developing design I made, I constantly improve my skills and stay up-to-date with the technology.</p>
@@ -28,7 +27,6 @@ color: "#3c64ff"
             <div class="column-6"></div>
 
             <div class="column-6 show-up">
-                <space></space>
                 <h2 class="strong-font">Working experience</h2>
                 <div class="exp">
                     <h3>2007</h3>
@@ -62,10 +60,10 @@ color: "#3c64ff"
                     <h3>2014 - present</h3>
                     <p>UX/UI Designer and Frontend developer at “AllThingsTalk”, Serbia - Belgium</p>
                 </div>
+                <small-space></small-space>
             </div>
 
             <div class="column-6 show-up">
-                <space></space>
                 <h2 class="strong-font">Skills</h2>
                 <div class="exp">
                     <h3>Graphic editing</h3>
@@ -99,10 +97,10 @@ color: "#3c64ff"
                     <h3>SPA Frameworks</h3>
                     <p>Angular.js [ baginner ]</p>
                 </div>
+                <small-space></small-space>
             </div>
 
             <div class="column-6 show-up">
-                <space></space>
                 <img src="<%= @site.url %>/images/favicons/favicon-228x228.png" alt=""/>
 
             </div>

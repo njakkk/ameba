@@ -23,8 +23,11 @@ function pageAction() {
         $('#bg-video').get(0).pause();
         pageLoader.fadeIn(500);
         header.fadeOut(500);
-        canvas.addClass(activeClass);
-        page.addClass(activeClass);
+
+        $([canvas, page]).each(function () {
+            $(this).addClass(activeClass);
+        });
+
         $([otherTrigger, otherDrop]).each(function () {
             $(this).removeClass(activeClass);
         });
@@ -66,6 +69,8 @@ function pageAction() {
     function showPageCanvas() {
         page.scrollTop(0);
         pageLoader.fadeOut(500);
+        header.fadeIn(500);
+
         $([canvas, body]).each(function () {
             $(this).addClass(activeClass);
         });
@@ -73,7 +78,6 @@ function pageAction() {
         setTimeout(function (){
             close.addClass(activeClass);
         }, 1000);
-        header.fadeIn(500);
 
         setTimeout(function (){
             content.find('[data-id]').addClass(activeClass);
@@ -98,7 +102,6 @@ function pageAction() {
 
          if(url !== pageName){
            if ( self.is($('[data-href]'))) {
-//                 hidePage();
                body.removeClass();
                showPage(contentData, pageName);
              }
@@ -125,6 +128,7 @@ function pageAction() {
     }
 
     gotoUrl();
+
 
 //hide page Canvas and remove page content
 

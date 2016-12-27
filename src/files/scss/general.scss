@@ -141,10 +141,10 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 260px;
-    height: 260px;
-    margin-top: -130px;
-    margin-left: -130px;
+    width: 280px;
+    height: 280px;
+    margin-top: -140px;
+    margin-left: -140px;
   }
 }
 
@@ -197,19 +197,19 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
 }
 
 .scroll-show {
-//  transform: translate3d(0,300px, 0);
+  transform: translate3d(0,300px, 0);
   opacity: 0;
   @include basicTransition(1.3s);
 
-//  &.left{
-//    transform: translate3d(-300px,0, 0);
-//  }
-//  &.right{
-//    transform: translate3d(300px,0, 0);
-//  }
-//  &.top{
-//    transform: translate3d(0,-300, 0);
-//  }
+  &.left{
+    transform: translate3d(-300px,0, 0);
+  }
+  &.right{
+    transform: translate3d(300px,0, 0);
+  }
+  &.top{
+    transform: translate3d(0,-300, 0);
+  }
   &.active{
     opacity: 1;
     transform: none !important;
@@ -269,6 +269,15 @@ body.dark-page{
   .scroll-show, .project-tip {
     transform: none !important;
     opacity: 1;
+  }
+
+  [site-loader], [page-loader]{
+    img{
+      width: 180px;
+      height: 180px;
+      margin-top: -90px;
+      margin-left: -90px;
+    }
   }
 }
 

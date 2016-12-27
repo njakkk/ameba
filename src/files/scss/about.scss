@@ -1,19 +1,5 @@
 @import 'variables';
 
-.page-stripe{
-  position: absolute;
-  width: 15px;
-  height: 80vh;
-  left: 50%;
-  top: 50vh;
-  margin-top: -40vh;
-  background: $main;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  opacity: 0.8;
-  z-index: 5;
-}
-
 .about{
   padding: 0 $spacing;
   position: relative;
