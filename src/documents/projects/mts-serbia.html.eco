@@ -1,5 +1,5 @@
 ---
-order: null
+order: 2
 isFeatured: true
 isProject: true
 isPublished: true
@@ -29,7 +29,7 @@ externalLink: "http://mts.rs"
     <section class="project-content show-up right">
 
         <div class="project-tip left"><span>Homepage</span></div>
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.png" alt="" class="scroll-show"/>
+        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.png" alt="" class=""/>
 
         <div class="project-tip right"><span>Homepage - full view</span></div>
         <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.jpg" alt="" class="scroll-show drop-shadow"/>
