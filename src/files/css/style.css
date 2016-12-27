@@ -2897,20 +2897,6 @@ h4 {
   display: none;
   background: #fbfbfb;
   z-index: 1000; }
-  [page-loader] span {
-    position: absolute;
-    width: 15px;
-    height: 200px;
-    left: 50%;
-    top: 50%;
-    margin-top: -100px;
-    background: #3c64ff;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    animation: loaderAnimation 1s infinite;
-    -webkit-animation: loaderAnimation 1s infinite; }
-  [page-loader].back {
-    background: #222; }
 
 [site-loader] {
   position: absolute;
@@ -2921,18 +2907,15 @@ h4 {
   display: block;
   z-index: 1000;
   background: #222; }
-  [site-loader] span {
-    position: absolute;
-    width: 15px;
-    height: 200px;
-    left: 50%;
-    top: 50%;
-    margin-top: -100px;
-    background: #3c64ff;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    animation: loaderAnimation 1s infinite;
-    -webkit-animation: loaderAnimation 1s infinite; }
+
+[site-loader] img, [page-loader] img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  height: 260px;
+  margin-top: -130px;
+  margin-left: -130px; }
 
 .ajax-error {
   position: fixed;

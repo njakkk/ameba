@@ -123,23 +123,6 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
   display: none;
   background: $lightest-grey;
   z-index: 1000;
-
-  span{
-    position: absolute;
-    width: 15px;
-    height: 200px;
-    left: 50%;
-    top: 50%;
-    margin-top: -100px;
-    background: $main;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    animation: loaderAnimation 1s infinite;
-    -webkit-animation: loaderAnimation 1s infinite;
-  }
-  &.back{
-    background: $dark;
-  }
 }
 
 [site-loader]{
@@ -151,18 +134,17 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
   display: block;
   z-index: 1000;
   background: $dark;
-  span{
+}
+
+[site-loader], [page-loader]{
+  img{
     position: absolute;
-    width: 15px;
-    height: 200px;
-    left: 50%;
     top: 50%;
-    margin-top: -100px;
-    background: $main;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    animation: loaderAnimation 1s infinite;
-    -webkit-animation: loaderAnimation 1s infinite;
+    left: 50%;
+    width: 260px;
+    height: 260px;
+    margin-top: -130px;
+    margin-left: -130px;
   }
 }
 
