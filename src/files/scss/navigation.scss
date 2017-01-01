@@ -308,6 +308,7 @@ body.active{
 
 @media screen and (max-width: 600px){
   .main-menu{
+    max-width: 360px;
     ul{
       overflow-x: hidden;
       overflow-y: auto;

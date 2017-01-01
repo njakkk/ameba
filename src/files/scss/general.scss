@@ -267,6 +267,10 @@ body.dark-page{
 
 @media screen and (max-width: 1200px){
 
+  .wrapper{
+    overflow: initial;
+  }
+
   .scroll-show, .project-tip {
     transform: none !important;
     opacity: 1;

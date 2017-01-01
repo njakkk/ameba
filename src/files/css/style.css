@@ -3046,6 +3046,8 @@ body.dark-page .close {
   mix-blend-mode: soft-light; }
 
 @media screen and (max-width: 1200px) {
+  .wrapper {
+    overflow: initial; }
   .scroll-show, .project-tip {
     transform: none !important;
     opacity: 1; }
@@ -4487,14 +4489,16 @@ body.active .header.filled {
     width: 100vw; } }
 
 @media screen and (max-width: 600px) {
-  .main-menu ul {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100vh; }
-  .main-menu li {
-    width: 100%;
-    height: auto;
-    float: none; } }
+  .main-menu {
+    max-width: 360px; }
+    .main-menu ul {
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 100vh; }
+    .main-menu li {
+      width: 100%;
+      height: auto;
+      float: none; } }
 
 .all-projects {
   zoom: 1; }
