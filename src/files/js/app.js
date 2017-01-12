@@ -169,7 +169,7 @@ function wrapWord(){
 
 }
 
-function moveMeAround(){
+function magnifier(){
 
     var parentElement = $('body');
     var el = $('.magnifier');
@@ -296,7 +296,7 @@ $(document).ready( function() {
     $('.slide-content').verticalCenter();
     $('.home-slider .owl-buttons').verticalCenter();
     wrapWord();
-    moveMeAround();
+//    magnifier();
     dropDown();
     attrBgColor();
     attrColor();
@@ -307,7 +307,7 @@ $(document).ready( function() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 $(window).on( 'resize', function() {
-    moveMeAround();
+//    magnifier();
     scrollShow();
 });
 

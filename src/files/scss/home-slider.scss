@@ -43,11 +43,11 @@ body.active .lines{
     width: 1px;
     background: $white;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.08;
   }
-  line:nth-child(1){ left: $vw/6; opacity: 0.2}
+  line:nth-child(1){ left: $vw/6;}
   line:nth-child(2){ left: $vw/6*2}
-  line:nth-child(3){ left: $vw/6*3; opacity: 0.15}
+  line:nth-child(3){ left: $vw/6*3;}
   line:nth-child(4){ left: $vw/6*4}
   line:nth-child(5){ left: $vw/6*5}
 }
@@ -90,26 +90,36 @@ body.active .lines{
   position: relative;
   width:  100%;
   height:  $vh;
-  background-color: $dark;
+  background-color: $darker;
 
   .home-background-holder{
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: $vw/6*2;
+    width: $vw/6*4;
     height: 100%;
     overflow: hidden;
-    @include scale(1.2,1.2);
+    @include translate($vw/6,0);
     transition: all 900ms 0ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    &:after{
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $dark;
+      opacity: 0.3;
+    }
   }
 
   .home-background{
-    background-position: center center;
+    background-position: right center;
     background-size: cover;
     position: absolute;
     left: 0;
     top: 0;
-    width: $vw;
+    width: 100%;
     height: $vh;
   }
 
@@ -122,6 +132,8 @@ body.active .lines{
     left:  $vw/6;
     width: 70vw;
     max-width: $vw/6*2;
+    padding: $spacing;
+    background: rgba(0,0,0,0.1);
 
     .slide-content-txt{
       opacity: 0;
@@ -140,7 +152,6 @@ body.active .lines{
       text-align: right;
       white-space: nowrap;
       font-size: 2.5vmin;
-      opacity: 0.4;
       overflow: hidden;
       span{
         display: inline-block;
@@ -150,8 +161,8 @@ body.active .lines{
 
       span:first-child{
         font-family: $strong;
-        font-size: 18vmin;
-        line-height: 0.7em;
+        font-size: 15vmin;
+        line-height: 0.55em;
         @include translate(0, -200px);
       }
       span:nth-child(2){
@@ -165,7 +176,7 @@ body.active .lines{
 
     h1{
       font-family: $strong;
-      font-size: 12.4vmin;
+      font-size: 11vmin;
       line-height: 0.7em;
       letter-spacing: -0.02em;
       max-width: 400px;
@@ -175,11 +186,14 @@ body.active .lines{
     }
     h2{
       clear: right;
-      font-size: 2vmin;
+      font-size: 17px;
       line-height: 1.2em;
+      opacity: 0.7;
+      width: $vw/6.7;
     }
     .btn{
       margin-top: $spacing;
+      float: right;
     }
   }
   letter {
@@ -194,10 +208,65 @@ body.active .lines{
   }
 }
 
+.slide-content{
+  .border-top,
+  .border-bottom{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: $white;
+    @include basicTransition(0.5s);
+    @include scale(0,1);
+  }
+
+  .border-right,
+  .border-left{
+    position: absolute;
+    width: 5px;
+    height:100% ;
+    background-color: $white;
+    @include basicTransition(0.5s);
+    @include scale(1,0);
+  }
+
+  .border-top{
+    left: 0;
+    top: 0;
+    transform-origin: 0 0;
+  }
+  .border-right{
+    top: 0;
+    right: 0;
+    transform-origin: 100% 100%;
+  }
+  .border-bottom{
+    right: 0;
+    bottom: 0;
+    transform-origin: 100% 100%;
+  }
+  .border-left{
+    bottom: 0;
+    left: 0;
+    transform-origin: 0 0;
+  }
+}
+
+.slide-content:hover{
+  .border-top,
+  .border-bottom{
+    transform: scale(1) !important;
+  }
+
+  .border-right,
+  .border-left{
+    transform: scale(1) !important;
+  }
+}
+
 .owl-item.active{
   .home-slide{
     .home-background-holder{
-      @include scale(1,1);
+      @include noTransform();
     }
     .slide-content{
       .slide-num{
@@ -206,6 +275,17 @@ body.active .lines{
 
         }
       }
+    }
+  }
+  .slide-content{
+    .border-top,
+    .border-bottom{
+      transform: scale(0.2,1);
+    }
+
+    .border-right,
+    .border-left{
+      transform: scale(1,0.2);
     }
   }
 }
@@ -329,11 +409,17 @@ body.active .lines{
     .slide-content{
       width: 70vw;
       max-width: 70vw;
+      padding: 0;
+      background: none;
+      .border-left, .border-bottom, .border-right, .border-top{
+        display: none;
+      }
       h1{
         font-size: 12.4vmin;
       }
       h2{
         font-size: 14px;
+        width: 100%;
       }
     }
   }
@@ -345,16 +431,6 @@ body.active .lines{
       left: 0;
       width: 100%;
       height: 100%;
-      &:after{
-        content:'';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $dark;
-        opacity: 0.3;
-      }
     }
     .home-background{
       background-position: center center;
