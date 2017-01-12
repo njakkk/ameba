@@ -2796,8 +2796,8 @@ html, body {
 
 body {
   font-family: "Exo 2", sans-serif;
-  color: #222;
-  background: #111;
+  color: #24262d;
+  background: #1f1f25;
   font-size: 13pt;
   font-weight: 300;
   line-height: 1.5em;
@@ -2874,7 +2874,7 @@ h4 {
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #fbfbfb;
-  color: #222;
+  color: #24262d;
   transform: translate(100%, 0);
   -moz-transform: translate(100%, 0);
   -webkit-transform: translate(100%, 0);
@@ -2907,7 +2907,7 @@ h4 {
   height: 100%;
   display: block;
   z-index: 1000;
-  background: #222; }
+  background: #24262d; }
 
 [site-loader] img, [page-loader] img {
   position: absolute;
@@ -2924,7 +2924,7 @@ h4 {
   max-width: 500px;
   left: 50%;
   padding: 2.2vmin;
-  background: #111;
+  background: #1f1f25;
   color: #fff;
   z-index: 20;
   bottom: 4.4vmin;
@@ -2993,7 +2993,7 @@ h4 {
     transform: none !important; }
 
 body.dark-page [page] {
-  background-color: #111;
+  background-color: #1f1f25;
   color: #f4f4f4; }
 
 body.dark-page .close {
@@ -3174,7 +3174,7 @@ b {
   .scroll-down.light {
     color: #f4f4f4; }
   .scroll-down.dark {
-    color: #222; }
+    color: #24262d; }
   .scroll-down i {
     font-size: 28px;
     vertical-align: middle;
@@ -3201,14 +3201,14 @@ tiny-space {
   position: relative; }
   .pattern:before {
     content: '';
-    background: url("../images/noiz.jpg");
+    background: url("../images/noiz.gif");
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 3;
-    opacity: 0.06;
+    opacity: 0.05;
     pointer-events: none; }
 
 [data-display=""], [data-display="false"] {
@@ -3261,8 +3261,8 @@ tiny-space {
       border-color: rgba(255, 255, 255, 0.2);
       background: rgba(255, 255, 255, 0.1); }
   .btn.dark {
-    color: #222;
-    border-color: #222; }
+    color: #24262d;
+    border-color: #24262d; }
     .btn.dark:hover {
       border-color: rgba(0, 0, 0, 0.2);
       background: rgba(0, 0, 0, 0.1); }
@@ -3950,21 +3950,21 @@ body.active .lines {
   overflow: hidden; }
   .home-slider:before {
     content: '';
-    background: url("../images/noiz.jpg");
+    background: url("../images/noiz.gif");
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 3;
-    opacity: 0.06;
+    opacity: 0.05;
     pointer-events: none; }
 
 .home-slide {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #111; }
+  background-color: #1f1f25; }
   .home-slide .home-background-holder {
     position: absolute;
     top: 0;
@@ -3984,7 +3984,7 @@ body.active .lines {
       left: 0;
       width: 100%;
       height: 100%;
-      background: #222;
+      background: #24262d;
       opacity: 0.3; }
   .home-slide .home-background {
     background-position: right center;
@@ -4012,6 +4012,8 @@ body.active .lines {
       overflow: hidden; }
     .home-slide .slide-content:after {
       clear: both; }
+    .home-slide .slide-content.dark-text {
+      color: #24262d; }
     .home-slide .slide-content .slide-content-txt {
       opacity: 0;
       transform: translate(0, 50px);
@@ -4285,7 +4287,8 @@ body.active .lines {
     .home-slide .slide-content .border-bottom, .home-slide .slide-content .border-top {
       height: 3px; }
     .home-slide .slide-content h1 {
-      font-size: 12.4vmin; }
+      font-size: 12.4vmin;
+      color: #fff !important; }
     .home-slide .slide-content h2 {
       font-size: 14px;
       width: 100%;
@@ -4320,13 +4323,13 @@ body.active .lines {
     display: none; } }
 
 body.dark-logo .logo svg {
-  fill: #222; }
+  fill: #24262d; }
 
 body.dark-logo .hamburger span, body.dark-logo .hamburger span:before, body.dark-logo .hamburger span:after {
-  background: #222; }
+  background: #24262d; }
 
 body.dark-logo .close {
-  color: #222; }
+  color: #24262d; }
 
 /**** lines****/
 .header {
@@ -4345,11 +4348,11 @@ body.active .header.filled {
   background-color: #f4f4f4;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.08), 0 0 25px rgba(0, 0, 0, 0.1); }
   body.active .header.filled .logo svg {
-    fill: #222; }
+    fill: #24262d; }
   body.active .header.filled .hamburger span, body.active .header.filled .hamburger span:before, body.active .header.filled .hamburger span:after {
-    background: #222; }
+    background: #24262d; }
   body.active .header.filled .close {
-    color: #222; }
+    color: #24262d; }
 
 [data-trigger="main-menu"] {
   cursor: pointer;
@@ -4423,7 +4426,7 @@ body.active .header.filled {
   left: 0;
   width: 50vw;
   height: 100vh;
-  background: #111;
+  background: #1f1f25;
   overflow: hidden;
   color: #f4f4f4;
   z-index: 2;
@@ -4538,7 +4541,7 @@ body.active .header.filled {
   line-height: 30px;
   cursor: pointer;
   font-size: 31px;
-  color: #222; }
+  color: #24262d; }
   .close span {
     display: inline-block;
     width: 0;
@@ -4613,7 +4616,7 @@ body.active .header.filled {
     left: 2.7vmin;
     width: 1px;
     height: 5%;
-    background: #222;
+    background: #24262d;
     -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
     -moz-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -4784,7 +4787,7 @@ body.active .header.filled {
   height: 100%;
   left: 0;
   top: 0;
-  background: #111;
+  background: #1f1f25;
   color: #fff;
   z-index: 2; }
   .project-header > article {
@@ -4946,7 +4949,7 @@ body.active .header.filled {
       top: 50%;
       height: 1px;
       width: 40%;
-      background: #a2a2a2; }
+      background: #9ea3b2; }
     .project-tip span:after {
       content: '';
       position: absolute;
@@ -4955,7 +4958,7 @@ body.active .header.filled {
       height: 6px;
       width: 6px;
       border-radius: 100%;
-      background: #6f6f6f; }
+      background: #686e82; }
 
 .project-tip.left span {
   float: left;
@@ -5054,7 +5057,7 @@ body.active .header.filled {
   [data-tooltip]:after {
     content: attr(data-tooltip);
     position: absolute;
-    background: #1a1a1a;
+    background: #1d1f25;
     font-family: "Exo 2", sans-serif;
     font-size: 14px;
     line-height: 30px;

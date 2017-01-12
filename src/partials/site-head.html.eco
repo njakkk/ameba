@@ -15,7 +15,7 @@
     <meta property="og:description" content="Matovic Marija portfolio" />
     <meta property="og:url" content="http://ameba.rs" />
 
-    <meta name="theme-color" content="#222222" />
+    <meta name="theme-color" content="#24262d" />
 
     <!--Favicons-->
     <link rel="icon" type="image/png" href="<%= @site.url %>/images/favicons/favicon-16x16.png" sizes="16x16">

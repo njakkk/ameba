@@ -40,7 +40,7 @@ layout: "main"
                         <span>/</span>
                         <span class="of"></span>
                     </div>
-                    <h1 class="letters"><%= page.title %></h1>
+                    <h1 class="letters" data-color="<%= page.color %>"><%= page.title %></h1>
                     <aside class="slide-content-txt">
                         <h2><%= page.description %></h2>
                         <a href="#" class="btn" data-href="<%= @site.url %><%= page.url %>.html" data-hash="<%= page.name %>" tabindex="1">view project <i class="icon-arrow-right right-icc"></i></a>
