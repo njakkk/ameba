@@ -12,7 +12,7 @@ description: "Platform for diving lovers."
 longDescription: "Platform allows diving lovers to easilly share their experiences, with other members with same interests. Will still be further developed to support browsing and booking for diving tours worldwide."
 slide: "dive-and-seek/slide.jpg"
 thumb: "dive-and-seek/thumb.jpg"
-color: "#335fdd"
+color: "#2a84ff"
 
 dev: "true"
 

@@ -11,7 +11,7 @@ description: "Cross platform Music streaming service."
 longDescription: "SBB cable network provider, wanted to launch music streaming service much alike Deezer but with accent on Domestic popular music and artists. Design and UX were made for presentation shown on pich."
 slide: "unifi-music/slide.jpg"
 thumb: "unifi-music/thumb.jpg"
-color: "#8947c7"
+color: "#BD53DD"
 
 brand: "true"
 ux: "true"
