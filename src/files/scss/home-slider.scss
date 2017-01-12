@@ -133,7 +133,7 @@ body.active .lines{
     width: 70vw;
     max-width: $vw/6*2;
     padding: $spacing;
-    background: rgba(0,0,0,0.1);
+    border: solid 1px rgba(255,255,255,0.3);
 
     .slide-content-txt{
       opacity: 0;
@@ -409,10 +409,13 @@ body.active .lines{
     .slide-content{
       width: 70vw;
       max-width: 70vw;
-      padding: 0;
+      padding: 20px;
       background: none;
-      .border-left, .border-bottom, .border-right, .border-top{
-        display: none;
+      .border-left, .border-right{
+        width: 3px;
+      }
+      .border-bottom, .border-top{
+        height: 3px;
       }
       h1{
         font-size: 12.4vmin;
@@ -420,6 +423,7 @@ body.active .lines{
       h2{
         font-size: 14px;
         width: 100%;
+        opacity: 1;
       }
     }
   }
@@ -437,6 +441,20 @@ body.active .lines{
       left: 0;
       width: 100%;
       animation: none;
+    }
+    .slide-content{
+      .slide-num{
+        top: 20px;
+        span{
+          color: $white !important;
+        }
+        span:nth-child(2), span:nth-child(3){
+          display: none;
+        }
+      }
+      .btn{
+        float: none;
+      }
     }
   }
 
