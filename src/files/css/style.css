@@ -3180,6 +3180,24 @@ b {
     vertical-align: middle;
     margin-right: 5px; }
 
+.page-title {
+  position: fixed;
+  top: 50%;
+  right: -25%;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  pointer-events: none;
+  color: #24262d;
+  opacity: 0.06;
+  font-size: 32vmin;
+  width: 100vh;
+  line-height: 0.6em;
+  transform-origin: top;
+  font-family: "evelethclean_regular", sans-serif;
+  z-index: 0; }
+
 space {
   display: block;
   height: 20vh; }
@@ -4916,18 +4934,6 @@ body.active .header.filled {
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
   z-index: 0; }
-  .project-line:after, .project-line:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 1px; }
-  .project-line:after {
-    left: 20vw;
-    background: rgba(0, 0, 0, 0.06); }
-  .project-line:before {
-    left: -10vw;
-    background: rgba(0, 0, 0, 0.04); }
 
 .project-tip {
   zoom: 1;

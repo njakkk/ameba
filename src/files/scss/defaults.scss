@@ -51,7 +51,21 @@ b{
     margin-right: 5px;
   }
 }
-
+.page-title{
+  position: fixed;
+  top: 50%;
+  right: -25%;
+  @include rotate(90deg);
+  pointer-events:none;
+  color: $dark;
+  opacity: 0.06;
+  font-size: 32vmin;
+  width: $vh;
+  line-height: 0.6em;
+  transform-origin: top;
+  font-family: $strong;
+  z-index: 0;
+}
 space{
   display: block;
   height: 20vh;

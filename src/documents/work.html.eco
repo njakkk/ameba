@@ -32,8 +32,8 @@ title: "Work"
             <a data-href="<%= @site.url %><%= page.url %>.html" data-hash="<%= page.name %>" class="full-action"></a>
         </article>
         <% end %>
-
-    </div>
+   </div>
+    <div class="page-title"><%= @document.title %></div>
 </section>
 
 

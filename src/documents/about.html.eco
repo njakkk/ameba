@@ -4,8 +4,8 @@ isProject: false
 isPublished: false
 
 name: "about"
+title: "About"
 pageClass: "dark-logo"
-title: "Ameba's name is Marija, she is a Designer & Developer."
 
 color: "#3c64ff"
 ---
@@ -15,7 +15,7 @@ color: "#3c64ff"
         <space></space>
         <div class="row">
             <div class="column-3 show-up">
-                <h1 data-color="<%= @document.color %>"><%= @document.title %></h1>
+                <h1 data-color="<%= @document.color %>">Ameba's name is Marija, she is a Designer & Developer.</h1>
                 <p>I design and build websites to communicate a feeling of comfort that shall invite the user to come back. For me, it's not only the Design, but also the frontend development including HTML & CSS, JS.</p>
                 <p>The development is really important to me, because while developing design I made, I constantly improve my skills and stay up-to-date with the technology.</p>
 
@@ -107,6 +107,7 @@ color: "#3c64ff"
         </div>
 
     </section>
+    <div class="page-title"><%= @document.title %></div>
 </section>
 
 
