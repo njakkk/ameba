@@ -13,8 +13,6 @@ title: "Work"
     <div class="all-projects">
         <% for page in @getCollection("projects").toJSON(): %>
         <article class="project-box show-up right">
-            <!--<div class="project-color" data-bg-color="<%= page.color %>"></div>-->
-
             <div class="project-img">
                 <div class="project-color" data-bg-color="<%= page.color %>"></div>
                 <div class="bg pattern">

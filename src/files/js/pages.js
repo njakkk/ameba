@@ -130,7 +130,6 @@ function pageAction() {
 
     gotoUrl();
 
-
 //hide page Canvas and remove page content
 
     function hidePage() {
@@ -157,12 +156,12 @@ function pageAction() {
         }
     });
 
-    $(window).on("hashchange",function (){
-        var url = window.location.hash;
-        if(url == ''){
-            hidePage();
-        }
-    });
+//    $(window).on("hashchange",function (){
+//        var url = location.hash;
+//        if(url !== ''){
+//            hidePage();
+//        }
+//    });
 
 }
 

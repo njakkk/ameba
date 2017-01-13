@@ -4069,7 +4069,8 @@ body.active .lines {
       font-size: 11vmin;
       line-height: 0.7em;
       letter-spacing: -0.02em;
-      max-width: 400px; }
+      max-width: 400px;
+      pointer-events: none; }
       .home-slide .slide-content h1 span {
         white-space: normal; }
     .home-slide .slide-content h2 {
@@ -4077,7 +4078,8 @@ body.active .lines {
       font-size: 17px;
       line-height: 1.2em;
       opacity: 0.7;
-      width: 14.92537vw; }
+      width: 14.92537vw;
+      pointer-events: none; }
     .home-slide .slide-content .btn {
       margin-top: 2.2vmin;
       float: right; }
