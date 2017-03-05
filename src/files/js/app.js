@@ -272,16 +272,6 @@ $.fn.changeOnScroll = function () {
 };
 
 
-//function fillHeader(){
-//    var color =  $('.project-header').attr('data-bg-color');
-//
-//    $('.project-content').scroll(function(){
-//        $('.header').css({ 'background-color': color})
-//    })
-//}
-
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(document).ready( function() {
     $('.home-slider').imagesLoaded( function() {
@@ -300,7 +290,7 @@ $(document).ready( function() {
     dropDown();
     attrBgColor();
     attrColor();
-    floatingAmeba();
+//    floatingAmeba();
     $('.header').changeOnScroll();
 });
 

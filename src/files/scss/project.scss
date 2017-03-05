@@ -26,9 +26,10 @@
   height: 100%;
   left: 0;
   top: 0;
-  background: $darker;
-  color: $white;
+  background: $light-grey;
+  color: $dark;
   z-index: 2;
+  border-right: solid 1px rgba(0,0,0,0.02);
 
   > article{
     position: absolute;
@@ -44,22 +45,20 @@
     }
 
     h1{
-     font-family: $strong;
-     font-size: 11vmin;
+     font-family: $thin;
+     font-size: 7vmin;
      line-height: 0.65em;
      letter-spacing: -0.02em;
      margin: 0;
      text-align: left;
-//     word-wrap: break-word;
      width: 80%;
     }
     h2{
       margin: $spacing 0;
-      font-size: 3vmin;
+      font-size: 2.4vmin;
       opacity: 0.8;
-      line-height: 0.8em;
+      line-height: 1em;
       font-weight: 300;
-      font-family: $thin;
     }
     h3{
       font-family: $thin;
@@ -77,6 +76,7 @@
       line-height: 1.5em;
       margin-bottom: $spacing;
       font-weight: 300;
+      opacity: 0.6;
     }
   }
 
@@ -98,7 +98,7 @@
   .more-projects{
     position: absolute;
     width: 100%;
-    border-top: solid 1px rgba(255,255,255,0.1);
+    border-top: solid 1px rgba(0,0,0,0.04);
     bottom: 0;
     left: 0;
     padding: $spacing*2 $spacing*2;

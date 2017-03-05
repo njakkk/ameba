@@ -41,15 +41,15 @@ body.active .lines{
     position: fixed;
     top: 0;
     width: 1px;
-    background: $white;
+    background: $dark;
     height: 100%;
     opacity: 0.08;
   }
-  line:nth-child(1){ left: $vw/6;}
-  line:nth-child(2){ left: $vw/6*2}
-  line:nth-child(3){ left: $vw/6*3;}
-  line:nth-child(4){ left: $vw/6*4}
-  line:nth-child(5){ left: $vw/6*5}
+  line:nth-child(1){ left: $vw/5;}
+  line:nth-child(2){ left: $vw/5*2}
+  line:nth-child(3){ left: $vw/5*3;}
+  line:nth-child(4){ left: $vw/5*4}
+  line:nth-child(5){ left: $vw/5*5}
 }
 
 /****home slider****/
@@ -81,25 +81,25 @@ body.active .lines{
   height:  100%;
   overflow: hidden;
 
-  &:before{
-    @include noiz;
-  }
+//  &:before{
+//    @include noiz;
+//  }
 }
 
 .home-slide{
   position: relative;
   width:  100%;
   height:  $vh;
-  background-color: $darker;
+  background-color: $lightest-grey;
 
   .home-background-holder{
     position: absolute;
     top: 0;
-    left: $vw/6*2;
-    width: $vw/6*4;
+    left: $vw/5*2;
+    width: $vw/5*3;
     height: 100%;
     overflow: hidden;
-    @include translate($vw/6,0);
+    @include translate($vw/5,0);
     transition: all 900ms 0ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
     &:after{
       content:'';
@@ -109,7 +109,7 @@ body.active .lines{
       width: 100%;
       height: 100%;
       background: $dark;
-      opacity: 0.2;
+      opacity: 0.1;
     }
   }
 
@@ -125,17 +125,20 @@ body.active .lines{
 
   .slide-content{
     @include clearfix;
-    color: $light-grey;
+    color: $dark;
     text-align: left;
     position: absolute;
     top: 50%;
-    left:  $vw/6;
+    left:  $vw/5;
     width: 70vw;
-    max-width: $vw/6*2;
+    max-width: $vw/5*2;
     padding: $spacing;
-    border: solid 1px rgba(255,255,255,0.3);
+    border: solid 1px rgba(0,0,0,0.1);
     &.dark-text{
       color: $dark;
+    }
+    &.light-text{
+      color: $light-grey;
     }
 
     .slide-content-txt{
@@ -178,7 +181,7 @@ body.active .lines{
     }
 
     h1{
-      font-family: $strong;
+      font-family: $thin;
       font-size: 11vmin;
       line-height: 0.7em;
       letter-spacing: -0.02em;
@@ -424,7 +427,6 @@ body.active .lines{
       }
       h1{
         font-size: 12.4vmin;
-        color: $white !important;
       }
       h2{
         font-size: 14px;
@@ -437,6 +439,13 @@ body.active .lines{
 
 @media screen and (max-width: 960px){
   .home-slide{
+    .slide-content{
+      color: $white;
+      h1{
+        color: $white !important;
+      }
+    }
+
     .home-background-holder{
       left: 0;
       width: 100%;

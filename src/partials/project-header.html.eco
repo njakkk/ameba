@@ -1,5 +1,5 @@
-<header class="project-header show-up left pattern" data-float-parent >
-    <div class="float" data-float></div>
+<header class="project-header show-up left" data-float-parent >
+    <!--<div class="float" data-float></div>-->
     <article class="vert-center">
         <aside class="show-up">
             <h3><%= @document.year %></h3>
@@ -17,7 +17,7 @@
         </aside>
     </article>
     <aside class="show-up more-projects">
-        <a data-href="work.html" data-hash="work" class="btn white small">view all work</a>
-        <a data-display="<%= @document.hasExternalLink %>" href="<%= @document.externalLink %>" target="_blank" class="btn white small"><%= @document.externalLinkTitle %> <i class="icon-arrow-right right-icc"></i></a>
+        <a data-href="work.html" data-hash="work" class="btn dark small">view all work</a>
+        <a data-display="<%= @document.hasExternalLink %>" href="<%= @document.externalLink %>" target="_blank" class="btn dark small"><%= @document.externalLinkTitle %> <i class="icon-arrow-right right-icc"></i></a>
     </aside>
 </header>
