@@ -21,7 +21,7 @@ layout: "main"
                     </h1>
                     <aside class="slide-content-txt">
                         <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions she also likes to design and develop.</h2>
-                        <a href="#" class="btn" data-href="work.html" data-hash="work" tabindex="1">view all work <i class="icon-arrow-right right-icc"></i></a>
+                        <a href="#" class="btn dark-text" data-href="work.html" data-hash="work" tabindex="1">view all work <i class="icon-arrow-right right-icc"></i></a>
                     </aside>
                 </div>
             </article>

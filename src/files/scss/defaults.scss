@@ -105,6 +105,13 @@ tiny-space{
   padding: $spacing*5 $spacing $spacing $spacing;
 }
 
+.light-text, .light-text a{
+  color: $white;
+}
+.dark-text, .dark-text a{
+  color: $dark;
+}
+
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 
 

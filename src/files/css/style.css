@@ -3239,6 +3239,12 @@ tiny-space {
 .default-content {
   padding: 11vmin 2.2vmin 2.2vmin 2.2vmin; }
 
+.light-text, .light-text a {
+  color: #fff; }
+
+.dark-text, .dark-text a {
+  color: #292b31; }
+
 @media screen and (max-width: 1200px) {
   .scroll-down {
     display: none; } }
