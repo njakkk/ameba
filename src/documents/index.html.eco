@@ -12,11 +12,11 @@ layout: "main"
                 </video>
                 <div class="slide-content light-text" data-href="work.html" data-hash="work">
                     <span class="border-top"></span><span class="border-right"></span><span class="border-bottom"></span><span class="border-left"></span>
-                    <div class="slide-num" data-color="<%= @document.color %>">
-                        <span class="current"></span>
-                        <span>/</span>
-                        <span class="of"></span>
-                    </div>
+                    <!--<div class="slide-num" data-color="<%= @document.color %>">-->
+                        <!--<span class="current"></span>-->
+                        <!--<span>/</span>-->
+                        <!--<span class="of"></span>-->
+                    <!--</div>-->
                     <h1>
                         <span class="letters">The core of simplicity</span>
                     </h1>
