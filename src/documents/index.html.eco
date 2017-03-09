@@ -2,15 +2,14 @@
 layout: "main"
 ---
     <div class="wrapper">
-        <!--<p class="scroll-down uppercase light"><i class="icon-scroll"></i> scroll for selected work</p>-->
+        <p class="scroll-down uppercase"><i class="icon-scroll"></i> scroll for selected work</p>
         <section class="home-slider">
 
-            <article class="home-slide pattern">
-                <p class="scroll-down uppercase light"><i class="icon-scroll"></i> scroll for selected work</p>
-                <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
-                    <source src="<%= @site.url %>/images/ameba.mp4" type="video/mp4">
+            <article class="home-slide">
+                <video autoplay muted loop poster="<%= @site.url %>/images/video-cover-02.jpg" class="video-background" id="bg-video">
+                    <source src="<%= @site.url %>/images/ameba-02.mp4" type="video/mp4">
                 </video>
-                <div class="slide-content light-text" data-href="work.html" data-hash="work">
+                <div class="slide-content" data-href="work.html" data-hash="work">
                     <span class="border-top"></span><span class="border-right"></span><span class="border-bottom"></span><span class="border-left"></span>
                     <!--<div class="slide-num" data-color="<%= @document.color %>">-->
                         <!--<span class="current"></span>-->
@@ -30,7 +29,6 @@ layout: "main"
 
             <% for page in @getCollection("featuredProjects").toJSON(): %>
             <article class="home-slide">
-                <p class="scroll-down uppercase dark"><i class="icon-scroll"></i> scroll for selected work</p>
                 <div class="home-background-holder">
                    <div class="home-background bg"><img src="<%= @site.url %>/images/projects/<%= page.slide %>" alt="" data-bg-img/></div>
                 </div>
