@@ -26,6 +26,7 @@ $loader-img-size: 200px;
 
 
 $main: #3c64ff;
+//$main: #4730f0;
 $dark: rgba(41, 43, 49, 1);
 $darker: #1f1f25;
 $light-grey: #f4f4f4;
@@ -179,13 +180,13 @@ $border-default: solid 1px #e5e5e5;
 
 @mixin noiz{
   content:'';
-  background: url('../images/noiz.gif');
+  background: url('../images/noiz.jpg');
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   z-index: 3;
-  opacity: 0.05;
+  opacity: 0.03;
   pointer-events:none;
 }

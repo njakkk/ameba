@@ -59,7 +59,7 @@ body.active{
   margin: 0 $spacing/2;
   svg{
     width: 10vmin;
-    max-width: 100px;
+    max-width: 80px;
     min-width: 65px;
     fill: $dark;
     height: 25px;
@@ -72,6 +72,9 @@ body.active{
   width: 25px;
   height: 30px;
   position: relative;
+  float: right;
+  filter: drop-shadow(0px 1px 0px $light-grey);
+  -webkit-filter: drop-shadow(0px 1px 0px $light-grey);
   span{
     position: absolute;
     top: 50%;
@@ -97,31 +100,43 @@ body.active{
     }
   }
 }
+.hamburger:hover{
+  span{
+    &:before{
+      top: -6px;
+    }
+    &:after{
+      bottom: -6px;
+    }
+  }
 
+}
 /***color when page opened***/
 
 [data-trigger="main-menu"].active{
-//  .logo svg{
-//    fill: $light-grey !important;
-//  }
-
-  .hamburger{
-    span{
-      background: transparent !important;
-
-      &:before, &:after{
-        top: 50%;
-//        background: $light-grey !important;
-      }
-
-      &:before{
-        @include rotate(-45deg);
-      }
-      &:after{
-        @include rotate(45deg);
-      }
-    }
+  .logo svg{
+    fill: $light-grey !important;
+  }
 }
+
+.hamburger.active{
+  filter: none;
+  -webkit-filter: none;
+  span{
+    background: transparent !important;
+
+    &:before, &:after{
+      top: 50%;
+      background: $light-grey !important;
+    }
+
+    &:before{
+      @include rotate(-45deg);
+    }
+    &:after{
+      @include rotate(45deg);
+    }
+  }
 }
 
 
@@ -130,20 +145,20 @@ body.active{
 .main-menu{
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 50vw;
   height: $vh;
-  background: $light-grey;
+  background: $dark;
   overflow: hidden;
-  color: $dark;
+  color: $light-grey;
   z-index: 2;
 
-  transform-origin: 0 0;
+  transform-origin: 100% 0;
   @include scale(0, 1);
   visibility: hidden;
   transition: all 800ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
   a{
-    color: $dark;
+    color: $light-grey;
   }
 
   li{
@@ -151,11 +166,11 @@ body.active{
     float: left;
     width: 50%;
     height: 50vh;
-    padding: $header-size*2 $header-size;
+    padding: $header-size*2 $header-size*2;
     border-right: $dark-border;
     border-bottom: $dark-border;
     opacity: 0;
-    @include translate(300px, 0);
+    @include translate(-300px, 0);
 
     &:nth-child(1),
     &:nth-child(2){
@@ -203,7 +218,7 @@ body.active{
       width: 200px;
     }
     .full-action{
-      background: rgba(0,0,0,0.05);
+      background: rgba(0,0,0,0.1);
     }
   }
 }
@@ -243,16 +258,17 @@ body.active{
 //** close*//
 .close{
   position: relative;
-  float: right;
   opacity: 0;
-  transform: translate3d(300px, 0, 0);
   @include basicTransition(.5s);
   display: inline-block;
+  vertical-align: middle;
   height: $close-size;
   line-height: $close-size;
+  width: 0;
   cursor: pointer;
   font-size: 31px;
   color: $dark;
+  overflow: hidden;
   span{
     display: inline-block;
     width: 0;
@@ -268,7 +284,7 @@ body.active{
   }
   &.active{
     opacity: 1;
-    transform: none;
+    width: $close-size;
   }
   &:hover{
     span{
@@ -277,6 +293,18 @@ body.active{
     }
   }
 
+}
+
+.logo-holder.active{
+  .close{
+    opacity: 1;
+    width: $close-size;
+  }
+}
+.logo-holder:hover{
+  .close{
+    animation: leftIconAnimation 0.8s both;
+  }
 }
 
 
@@ -290,14 +318,6 @@ body.active{
   }
 }
 
-@media screen and (max-width: 1200px){
-  .close{
-    color: $light-grey;
-    span{
-      display: none;
-    }
-  }
-}
 
 @media screen and (max-width: 900px){
   .main-menu{

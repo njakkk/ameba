@@ -10,7 +10,7 @@
 
 <div page>
     <div page-content></div>
-    <div page-loader><img src="<%= @site.url %>/images/ameba-loader-dark.svg" alt=""/></div>
+    <div page-loader><img src="<%= @site.url %>/images/ameba-loader.svg" alt=""/></div>
 </div>
 
 <section ajax-error class="ajax-error">

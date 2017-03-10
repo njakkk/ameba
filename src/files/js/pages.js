@@ -150,6 +150,10 @@ function pageAction() {
         }
     });
 
+    close.on("click", function() {
+        hidePage();
+    });
+
     $(document).keyup(function(e) {
         if (e.keyCode == 27) {
             hidePage();

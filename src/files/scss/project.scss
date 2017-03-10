@@ -192,8 +192,11 @@
   span{
     width: 50%;
     position: relative;
-    @include uppText;
     line-height: 1em;
+    font-family: $thin;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
 
     &:before{
       content:'';

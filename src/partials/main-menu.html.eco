@@ -1,6 +1,6 @@
 <header class="header">
-    <div data-trigger="main-menu">
-        <div class="hamburger"><span></span></div>
+    <div class="fl logo-holder" page-close>
+        <div class="close icon-arrow-left"></div>
         <div class="logo"><%- @partial('logo')%></div>
     </div>
 
@@ -36,5 +36,5 @@
     </nav>
     <div class="main-menu-overlay"></div>
 
-    <div page-close class="close icon-arrow-left"><span page-close>home</span></div>
+    <div class="hamburger" data-trigger="main-menu"><span></span></div>
 </header>

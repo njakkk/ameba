@@ -1,11 +1,11 @@
 <header class="project-header show-up left" data-float-parent >
     <!--<div class="float" data-float></div>-->
     <article class="vert-center">
-        <aside class="show-up">
+        <aside class="show-up left">
             <h3><%= @document.year %></h3>
             <h1 data-color="<%= @document.color %>"><%= @document.title %></h1>
         </aside>
-        <aside class="show-up">
+        <aside class="show-up left">
             <h2><%= @document.description %></h2>
             <p><%= @document.longDescription %></p>
             <ul class="project-icons">
@@ -16,7 +16,7 @@
             </ul>
         </aside>
     </article>
-    <aside class="show-up more-projects">
+    <aside class="show-up more-projects left">
         <a data-href="work.html" data-hash="work" class="btn dark small">view all work</a>
         <a data-display="<%= @document.hasExternalLink %>" href="<%= @document.externalLink %>" target="_blank" class="btn dark small"><%= @document.externalLinkTitle %> <i class="icon-arrow-right right-icc"></i></a>
     </aside>

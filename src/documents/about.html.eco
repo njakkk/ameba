@@ -107,7 +107,6 @@ color: "#3c64ff"
         </div>
 
     </section>
-    <div class="page-title"><%= @document.title %></div>
 </section>
 
 
