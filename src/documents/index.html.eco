@@ -1,55 +1,7 @@
 ---
 layout: "main"
 ---
-    <div class="wrapper" data-scroll-target="home" section-holder>
-
-         <section class="home-slide pattern" page-section>
-             <div class="lines"></div>
-             <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
-                 <source src="<%= @site.url %>/images/ameba.mp4" type="video/mp4">
-             </video>
-             <div class="slide-content" data-href="work.html" data-hash="work">
-                 <span class="border-top"></span><span class="border-right"></span><span class="border-bottom"></span><span class="border-left"></span>
-                 <h1>
-                     <span class="letters">The core of simplicity</span>
-                 </h1>
-                 <aside class="slide-content-txt">
-                     <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions she also likes to design and develop.</h2>
-                     <a href="#" class="btn" tabindex="1" data-scroll-trigger="work" >view work <i class="icon-arrow-right right-icc"></i></a>
-                 </aside>
-             </div>
-         </section>
-
-        <section class="scroll-h" page-section data-scroll-target="work">
-            <section class="all-projects">
-                <% for page in @getCollection("projects").toJSON(): %>
-                <article class="project-box">
-                    <header>
-                        <div class="project-num">0<%= page.order %></div>
-                        <h1><%= page.title %></h1>
-                        <p><%= page.description %></p>
-                    </header>
-                    <div class="project-img">
-                        <div class="project-color" data-bg-color="<%= page.color %>"></div>
-                        <div class="bg pattern">
-                            <img src="<%= @site.url %>/images/projects/<%= page.thumb %>" alt="" data-bg-img/>
-                        </div>
-                    </div>
-                    <div class="project-box-desc">
-                        <h3><%= page.year %></h3>
-                        <ul class="project-type">
-                            <li data-display="<%= page.brand %>"><i class="icon-sailing-boat-water"></i> <span>Branding</span></li>
-                            <li data-display="<%= page.ux %>"><i class="icon-ux-ui"></i> <span>Design & UX</span></li>
-                            <li data-display="<%= page.dev %>"><i class="icon-development"></i> <span>Frontend development</span></li>
-                            <li data-display="<%= page.graphic %>"><i class="icon-target-arrow"></i> <span>Graphic design</span></li>
-                        </ul>
-                    </div>
-                    <a data-href="<%= @site.url %><%= page.url %>.html" data-hash="<%= page.name %>" class="full-action"></a>
-                </article>
-                <% end %>
-            </section>
-        </section>
-
+    <div class="wrapper"  section-holder>
         <section class="scroll-h" page-section data-scroll-target="about">
             <section class="about">
                 <space></space>
@@ -145,6 +97,53 @@ layout: "main"
 
                     </div>
                 </div>
+            </section>
+        </section>
+
+         <section class="home-slide pattern" page-section data-scroll-target="home">
+             <div class="lines"></div>
+             <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
+                 <source src="<%= @site.url %>/images/ameba.mp4" type="video/mp4">
+             </video>
+             <div class="slide-content" data-href="work.html" data-hash="work">
+                 <span class="border-top"></span><span class="border-right"></span><span class="border-bottom"></span><span class="border-left"></span>
+                 <h1>
+                     <span class="letters">The core of simplicity</span>
+                 </h1>
+                 <aside class="slide-content-txt">
+                     <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions she also likes to design and develop.</h2>
+                     <a href="#" class="btn" tabindex="1" data-scroll-trigger="work" >view work <i class="icon-arrow-right right-icc"></i></a>
+                 </aside>
+             </div>
+         </section>
+
+        <section class="scroll-h" page-section data-scroll-target="work">
+            <section class="all-projects">
+                <% for page in @getCollection("projects").toJSON(): %>
+                <article class="project-box">
+                    <header>
+                        <div class="project-num">0<%= page.order %></div>
+                        <h1><%= page.title %></h1>
+                        <p><%= page.description %></p>
+                    </header>
+                    <div class="project-img">
+                        <div class="project-color" data-bg-color="<%= page.color %>"></div>
+                        <div class="bg pattern">
+                            <img src="<%= @site.url %>/images/projects/<%= page.thumb %>" alt="" data-bg-img/>
+                        </div>
+                    </div>
+                    <div class="project-box-desc">
+                        <h3><%= page.year %></h3>
+                        <ul class="project-type">
+                            <li data-display="<%= page.brand %>"><i class="icon-sailing-boat-water"></i> <span>Branding</span></li>
+                            <li data-display="<%= page.ux %>"><i class="icon-ux-ui"></i> <span>Design & UX</span></li>
+                            <li data-display="<%= page.dev %>"><i class="icon-development"></i> <span>Frontend development</span></li>
+                            <li data-display="<%= page.graphic %>"><i class="icon-target-arrow"></i> <span>Graphic design</span></li>
+                        </ul>
+                    </div>
+                    <a data-href="<%= @site.url %><%= page.url %>.html" data-hash="<%= page.name %>" class="full-action"></a>
+                </article>
+                <% end %>
             </section>
         </section>
     </div>
