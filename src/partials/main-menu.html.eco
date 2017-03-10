@@ -1,9 +1,13 @@
 <header class="header">
-    <div class="fl logo-holder" page-close>
+    <div class="fl logo-holder home-nav" data-scroll-trigger="home">
         <div class="close icon-arrow-left"></div>
         <div class="logo"><%- @partial('logo')%></div>
     </div>
 
+    <div class="fl logo-holder page-nav" page-close>
+        <div class="close icon-arrow-left"></div>
+        <div class="logo"><%- @partial('logo')%></div>
+    </div>
 
     <nav class="main-menu" data-drop="main-menu">
         <ul>
@@ -11,14 +15,13 @@
                 <h1>Work.</h1>
                 <p class="uppercase desc">Branding / Design / Frontend / Digital art</p>
                 <span class="line"></span>
-                <a data-href="work.html" data-hash="work" class="full-action"></a>
+                <a page-close data-scroll-trigger="work" class="full-action"></a>
             </li>
             <li>
                 <h1>About.</h1>
                 <p class="uppercase desc">About Marija Matović</p>
                 <span class="line"></span>
-                <a data-href="about.html" data-hash="about" class="full-action"></a>
-                <!--data-body-class="dark-page"-->
+                <a page-close data-scroll-trigger="about" class="full-action"></a>
             </li>
             <li>
                 <h2>Say hello.</h2>

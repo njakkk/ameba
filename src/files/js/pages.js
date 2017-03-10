@@ -79,7 +79,7 @@ function pageAction() {
                         pageLoaded();
                         location.hash = pageName;
                     });
-                }, 900);
+                }, 300);
             },
             error: function(){
                 ajaxError.addClass(activeClass);

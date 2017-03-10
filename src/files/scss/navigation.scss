@@ -201,7 +201,7 @@ body.active{
       width: 100px;
       max-width: 100%;
       height: 1px;
-      background: $dark;
+      background: $light-grey;
       display: block;
       margin-top: 10px;
       @include basicTransition(0.4s);
@@ -295,6 +295,10 @@ body.active{
 
 }
 
+.logo-holder{
+  cursor: pointer;
+}
+
 .logo-holder.active{
   .close{
     opacity: 1;
@@ -305,6 +309,14 @@ body.active{
   .close{
     animation: leftIconAnimation 0.8s both;
   }
+}
+
+.logo-holder.page-nav{ display: none}
+
+body.active{
+  .logo-holder.home-nav{ display: none}
+  .logo-holder.page-nav{ display: block}
+
 }
 
 

@@ -72,9 +72,6 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
   }
 }
 
-
-
-
 /****************************************/
 [canvas]{
   width: 100%;
@@ -90,6 +87,19 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
     @include translate(-30%,0);
 
   }
+}
+[section-holder]{
+  width: $vw*3;
+  height: $vh;
+  position: relative;
+}
+[page-section]{
+  position: relative;
+  width:  $vw;
+  height:  $vh;
+  background-color: $lightest-grey;
+  overflow: hidden;
+  float: left;
 }
 
 [page]{
@@ -134,7 +144,7 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
   height: 100%;
   display: block;
   z-index: 1000;
-  background: $light-grey;
+  background: $dark;
 }
 
 [page-close]{
@@ -180,6 +190,7 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
     margin-top: $spacing;
   }
 }
+
 
 .show-up{
   transform: translate3d(0,100px, 0);

@@ -17,7 +17,6 @@
         </aside>
     </article>
     <aside class="show-up more-projects left">
-        <a data-href="work.html" data-hash="work" class="btn dark small">view all work</a>
         <a data-display="<%= @document.hasExternalLink %>" href="<%= @document.externalLink %>" target="_blank" class="btn dark small"><%= @document.externalLinkTitle %> <i class="icon-arrow-right right-icc"></i></a>
     </aside>
 </header>

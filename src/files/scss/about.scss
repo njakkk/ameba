@@ -1,9 +1,10 @@
 @import 'variables';
 
 .about{
-  padding: 0 $spacing;
+  padding: 0 $spacing*2;
   position: relative;
   z-index: 1;
+  background: $light-grey;
 
 
   h1{

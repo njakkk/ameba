@@ -5,24 +5,63 @@
 }
 
 .project-box {
-  float: left;
-  width: 25%;
-  border: $border-default;
+  width: $vw/4;
+  border-left: $border-default;
   padding: 8vh $spacing;
   position: relative;
   overflow: hidden;
-  margin: -1px 0 0 -1px;
-  min-height: 50vh;
+  margin: 0;
+  margin-left: -5px;
+  min-height: 100vh;
+  display: inline-flex;
+  @include basicTransition(0.4s);
+  &:first-child{
+    border-left: none;
+  }
 
-  &:after{
-    content:'';
+  header{
     position: absolute;
-    bottom: 0;
-    left: $spacing + 0.5vmin;
-    width: 1px;
-    height: 5%;
-    background: $dark;
+    top: $header-size*2.5;
+    overflow: hidden;
+
+    &:after{
+      content:'';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: $spacing;
+      height: 1px;
+      background: $dark;
+      @include basicTransition(0.4s);
+    }
+    p{
+      margin-bottom: $spacing/2;
+      font-size: 12px;
+      opacity: 0;
+      font-weight: 400;
+      width: 70%;
+      line-height: 1.4em;
+      @include translate(0, 50px);
+      @include basicTransition(0.4s);
+    }
+  }
+
+  .project-num{
+    font-family: $strong;
+    opacity: 0.1;
+    font-size: 5vmin;
     @include basicTransition(0.4s);
+    transform-origin: 0 0;
+  }
+
+  h1{
+    font-size: 150%;
+    font-family: $thin;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    opacity: 0.1;
+    margin-top: $spacing;
+    margin-bottom: $spacing/2;
   }
 
   .project-img{
@@ -50,32 +89,8 @@
         border-radius: 100%;
       }
     }
-
-    .static-mask{
-      position: absolute;
-      top: -1px;
-      left: -1px;
-      width: calc(100% + 2px);
-      height: calc(100% + 2px);
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      z-index: 1;
-      pointer-events:none;
-    }
   }
 
-  h1{
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-    @include rotate(-90deg);
-    transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    position: absolute;
-    bottom: 0;
-    @include basicTransition(0.4s);
-  }
 
   .project-color{
     position: absolute;
@@ -88,20 +103,6 @@
     pointer-events:none;
     @include scale(0.8,0.8);
     @include basicTransition(0.6s);
-
-    &:after{
-      content:'';
-      background-color: $lightest-grey;
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      border-radius: 100%;
-      pointer-events:none;
-      @include scale(0.9,0.9);
-    }
   }
 
   .project-box-desc{
@@ -129,22 +130,33 @@
 }
 
 .project-box:hover {
+  header{
+    &:after{
+      width: 100%;
+    }
+    p{
+      opacity: 0.6;
+      @include noTransform;
+    }
+  }
+
+  .project-num{
+    opacity: 1;
+    @include scale(1.5,1.5);
+  }
+
+  h1{
+    opacity: 1;
+  }
 
   .project-img .bg{
     filter: none;
     -webkit-filter: none;
-    @include scale(0.75,0.75);
+    @include scale(1.5,1.5);
   }
 
-  &:after{
-    height: 15%;
-  }
-
-  h1{
-    bottom: 10%;
-  }
   .project-color{
-    @include scale(1,1);
+    @include scale(1.7,1.7);
   }
 }
 
@@ -153,7 +165,7 @@
 
 @media screen and (max-width: 1030px){
   .project-box {
-    width: 33.3%;
+    width: $vw/3;
 
     .project-img{
       width: 22vw;
@@ -173,7 +185,7 @@
 
 @media screen and (max-width: 770px){
   .project-box {
-    width: 50%;
+    width: $vw/2;
 
     .project-img{
       width: 30vw;

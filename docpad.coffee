@@ -13,7 +13,7 @@ docpadConfig = {
 
     projects: ->
       @getCollection("html").findAllLive({relativeOutDirPath: 'projects', isProject: true, isPublished: true}, [
-        year: -1
+        order: 1
       ])
 
   templateData:

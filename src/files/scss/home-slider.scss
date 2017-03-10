@@ -5,18 +5,16 @@
 
 .lines{
   position: absolute;
-  width: auto;
-  height:  100%;
-  left: 0;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/lines.svg');
+  background-size: cover;
+  pointer-events: none;
   z-index: 3;
-  pointer-events:none;
-}
 
-body.active .lines{
-  display: none;
 }
-
 .magnifier{
   background: url("../images/ameba-bulb.svg");
   background-repeat: no-repeat;
@@ -30,28 +28,6 @@ body.active .lines{
   opacity: 0.25;
 }
 
-.static-lines{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events:none;
-  line{
-    position: fixed;
-    top: 0;
-    width: 1px;
-    background: $dark;
-    height: 100%;
-    opacity: 0.08;
-  }
-  line:nth-child(1){ left: $vw/5;}
-  line:nth-child(2){ left: $vw/5*2}
-  line:nth-child(3){ left: $vw/5*3;}
-  line:nth-child(4){ left: $vw/5*4}
-  line:nth-child(5){ left: $vw/5*5}
-}
-
 /****home slider****/
 
 #ameba-home canvas{
@@ -60,7 +36,7 @@ body.active .lines{
 }
 
 .video-background {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
@@ -74,22 +50,8 @@ body.active .lines{
   transform: translateX(-50%) translateY(-50%);
 }
 
-.home-slider{
-  top: 0;
-  left: 0;
-  width: 100%;
-  height:  100%;
-  overflow: hidden;
-
-//  &:before{
-//    @include noiz;
-//  }
-}
-
 .home-slide{
   position: relative;
-  width:  100%;
-  height:  $vh;
   background-color: $lightest-grey;
 
   .home-background-holder{
@@ -124,7 +86,7 @@ body.active .lines{
 
   .slide-content{
     @include clearfix;
-    color: $dark;
+    color: $light-grey;
     text-align: left;
     position: absolute;
     top: 50%;
@@ -150,50 +112,16 @@ body.active .lines{
       }
     }
 
-    .slide-num{
-      position: absolute;
-      top: 0;
-      right: 105%;
-      text-align: right;
-      white-space: nowrap;
-      font-size: 2.5vmin;
-      overflow: hidden;
-      span{
-        display: inline-block;
-        margin: 0 -1px;
-        @include basicTransition(.7s);
-      }
-
-      span:first-child{
-        font-family: $strong;
-        font-size: 15vmin;
-        line-height: 0.55em;
-        @include translate(0, -200px);
-      }
-      span:nth-child(2){
-        @include translate(0, 200px);
-        transition-delay:0.2s;
-      }
-      span:nth-child(3){
-        @include translate(0, 200px);
-      }
-    }
-
     h1{
-      font-family: $thin;
       font-size: 9.5vmin;
       line-height: 0.7em;
-      letter-spacing: -0.02em;
       max-width: 400px;
       pointer-events: none;
+      font-family: $strong;
+      letter-spacing: -0.01em;
       span{
         white-space: normal;
       }
-    }
-    h1.strong{
-      font-family: $strong;
-      letter-spacing: -0.01em;
-      color: $main;
     }
     h2{
       clear: right;
@@ -226,9 +154,9 @@ body.active .lines{
     position: absolute;
     height: 5px;
     width: 100%;
-    background-color: $dark;
+    background-color: $light-grey;
     @include basicTransition(0.5s);
-    @include scale(0,1);
+    @include scale(0.2,1);
   }
 
   .border-right,
@@ -236,9 +164,9 @@ body.active .lines{
     position: absolute;
     width: 5px;
     height:100% ;
-    background-color: $dark;
+    background-color: $light-grey;
     @include basicTransition(0.5s);
-    @include scale(1,0);
+    @include scale(1,0.2);
   }
 
   .border-top{
