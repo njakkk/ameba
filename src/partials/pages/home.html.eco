@@ -1,0 +1,16 @@
+<section class="home-slide pattern" page-section data-scroll-target="home">
+    <div class="lines"></div>
+    <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
+        <source src="<%= @site.url %>/images/ameba.mp4" type="video/mp4">
+    </video>
+    <div class="slide-content" data-href="work.html" data-hash="work">
+        <span class="border-top"></span><span class="border-right"></span><span class="border-bottom"></span><span class="border-left"></span>
+        <h1>
+            <span class="letters">The core of simplicity</span>
+        </h1>
+        <aside class="slide-content-txt">
+            <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions she also likes to design and develop.</h2>
+            <a href="#" class="btn" tabindex="1" data-scroll-trigger="work" >view work <i class="icon-arrow-right right-icc"></i></a>
+        </aside>
+    </div>
+</section>

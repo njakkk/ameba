@@ -2,10 +2,26 @@
 
 .about{
   padding: 0 $spacing*2;
-  position: relative;
-  z-index: 1;
-  background: $light-grey;
+  height: $vh;
+  display: table;
+  table-layout: fixed;
 
+  [class*="column"]{
+    padding: $spacing*5 $spacing*2 $spacing*5 0;
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+    &:first-child{
+      padding-left: $spacing*2;
+    }
+  }
+
+  .column-6 {
+    width: 300px;
+  }
+  .column-3 {
+    width: 600px;
+  }
 
   h1{
    font-family: $strong;
@@ -20,10 +36,10 @@
     line-height: 0.8em;
   }
   p{
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 0.03em;
     line-height: 1.5em;
-    margin-bottom: $spacing;
+    margin-bottom: 0;
     font-weight: 400;
   }
 }
@@ -35,6 +51,9 @@
 .exp{
   padding: $spacing 0;
   border-bottom: $dark-border;
+  &:first-child{
+    padding-top: 0;
+  }
   h3{
     font-size: 17px;
     font-weight: 600;

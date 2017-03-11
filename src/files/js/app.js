@@ -203,15 +203,21 @@ $.fn.changeOnScroll = function () {
     });
 };
 
-function setProjectsWidth(){
-    var el = $('.all-projects');
-    var child = el.children();
+function setElementWidth(){
+    var el = $('[set-width]');
 
-    setTimeout(function(){
-        el.css({
-            width: (child.width() - 5) * (child.length + 1)
+    el.each(function(){
+        var self = $(this);
+        var child = self.children();
+        var width = 0;
+
+        child.each(function() {
+            width += $(this).outerWidth( true );
         });
-    }, 100);
+
+       self.css('width', width);
+    });
+
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -236,7 +242,7 @@ $(document).ready( function() {
     });
     $('[canvas]').stop().animate({scrollLeft: $('[data-scroll-target="home"]').offset().left}, 0);
 
-    setProjectsWidth();
+    setElementWidth();
     pageAction();
     showLetters();
     scrollTrigger();
@@ -255,7 +261,7 @@ $(document).ready( function() {
 $(window).on( 'resize', function() {
 //    magnifier();
     scrollShow();
-    setProjectsWidth();
+    setElementWidth();
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

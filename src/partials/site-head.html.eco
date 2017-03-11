@@ -53,7 +53,6 @@
 </head>
 
 <body class="<%= @document.bodyClass %>">
-<!--<img src="<%= @site.url %>/images/lines.svg" alt="" class="lines"/>-->
 <div class="site-wrapper">
     <%- @partial('main-menu')%>
     <div site-loader><img src="<%= @site.url %>/images/ameba-loader.svg" alt=""/></div>

@@ -1,8 +1,8 @@
 //SETUP
 
-$main-unit:       100%; //Defines fill width of the grid, needs to have same mesurement unit as "$margin-unit"
-$margin-unit:     $spacing; //Defines margin of grid column, needs to have same mesurement unit as "$main-unit"
-$box-pdd:         20px; //Defines padding of column with class .column-padding
+$main-unit:       100vw; //Defines fill width of the grid, needs to have same mesurement unit as "$margin-unit"
+$margin-unit:     $spacing*2; //Defines margin of grid column, needs to have same mesurement unit as "$main-unit"
+$box-pdd:         40px; //Defines padding of column with class .column-padding
 
 //DEFINITIONS________________________________________________________________
 
