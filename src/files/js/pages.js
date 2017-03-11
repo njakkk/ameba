@@ -121,9 +121,9 @@ function pageAction() {
             var pageName = location.hash.split('#')[1];
             var contentData = location.href.split('#')[0] + '/projects/' + pageName + '.html';
 
-            if( pageName === 'work' || pageName === 'about'){
-                var contentData = location.href.split('#')[0] + '/' + pageName + '.html';
-            }
+//            if( pageName === 'work' || pageName === 'about'){
+//                var contentData = location.href.split('#')[0] + '/' + pageName + '.html';
+//            }
            showPage(contentData, pageName);
         }
     }
@@ -160,12 +160,15 @@ function pageAction() {
         }
     });
 
-//    $(window).on("hashchange",function (){
-//        var url = location.hash;
-//        if(url !== ''){
-//            hidePage();
-//        }
-//    });
+    $(window).on("hashchange",function (){
+        var url = location.hash;
+        if(url == ''){
+            hidePage();
+        }
+        else{
+          gotoUrl();
+        }
+    });
 
 }
 

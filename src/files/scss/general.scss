@@ -84,7 +84,8 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
 
   &.active{
     pointer-events:none;
-    @include translate(-30%,0);
+    animation: moveCanvas 1s both;
+//    @include translate(-30%,0);
 
   }
 }

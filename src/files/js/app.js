@@ -149,6 +149,7 @@ function scrollTrigger(speed, easing, scrollTrigger) {
         var $goTo = $(document).find('[data-scroll-target= ' + $data + ']').offset().left;
         var scrollPosition = $('[canvas]').scrollLeft();
         $('[canvas]').stop().animate({scrollLeft: scrollPosition + $goTo}, speed, easing);
+        $('.scroll-h').mCustomScrollbar("scrollTo","left");
     });
 
     $('[page-section]:visible').bind('mousewheel', function (e, delta) {
@@ -161,6 +162,10 @@ function scrollTrigger(speed, easing, scrollTrigger) {
             }
             else {
                 $('[canvas]').stop().animate({scrollLeft: scrollPosition + $nextSection.offset().left}, speed, easing);
+                $('[page-section]').removeClass('current');
+                $nextSection.addClass('current');
+                $('.scroll-h').mCustomScrollbar("scrollTo","left");
+
 
             }
         } else {
@@ -170,7 +175,10 @@ function scrollTrigger(speed, easing, scrollTrigger) {
             }
             else{
                 $('[canvas]').stop().animate({scrollLeft: scrollPosition + $prevSection.offset().left}, speed, easing);
-        }
+                $('[page-section]').removeClass('current');
+                $prevSection.addClass('current');
+                $('.scroll-h').mCustomScrollbar("scrollTo","left");
+            }
         e.preventDefault()
         }
     });
@@ -241,6 +249,7 @@ $(document).ready( function() {
         axis: "x"
     });
     $('[canvas]').stop().animate({scrollLeft: $('[data-scroll-target="home"]').offset().left}, 0);
+    $('[data-scroll-target="home"]').addClass('current');
 
     setElementWidth();
     pageAction();
