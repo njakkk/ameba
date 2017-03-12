@@ -4042,7 +4042,7 @@ body.active .logo-holder.page-nav {
     border-left: none; }
   .project-box header {
     position: absolute;
-    top: 7.5vh;
+    top: 4.4vmin;
     overflow: hidden; }
     .project-box header:after {
       content: '';

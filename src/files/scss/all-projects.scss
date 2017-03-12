@@ -21,7 +21,7 @@
 
   header{
     position: absolute;
-    top: $header-size*2.5;
+    top: $spacing*2;
     overflow: hidden;
 
     &:after{
