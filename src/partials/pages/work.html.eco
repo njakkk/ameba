@@ -25,5 +25,6 @@
             <a data-href="<%= @site.url %><%= page.url %>.html" data-hash="<%= page.name %>" class="full-action"></a>
         </article>
         <% end %>
+        <div class="scroll-to-start" scroll-back><i class="icon-arrow-left"></i></div>
     </section>
 </section>

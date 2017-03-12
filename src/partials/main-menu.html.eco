@@ -1,12 +1,18 @@
-<header class="header">
+<header class="header" data-drop="main-menu">
+
     <div class="fl logo-holder home-nav" data-scroll-trigger="home">
-        <div class="close icon-arrow-left"></div>
-        <div class="logo"><%- @partial('logo')%></div>
+        <div class="logo">
+            <img src="<%= @site.url %>/images/logo.svg" alt=""/>
+            <img src="<%= @site.url %>/images/logo-white.svg" alt=""/>
+        </div>
     </div>
 
     <div class="fl logo-holder page-nav" page-close>
-        <div class="close icon-arrow-left"></div>
-        <div class="logo"><%- @partial('logo')%></div>
+        <!--<div class="close icon-arrow-left" page-close></div>-->
+        <div class="logo">
+            <img src="<%= @site.url %>/images/logo.svg" alt=""/>
+            <img src="<%= @site.url %>/images/logo-white.svg" alt=""/>
+        </div>
     </div>
 
     <nav class="main-menu" data-drop="main-menu">

@@ -44,7 +44,11 @@ $ui-el-size: 45px;
 $btn-size: 48px;
 $btn-size-small: 38px;
 $header-size: 3vh;
-$close-size: 30px;
+$nav-size: 50px;
+$wrap-width: calc(#{$vw} - #{$nav-size});
+$close-size: $nav-size;
+
+
 
 //SCREEN SIZES_______________________________________________
 

@@ -1,40 +1,30 @@
 @import 'variables';
 
-body.dark-logo{
-  .logo{
-    svg{
-      fill: $dark;
-    }
-  }
-  .hamburger{
-    span, span:before, span:after{
-      background: $dark;
-    }
-  }
-  .close{
-    color: $dark;
-  }
-}
-
-
 /**** lines****/
 .header{
   position: fixed;
   top: 0;
   left: 0;
   z-index: 20;
-  padding: $spacing;
-  width: 100%;
+  width: $nav-size;
+  height: $vh;
   @include basicTransition(0.5s);
+  border-right: $dark-border;
+}
+
+.header.active{
+  background: darken($dark,0.5);
+  .logo img{
+    &:nth-child(1){display: none;}
+    &:nth-child(2){display: block;}
+  }
 }
 
 body.active{
   .header.filled{
     background-color: $light-grey;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.08), 0 0 25px rgba(0, 0, 0, 0.1);
-    .logo svg{
-      fill: $dark;
-    }
+
     .hamburger{
       span, span:before, span:after{
         background: $dark;
@@ -54,59 +44,60 @@ body.active{
 }
 
 .logo{
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 $spacing/2;
-  svg{
-    width: 10vmin;
-    max-width: 80px;
-    min-width: 65px;
-    fill: $dark;
-    height: 25px;
+  display: block;
+  text-align: center;
+  img{
+    width: $nav-size;
+    display: block;
+    height: auto;
+  }
+  img:nth-child(2){
+    display: none;
   }
 }
 
 .hamburger{
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  margin-top: -30px;
   width: 25px;
-  height: 30px;
-  position: relative;
+  height: 20px;
   float: right;
   filter: drop-shadow(0px 1px 0px $light-grey);
   -webkit-filter: drop-shadow(0px 1px 0px $light-grey);
   span{
     position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 1px;
-    margin-top: -1px;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
     background: $dark;
 
     &:before, &:after{
       content:'';
       position: absolute;
-      width: 100%;
-      height: 1px;
+      width: 1px;
+      height: 100%;
       background: $dark;
-      @include basicTransition(0.3s);
+      @include basicTransition(0.2s);
     }
 
     &:before{
-      top: -8px;
+      left: -6px;
     }
     &:after{
-      bottom: -8px;
+      right: -6px;
     }
   }
 }
 .hamburger:hover{
   span{
     &:before{
-      top: -6px;
+      left: -2px;
     }
     &:after{
-      bottom: -6px;
+      right: -2px;
     }
   }
 
@@ -126,7 +117,7 @@ body.active{
     background: transparent !important;
 
     &:before, &:after{
-      top: 50%;
+      left: 50%;
       background: $light-grey !important;
     }
 
@@ -145,7 +136,7 @@ body.active{
 .main-menu{
   position: absolute;
   top: 0;
-  right: 0;
+  left: $nav-size;
   width: 50vw;
   height: $vh;
   background: $dark;
@@ -153,7 +144,7 @@ body.active{
   color: $light-grey;
   z-index: 2;
 
-  transform-origin: 100% 0;
+  transform-origin: 0 0;
   @include scale(0, 1);
   visibility: hidden;
   transition: all 800ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -170,7 +161,7 @@ body.active{
     border-right: $dark-border;
     border-bottom: $dark-border;
     opacity: 0;
-    @include translate(-300px, 0);
+    @include translate(300px, 0);
 
     &:nth-child(1),
     &:nth-child(2){
@@ -262,13 +253,14 @@ body.active{
   @include basicTransition(.5s);
   display: inline-block;
   vertical-align: middle;
-  height: $close-size;
+  width: $close-size;
+  height: 0;
   line-height: $close-size;
-  width: 0;
   cursor: pointer;
   font-size: 31px;
   color: $dark;
   overflow: hidden;
+  text-align: center;
   span{
     display: inline-block;
     width: 0;
@@ -284,12 +276,11 @@ body.active{
   }
   &.active{
     opacity: 1;
-    width: $close-size;
+    height: $close-size;
   }
   &:hover{
     span{
-      width: 40px;
-      margin-left: 10px;
+      animation: leftIconAnimation 0.5s;
     }
   }
 
@@ -297,12 +288,15 @@ body.active{
 
 .logo-holder{
   cursor: pointer;
+  position: relative;
+  z-index: 4;
+  margin-top: $spacing;
 }
 
 .logo-holder.active{
   .close{
     opacity: 1;
-    width: $close-size;
+    height: $close-size;
   }
 }
 .logo-holder:hover{

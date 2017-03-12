@@ -94,6 +94,9 @@
                         <p>Angular.js [ baginner ]</p>
                     </div>
                 </div>
+
+                <div class="scroll-to-start" scroll-back><i class="icon-arrow-left"></i></div>
+
             </div>
     </section>
 </section>

@@ -119,6 +119,28 @@ tiny-space{
   float: right;
 }
 
+.scroll-to-start{
+  position: relative;
+  float: left;
+  width: 80px;
+  height: $vh;
+  background: $light-grey;
+  border-left: $dark-border;
+  cursor: pointer;
+  i{
+    position: relative;
+    margin-top: $spacing*2;
+    display: block;
+    text-align: center;
+    font-size: 29px;
+  }
+  &:hover{
+    i{
+      animation: leftIconAnimation 0.5s
+    }
+  }
+}
+
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 
 

@@ -1,16 +1,16 @@
 @import 'variables';
 
 .about{
-  padding: 0 $spacing*2;
-  height: $vh;
-  display: table;
-  table-layout: fixed;
+//  height: $vh;
+  display: block;
 
   [class*="column"]{
     padding: $spacing*5 $spacing*2 $spacing*5 0;
-    display: table-cell;
-    float: none;
+    display: block;
+    float: left;
     vertical-align: top;
+    height: $vh;
+    margin-bottom: 0;
     &:first-child{
       padding-left: $spacing*2;
     }
