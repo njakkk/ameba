@@ -1,4 +1,5 @@
 ---
+layout: "project"
 order: 5
 isFeatured: true
 isProject: true
@@ -17,39 +18,49 @@ brand: "true"
 ux: "true"
 ---
 
-<section data-id="<%= @document.name %>" class="wrapper">
-    <%- @partial('project-header')%>
-    <span class="project-line"></span>
-    <section class="project-content show-up right">
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.jpg" alt="" class="full"/>
+</article>
 
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.jpg" alt="" class="full"/>
+<div class="project-tip"><span>Web app homepage</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.png" alt="" class="scroll-show"/>
+</article>
 
-        <div class="project-tip left"><span>Web app homepage</span></div>
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.png" alt="" class="scroll-show"/>
+<div class="project-tip"><span>The player</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-002.png" alt="" class=" scroll-show drop-shadow"/>
+</article>
 
-        <div class="project-tip right"><span>The player</span></div>
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-002.png" alt="" class=" scroll-show drop-shadow"/>
+<div class="project-tip"><span>Android app homepage & player</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.png" alt="" class="scroll-show"/>
+</article>
 
-        <div class="project-tip right"><span>Android app homepage & player</span></div>
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.png" alt="" class="scroll-show"/>
+<div class="project-tip"><span>Recommended mixes & playlists</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.png" alt="" class="scroll-show"/>
+</article>
+<space></space>
 
-        <div class="project-tip left"><span>Recommended mixes & playlists</span></div>
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.png" alt="" class="scroll-show"/>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.jpg" alt="" class="full"/>
+</article>
 
-        <space></space>
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.jpg" alt="" class="full"/>
+<div class="project-tip"><span>Playlists page</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-04.png" alt="" class="scroll-show"/>
+</article>
 
-        <div class="project-tip right"><span>Playlists page</span></div>
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-04.png" alt="" class="scroll-show"/>
+<div class="project-tip"><span>Selected Playlist page</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-05.png" alt="" class="scroll-show"/>
+</article>
 
-        <div class="project-tip left"><span>Selected Playlist page</span></div>
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-05.png" alt="" class="scroll-show"/>
-
-        <div class="project-tip right"><span>Android app navigation</span></div>
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-06.png" alt="" class="scroll-show"/>
-        <%- @partial('project-footer')%>
-    </section>
-</section>
+<div class="project-tip"><span>Android app navigation</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-06.png" alt="" class="scroll-show"/>
+</article>
 
 
 

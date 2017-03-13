@@ -5,10 +5,9 @@
                     <h1 data-color="<%= @document.color %>">Ameba's name is Marija, she is a Designer & Developer.</h1>
                     <p>I design and build websites to communicate a feeling of comfort that shall invite the user to come back. For me, it's not only the Design, but also the frontend development including HTML & CSS, JS.</p>
                     <p>The development is really important to me, because while developing design I made, I constantly improve my skills and stay up-to-date with the technology.</p>
-
-                    <tiny-space></tiny-space>
+                    <br/>
+                    <br/>
                     <a class="btn dark" href="mailto:matovic.marija@gmail.com">Say hello</a>
-                    <small-space></small-space>
                 </div>
 
                 <div class="column-6"></div>

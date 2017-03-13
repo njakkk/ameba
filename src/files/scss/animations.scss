@@ -80,6 +80,9 @@
   0%,100% {
     transform: translate(0, 0);
   }
+  30%{
+    transform: translate(200px, 0);
+  }
 
   80% {
     transform: translate(-50%, 0);
@@ -88,3 +91,28 @@
 }
 
 //______________________________________________________________________________________
+
+
+
+@keyframes openMenuHeader {
+  0%, 100%{
+  left: 0;
+  }
+
+  70% {
+    left: -$nav-size;
+  }
+}
+
+@keyframes openMenuWrapper {
+  0%, 100%{
+    width: $wrap-width;
+    margin-left: $nav-size;
+  }
+
+  70% {
+    width: $vw;
+    margin-left: 0;
+  }
+}
+

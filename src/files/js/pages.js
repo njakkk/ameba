@@ -175,7 +175,6 @@ function pageAction() {
 //Call after page loads
 
 function pageLoaded() {
-
     $('.vert-center').verticalCenter();
     $('.bg').bgImage();
     floatingAmeba();
@@ -183,6 +182,9 @@ function pageLoaded() {
     attrColor();
     scrollShow();
     $('.header').changeOnScroll();
+    setElementWidth();
+    setScrollH();
+    scrollBack();
 }
 
 

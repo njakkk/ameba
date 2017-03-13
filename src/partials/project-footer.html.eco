@@ -1,4 +1,4 @@
-<footer class="project-footer">
+<footer class="project-footer scroll-show">
     <aside class="projects-nav">
         <% for document,documentIndex in @getCollection('projects').toJSON(): %>
 

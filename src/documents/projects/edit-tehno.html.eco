@@ -1,4 +1,5 @@
 ---
+layout: "project"
 order: 7
 isFeatured: false
 isProject: true
@@ -17,34 +18,38 @@ color: "#ff3c3c"
 graphic: "true"
 ---
 
-<section data-id="<%= @document.name %>" class="wrapper">
-    <span class="project-line"></span>
-    <%- @partial('project-header')%>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.jpg" alt="" class="full"/>
+</article>
+<space></space>
 
-    <section class="project-content show-up right">
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.jpg" alt="" class="scroll-show drop-shadow"/>
+</article>
+<space></space>
 
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.jpg" alt="" class="full"/>
-        <space></space>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.jpg" alt="" class="scroll-show drop-shadow"/>
+</article>
+<space></space>
 
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.jpg" alt="" class="scroll-show drop-shadow"/>
-        <space></space>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-04.jpg" alt="" class="scroll-show drop-shadow full"/>
+</article>
+<space></space>
 
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.jpg" alt="" class="scroll-show drop-shadow"/>
-        <space></space>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-05.jpg" alt="" class="scroll-show drop-shadow"/>
+</article>
+<space></space>
 
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-04.jpg" alt="" class="scroll-show drop-shadow full"/>
-        <space></space>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-06.jpg" alt="" class="scroll-show drop-shadow full"/>
+</article>
+<space></space>
 
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-05.jpg" alt="" class="scroll-show drop-shadow"/>
-        <space></space>
-
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-06.jpg" alt="" class="scroll-show drop-shadow full"/>
-        <space></space>
-
-        <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-07.jpg" alt="" class="scroll-show drop-shadow"/>
-        <%- @partial('project-footer')%>
-    </section>
-</section>
-
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-07.jpg" alt="" class="scroll-show drop-shadow"/>
+</article>
 
 

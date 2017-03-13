@@ -67,16 +67,16 @@ b{
   z-index: 0;
 }
 space{
-  display: block;
-  height: 20vh;
+  min-width: 20vh;
+  height: $vh;
 }
 small-space{
-  display: block;
-  height: 10vh;
+  min-width: 10vh;
+  height: $vh;
 }
 tiny-space{
-  display: block;
-  height: 5vh;
+  min-width: 5vh;
+  height: $vh;
 }
 
 .textual-content{

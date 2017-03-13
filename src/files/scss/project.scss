@@ -22,14 +22,15 @@
 
 .project-header{
   position: absolute;
-  width: 25%;
+  width: $vw/5.5;
   height: 100%;
-  left: 0;
+  right: 80px;
   top: 0;
   background: $lightest-grey;
   color: $dark;
   z-index: 2;
   border-right: solid 1px rgba(0,0,0,0.07);
+  border-left: solid 1px rgba(0,0,0,0.07);
 
   > article{
     position: absolute;
@@ -132,8 +133,8 @@
 ///////////////////////////////////////////////////////////////////
 
 .project-footer{
-//  padding-top: $spacing*2;
   text-align: center;
+  min-width: 400px;
 }
 .projects-nav{
     padding: $spacing;
@@ -143,41 +144,45 @@
 .project-content{
   position: relative;
   top: 0;
-  margin-left: 25%;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+//  margin-left: $vw/4;
+  height: $vh;
+  overflow: hidden;
+  display: table;
+  table-layout: auto;
   >*{
     position: relative;
     z-index: 1;
+    display: table-cell;
+    vertical-align: middle;
   }
 
   img {
-    max-width: 1200px;
-    width: 80%;
-    margin: auto;
-    display: block;
+    max-height: 80vh;
+    width: auto;
+
   }
 
   img.full {
-    max-width: inherit;
-    width: 100%;
+    height: $vh;
+    max-height: $vh;
   }
 
   .more-projects{
     text-align: center;
     padding-bottom: $ui-el-size;
   }
+  .scroll-to-start{
+    margin-left: $vw/5.5;
+  }
 
 }
 
 .project-line{
   position: absolute;
-  top: 0;
-  left: 62.4%;
-  margin-left: -1px;
-  width: 1px;
-  height: 100%;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
   background: rgba(0,0,0,0.1);
   z-index: 0;
 }
@@ -188,66 +193,27 @@
 
 .project-tip{
   @include clearfix;
-  padding: 10vh 0;
+  padding: 10vh $spacing;
   span{
-    width: 50%;
     position: relative;
     line-height: 1em;
     font-family: $thin;
     font-size: 16px;
     letter-spacing: 0.05em;
     font-weight: 600;
+    display: block;
+    padding: 0 $spacing;
+    background: $lightest-grey;
+    white-space: nowrap;
 
     &:before{
       content:'';
       position: absolute;
-      top: 50%;
+      bottom: -10px;
+      right: $spacing;
       height: 1px;
-      width: 40%;
-      background: lighten($dark,50);
-    }
-
-    &:after{
-      content:'';
-      position: absolute;
-      top: 50%;
-      margin-top: -3px;
-      height: 6px;
-      width: 6px;
-      border-radius:100%;
+      width: 40px;
       background: lighten($dark,30);
-    }
-  }
-}
-.project-tip.left{
-  span{
-    float: left;
-    text-align: right;
-    padding-right: 21%;
-    padding-left: $spacing;
-
-    &:before{
-      right: 0;
-    }
-    &:after{
-      right: -3px;
-    }
-
-  }
-}
-
-.project-tip.right{
-  span{
-    float: right;
-    text-align: left;
-    padding-left: 21%;
-    padding-right: $spacing;
-
-    &:before{
-      left: 0;
-    }
-    &:after{
-      left: -3px;
     }
   }
 }
