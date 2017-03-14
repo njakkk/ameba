@@ -88,13 +88,14 @@
   .slide-content{
     @include clearfix;
     color: $light-grey;
-    text-align: left;
+    text-align: center;
     position: absolute;
     top: 50%;
-    left:  $vw/5;
+    left:  50%;
+    @include translate(-50%, 0);
     width: 70vw;
     max-width: $vw/5*2;
-    padding: $spacing;
+    padding: $spacing*2 $spacing;
     border: solid 1px rgba(0,0,0,0.1);
     z-index: 2;
     &.dark-text{
@@ -115,9 +116,8 @@
     }
 
     h1{
-      font-size: 9.5vmin;
+      font-size: 11vmin;
       line-height: 0.7em;
-      max-width: 400px;
       pointer-events: none;
       font-family: $strong;
       letter-spacing: -0.01em;
@@ -130,12 +130,12 @@
       font-size: 17px;
       line-height: 1.2em;
       opacity: 0.8;
-      width: $vw/6.7;
+      width: 70%;
+      margin: auto;
       pointer-events: none;
     }
     .btn{
       margin-top: $spacing;
-      float: right;
     }
   }
   letter {
