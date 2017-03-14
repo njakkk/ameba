@@ -13,20 +13,21 @@
   background-size: cover;
   pointer-events: none;
   z-index: 3;
+}
 
-}
-.magnifier{
-  background: url("../images/ameba-bulb.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: fixed;
-  z-index: 10;
-  width: 45vh;
-  height: 45vh;
-  mix-blend-mode: overlay;
+.video-mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/video-mask.svg');
+  background-size: cover;
   pointer-events: none;
-  opacity: 0.25;
+  z-index: 1;
 }
+
+
 
 /****home slider****/
 
@@ -95,6 +96,7 @@
     max-width: $vw/5*2;
     padding: $spacing;
     border: solid 1px rgba(0,0,0,0.1);
+    z-index: 2;
     &.dark-text{
       color: $dark;
     }
