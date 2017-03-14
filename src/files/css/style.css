@@ -1915,6 +1915,7 @@ h4 {
     animation: moveCanvas 1200ms both; }
 
 [page] {
+  z-index: 5;
   position: absolute;
   left: 0;
   top: 0;
