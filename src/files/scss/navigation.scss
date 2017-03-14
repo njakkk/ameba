@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 2;
   width: $nav-size;
   height: $vh;
   @include basicTransition(0.5s);

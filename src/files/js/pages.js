@@ -1,6 +1,5 @@
 
-function pageAction() {
-    var body, trigger,page, canvas, content, id, pageLoader, close, activeClass, otherTrigger, otherDrop, slider, ajaxError, ajaxErrorBtn, header;
+function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, activeClass, otherTrigger, otherDrop, slider, ajaxError, ajaxErrorBtn, loaderTime) {
 
     body = $('body');
     trigger = $('[data-href]');
@@ -16,13 +15,12 @@ function pageAction() {
     slider = $('.home-slider');
     ajaxError = $('[ajax-error]');
     ajaxErrorBtn = $('[ajax-error-btn]');
-    header = $('.header');
+    loaderTime = 300;
 
 
     function beforeShowPage(){
         $('#bg-video').get(0).pause();
-        pageLoader.fadeIn(500);
-        header.fadeOut(500);
+        pageLoader.fadeIn(loaderTime);
 
         $([canvas, page]).each(function () {
             $(this).addClass(activeClass);
@@ -35,8 +33,7 @@ function pageAction() {
 
     function showPageCanvas() {
         page.scrollTop(0);
-        pageLoader.fadeOut(500);
-        header.fadeIn(500);
+        pageLoader.fadeOut(loaderTime);
 
         $([canvas, body]).each(function () {
             $(this).addClass(activeClass);
@@ -55,7 +52,7 @@ function pageAction() {
                     $el.addClass(activeClass);
                 }, i * 200);
             });
-        }, 700);
+        }, loaderTime);
 
     }
 
@@ -79,11 +76,11 @@ function pageAction() {
                         pageLoaded();
                         location.hash = pageName;
                     });
-                }, 300);
+                }, loaderTime);
             },
             error: function(){
                 ajaxError.addClass(activeClass);
-                pageLoader.fadeOut(500);
+                pageLoader.fadeOut(loaderTime);
                 ajaxErrorBtn.click(function(e){
                     e.preventDefault();
                     ajaxError.removeClass(activeClass);
@@ -92,27 +89,6 @@ function pageAction() {
 
         });
     }
-
-//Show page on click
-
-     $(document).on("click", trigger, function(e) {
-         var self = $(e.target);
-         var contentData = self.attr("data-href");
-         var pageName = self.attr("data-hash");
-         var url = location.hash.split('#')[1];
-
-         if(url !== pageName){
-           if ( self.is($('[data-href]'))) {
-               body.removeClass();
-               showPage(contentData, pageName);
-             }
-         }
-         else{
-             $([otherTrigger, otherDrop]).each(function () {
-                 $(this).removeClass(activeClass);
-             });
-         }
-     });
 
 //Show page by url
 
@@ -130,14 +106,50 @@ function pageAction() {
 
     gotoUrl();
 
+//Show page on click
+
+    $(document).on("click", trigger, function(e) {
+        var self = $(e.target);
+        var pageName = self.attr("data-hash");
+        var url = location.hash.split('#')[1];
+
+        if(url !== pageName){
+            if ( self.is($('[data-href]'))) {
+                location.hash = pageName;
+                body.removeClass();
+                gotoUrl();
+            }
+        }
+        else{
+            $([otherTrigger, otherDrop]).each(function () {
+                $(this).removeClass(activeClass);
+            });
+        }
+    });
+
 //hide page Canvas and remove page content
 
+//    function hidePage() {
+//        $([page,canvas,close,body, trigger]).each( function(){$(this).removeClass(activeClass);});
+//        body.removeClass();
+//        setTimeout(function (){
+//            content.empty();
+//        }, 900);
+//        window.location.hash = '';
+//        $('#bg-video').get(0).play();
+//
+//    }
+
     function hidePage() {
-        $([page,canvas,close,body, trigger]).each( function(){$(this).removeClass(activeClass);});
-        body.removeClass();
+        content.fadeOut(500);
         setTimeout(function (){
-            content.empty();
-        }, 900);
+            $([page,canvas,close,body, trigger]).each( function(){$(this).removeClass(activeClass);});
+            body.removeClass();
+            setTimeout(function (){
+                content.empty();
+                content.show();
+            }, 900);
+        }, 500);
         window.location.hash = '';
         $('#bg-video').get(0).play();
 
@@ -177,10 +189,8 @@ function pageAction() {
 function pageLoaded() {
     $('.vert-center').verticalCenter();
     $('.bg').bgImage();
-    floatingAmeba();
     attrBgColor();
     attrColor();
-    scrollShow();
     $('.header').changeOnScroll();
     setElementWidth();
     setScrollH();

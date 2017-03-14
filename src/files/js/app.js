@@ -63,21 +63,6 @@ function showLetters(){
     },30);
 }
 
-function floatingAmeba() {
-    var ameba = $("[data-float]"),
-        theContainer = ameba.parents("[data-float-parent]"),
-        maxLeft = theContainer.width() - ameba.width(),
-        maxTop = theContainer.height() - ameba.height(),
-
-        leftPos = Math.floor(Math.random() * maxLeft),
-        topPos = Math.floor(Math.random() * maxTop);
-
-    ameba.animate({
-        "left": leftPos,
-        "top": topPos
-    }, 2500, floatingAmeba);
-}
-
 function attrBgColor(){
     var el = $('[data-bg-color]');
 
@@ -94,20 +79,6 @@ function attrColor(){
         var color = $(this).attr('data-color');
         $(this).css({ 'color': color})
     });
-}
-
-function scrollShow(){
-
-//    if($(window).width() > 1200) {
-//        $('.scroll-show, .project-tip').viewportChecker({
-//            classToAdd: 'active',
-//            offset: 0,
-//            repeat: false,
-//            scrollBox: $('.project-content'),
-//            scrollHorizontal: true
-//        });
-//    }
-
 }
 
 function scrollTrigger(speed, easing, scrollTrigger) {
@@ -207,7 +178,7 @@ function setScrollH(){
     function scrollShowElement(){
         var showEl = $('.scroll-show, .project-tip');
         showEl.each(function(){
-            if ($(this).offset().left < ($(window).width() - $(window).width()/5))
+            if ($(this).offset().left < ($(window).width() - $(window).width()/6))
                 $(this).addClass('active')
         })
     }
@@ -273,7 +244,6 @@ $(document).ready( function() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 $(window).on( 'resize', function() {
-    scrollShow();
     setElementWidth();
 });
 

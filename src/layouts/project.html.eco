@@ -1,5 +1,4 @@
 <section data-id="<%= @document.name %>" class="wrapper">
-    <%- @partial('project-header')%>
     <section class="show-up right scroll-h">
         <span class="project-line"></span>
         <div set-width class="project-content">
@@ -8,4 +7,5 @@
             <div class="scroll-to-start" scroll-back><i class="icon-arrow-left"></i></div>
         </div>
     </section>
+    <%- @partial('project-header')%>
 </section>
