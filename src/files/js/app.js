@@ -96,37 +96,6 @@ function scrollTrigger(speed, easing, scrollTrigger) {
         $('[page-section]').removeClass('current');
         $goTo.addClass('current');
     });
-
-//    $('[page-section]:visible').bind('mousewheel', function (e, delta) {
-//        var scrollPosition = $('[canvas]').scrollLeft();
-//
-//        if (delta < 0) {
-//            var $nextSection = $(this).next('[page-section]');
-//            if ($nextSection.length === 0){
-//                return false
-//            }
-//            else {
-//                $('[canvas]').stop().animate({scrollLeft: scrollPosition + $nextSection.offset().left}, speed, easing);
-//                $('[page-section]').removeClass('current');
-//                $nextSection.addClass('current');
-//                $('.scroll-h').mCustomScrollbar("scrollTo","left");
-//
-//
-//            }
-//        } else {
-//            var $prevSection = $(this).prev('[page-section]');
-//            if ($prevSection.length === 0){
-//                return false
-//            }
-//            else{
-//                $('[canvas]').stop().animate({scrollLeft: scrollPosition + $prevSection.offset().left}, speed, easing);
-//                $('[page-section]').removeClass('current');
-//                $prevSection.addClass('current');
-//                $('.scroll-h').mCustomScrollbar("scrollTo","left");
-//            }
-//        e.preventDefault()
-//        }
-//    });
 }
 
 $.fn.changeOnScroll = function () {
@@ -189,8 +158,8 @@ function setScrollH(){
         scrollInertia: 700,
         axis: "x",
         mouseWheel:{
-            scrollAmount: 300,
-            deltaFactor: 300
+            scrollAmount: 400,
+            deltaFactor: 400
         },
         callbacks:{
             whileScrolling: scrollShowElement

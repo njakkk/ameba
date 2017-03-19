@@ -20,9 +20,8 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
 
     function beforeShowPage(){
         $('#bg-video').get(0).pause();
-        pageLoader.fadeIn(loaderTime);
 
-        $([canvas, page]).each(function () {
+        $([canvas, page, content]).each(function () {
             $(this).addClass(activeClass);
         });
 
@@ -35,13 +34,9 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
         page.scrollTop(0);
         pageLoader.fadeOut(loaderTime);
 
-        $([canvas, body]).each(function () {
+        $([canvas, page, body, close]).each(function () {
             $(this).addClass(activeClass);
         });
-
-        setTimeout(function (){
-            close.addClass(activeClass);
-        }, 1000);
 
         setTimeout(function (){
             content.find('[data-id]').addClass(activeClass);
@@ -73,10 +68,15 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
                     body.addClass(pageClass);
                     content.imagesLoaded(function () {
                         showPageCanvas();
-                        pageLoaded();
+                        pageLoadedFunctions();
                         location.hash = pageName;
                     });
-                }, loaderTime);
+                }, loaderTime*3);
+
+                setTimeout(function () {
+                    content.removeClass(activeClass);
+                }, loaderTime*3);
+
             },
             error: function(){
                 ajaxError.addClass(activeClass);
@@ -97,9 +97,9 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
             var pageName = location.hash.split('#')[1];
             var contentData = location.href.split('#')[0] + '/projects/' + pageName + '.html';
 
-//            if( pageName === 'work' || pageName === 'about'){
-//                var contentData = location.href.split('#')[0] + '/' + pageName + '.html';
-//            }
+            if( pageName === 'work' || pageName === 'about'){
+                var contentData = location.href.split('#')[0] + '/' + pageName + '.html';
+            }
            showPage(contentData, pageName);
         }
     }
@@ -129,21 +129,10 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
 
 //hide page Canvas and remove page content
 
-//    function hidePage() {
-//        $([page,canvas,close,body, trigger]).each( function(){$(this).removeClass(activeClass);});
-//        body.removeClass();
-//        setTimeout(function (){
-//            content.empty();
-//        }, 900);
-//        window.location.hash = '';
-//        $('#bg-video').get(0).play();
-//
-//    }
-
     function hidePage() {
         content.fadeOut(500);
         setTimeout(function (){
-            $([page,canvas,close,body, trigger]).each( function(){$(this).removeClass(activeClass);});
+            $([page,canvas,close,body,trigger]).each( function(){$(this).removeClass(activeClass);});
             body.removeClass();
             setTimeout(function (){
                 content.empty();
@@ -152,7 +141,6 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
         }, 500);
         window.location.hash = '';
         $('#bg-video').get(0).play();
-
     }
 
     $(document).on("click", close, function(e) {
@@ -186,7 +174,7 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
 
 //Call after page loads
 
-function pageLoaded() {
+function pageLoadedFunctions() {
     $('.vert-center').verticalCenter();
     $('.bg').bgImage();
     attrBgColor();

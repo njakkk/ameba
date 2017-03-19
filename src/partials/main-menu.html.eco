@@ -22,12 +22,14 @@
                 <p class="uppercase desc">Branding / Design / Frontend / Digital art</p>
                 <span class="line"></span>
                 <a page-close data-scroll-trigger="work" class="full-action"></a>
+                <!--<a data-href="work.html" data-hash="work" class="full-action"></a>-->
             </li>
             <li>
                 <h1>About.</h1>
                 <p class="uppercase desc">About Marija Matović</p>
                 <span class="line"></span>
                 <a page-close data-scroll-trigger="about" class="full-action"></a>
+                <!--<a data-href="about.html" data-hash="about" class="full-action"></a>-->
             </li>
             <li>
                 <h2>Say hello.</h2>

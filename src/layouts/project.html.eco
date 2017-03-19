@@ -1,5 +1,5 @@
 <section data-id="<%= @document.name %>" class="wrapper">
-    <section class="show-up right scroll-h">
+    <section class="show-up left scroll-h">
         <span class="project-line"></span>
         <div set-width class="project-content">
             <%- @content %>

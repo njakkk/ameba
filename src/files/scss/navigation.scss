@@ -14,14 +14,10 @@
 
 .header.active{
   background: darken($dark,0.5);
-  animation: openMenuHeader 0.4s both;
   .logo img{
     &:nth-child(1){display: none;}
     &:nth-child(2){display: block;}
   }
-}
-.header.active + .site-wrapper{
-  animation: openMenuWrapper 0.4s both;
 }
 
 
@@ -108,12 +104,6 @@ body.active{
 }
 /***color when page opened***/
 
-[data-trigger="main-menu"].active{
-  .logo svg{
-    fill: $light-grey !important;
-  }
-}
-
 .hamburger.active{
   filter: none;
   -webkit-filter: none;
@@ -151,7 +141,7 @@ body.active{
   transform-origin: 0 0;
   @include scale(0, 1);
   visibility: hidden;
-  transition: all 800ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition: all 600ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
   a{
     color: $light-grey;
   }
@@ -219,7 +209,7 @@ body.active{
 }
 
 .main-menu.active{
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
   @include scale(1, 1);
   visibility: visible;
   li{
@@ -227,10 +217,10 @@ body.active{
     @include translate(0, 0);
     transition: opacity .6s ease, transform .6s ease;
   }
-  li:nth-child(1){ transition-delay: 600ms}
-  li:nth-child(2){ transition-delay: 800ms}
-  li:nth-child(3){ transition-delay: 1000ms}
-  li:nth-child(4){ transition-delay: 1200ms}
+  li:nth-child(1){ transition-delay: 400ms}
+  li:nth-child(2){ transition-delay: 600ms}
+  li:nth-child(3){ transition-delay: 800ms}
+  li:nth-child(4){ transition-delay: 1000ms}
 }
 
 .main-menu-overlay{
@@ -302,6 +292,7 @@ body.active{
   .close{
     opacity: 1;
     height: $close-size;
+    color: $light-grey;
   }
 }
 .logo-holder:hover{
@@ -310,7 +301,9 @@ body.active{
   }
 }
 
-.logo-holder.page-nav{ display: none}
+.logo-holder.page-nav{
+  display: none;
+}
 
 body.active{
   .logo-holder.home-nav{ display: none}

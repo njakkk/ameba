@@ -1,0 +1,5 @@
+<section data-id="<%= @document.name %>" class="wrapper" page-class="<%= @document.pageClass %>">
+    <section class="scroll-h">
+        <%- @content %>
+    </section>
+</section>
