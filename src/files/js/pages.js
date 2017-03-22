@@ -110,20 +110,23 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
 
     $(document).on("click", trigger, function(e) {
         var self = $(e.target);
-        var pageName = self.attr("data-hash");
-        var url = location.hash.split('#')[1];
 
-        if(url !== pageName){
-            if ( self.is($('[data-href]'))) {
-                location.hash = pageName;
-                body.removeClass();
-                gotoUrl();
+        if ( self.is($('[data-href]')) ){
+            var pageName = self.attr("data-hash");
+            var url = location.hash.split('#')[1];
+
+            if(url !== pageName){
+                if ( self.is($('[data-href]'))) {
+                    location.hash = pageName;
+                    body.removeClass();
+                    gotoUrl();
+                }
             }
-        }
-        else{
-            $([otherTrigger, otherDrop]).each(function () {
-                $(this).removeClass(activeClass);
-            });
+            else{
+                $([otherTrigger, otherDrop]).each(function () {
+                    $(this).removeClass(activeClass);
+                });
+            }
         }
     });
 
@@ -141,6 +144,9 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
         }, 500);
         window.location.hash = '';
         $('#bg-video').get(0).play();
+        $([otherTrigger, otherDrop]).each(function () {
+            $(this).removeClass(activeClass);
+        });
     }
 
     $(document).on("click", close, function(e) {

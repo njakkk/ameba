@@ -40,14 +40,15 @@
       background: rgba(255,255,255,0.1);
     }
   }
+  &.light-bg{
+   background: $lightest-grey;
+  }
 
   &.dark {
     color: $dark;
     border-color: $dark;
-    background: $lightest-grey;
     &:hover{
       border-color: rgba(0,0,0,0.2);
-      background: $light-grey;
     }
   }
   &.small{

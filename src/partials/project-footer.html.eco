@@ -5,7 +5,7 @@
         <% if @document.id is document.id: %>
 
         <% if documentIndex >= 1: %>
-        <a class="btn small dark" data-href="<%= @site.url %><%= @getCollection('projects').toJSON()[documentIndex-1].url %>.html" data-hash="<%= @getCollection('projects').toJSON()[documentIndex-1].name %>">
+        <a class="btn small dark light-bg" data-href="<%= @site.url %><%= @getCollection('projects').toJSON()[documentIndex-1].url %>.html" data-hash="<%= @getCollection('projects').toJSON()[documentIndex-1].name %>">
             <i class="icon-arrow-left left-icc"></i>
             <%= @getCollection('projects').toJSON()[documentIndex-1].title %>
         </a>
@@ -13,7 +13,7 @@
 
         <!-- Check if we have a next page -->
         <% if documentIndex < @getCollection('projects').length - 1: %>
-        <a class="btn small dark" data-href="<%= @site.url %><%= @getCollection('projects').toJSON()[documentIndex+1].url %>.html" data-hash="<%= @getCollection('projects').toJSON()[documentIndex+1].name %>">
+        <a class="btn small dark light-bg" data-href="<%= @site.url %><%= @getCollection('projects').toJSON()[documentIndex+1].url %>.html" data-hash="<%= @getCollection('projects').toJSON()[documentIndex+1].name %>">
             <%= @getCollection('projects').toJSON()[documentIndex+1].title %>
             <i class="icon-arrow-right right-icc"></i>
         </a>

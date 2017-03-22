@@ -1,7 +1,7 @@
 function dropDown() {
     var $outerTrigger = $(document).find('[data-trigger]');
     var $outerDrop = $(document).find('[data-drop]');
-    var $close = $(document).find('[data-drop]').find('.close');
+    var $close = $(document).find('[data-drop-close]');
     var activeClass = 'active';
 
 
@@ -28,11 +28,17 @@ function dropDown() {
         }
     });
 
-    $close.click(function() {
-        $(this).parent().removeClass(activeClass).removeAttr('style');
-        return false
-    });
+    $close.each(function() {
+        var self = $(this);
+        self.bind("click", function() {
+            var $data = self.attr("data-drop-close");
 
+            $(document).find('[data-drop= '+ $data +']').removeClass(activeClass);
+            $(document).find('[data-trigger= '+ $data +']').removeClass(activeClass);
+            self.removeClass(activeClass);
+            return false
+        });
+    });
 }
 
 function wrapWord(){
@@ -96,6 +102,11 @@ function scrollTrigger(speed, easing, scrollTrigger) {
         $('[page-section]').removeClass('current');
         $goTo.addClass('current');
     });
+
+    $(window).on('resize',function() {
+        var scrollPosition = $('[canvas]').scrollLeft();
+        $('[canvas]').stop().animate({scrollLeft: scrollPosition + $('[page-section].current').offset().left}, speed, easing);
+    });
 }
 
 $.fn.changeOnScroll = function () {
@@ -147,7 +158,7 @@ function setScrollH(){
     function scrollShowElement(){
         var showEl = $('.scroll-show, .project-tip');
         showEl.each(function(){
-            if ($(this).offset().left < ($(window).width() - $(window).width()/6))
+            if ($(this).offset().left < ($(window).width() - 150))
                 $(this).addClass('active')
         })
     }

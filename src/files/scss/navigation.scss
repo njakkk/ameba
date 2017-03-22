@@ -44,9 +44,26 @@ body.active{
   float: left;
 }
 
+.logo-holder{
+  cursor: pointer;
+  position: relative;
+  z-index: 4;
+  margin-top: $spacing;
+  display: block;
+}
+
+.logo-holder.active{
+  .close{
+    opacity: 1;
+    height: $close-size;
+    color: $light-grey;
+  }
+}
+
 .logo{
   display: block;
   text-align: center;
+  pointer-events: none;
   img{
     width: $nav-size;
     display: block;
@@ -62,16 +79,18 @@ body.active{
   top: 50%;
   left: 0;
   width: $nav-size;
-  height: 20px;
+  height: 100px;
+  margin-top: -50px;
   float: right;
   filter: drop-shadow(0px 1px 0px $light-grey);
   -webkit-filter: drop-shadow(0px 1px 0px $light-grey);
   span{
     position: absolute;
-    top: 0;
+    top: 50%;
+    height: 20px;
+    margin-top: -10px;
     left: 50%;
     width: 1px;
-    height: 100%;
     background: $dark;
 
     &:before, &:after{
@@ -281,35 +300,6 @@ body.active{
 
 }
 
-.logo-holder{
-  cursor: pointer;
-  position: relative;
-  z-index: 4;
-  margin-top: $spacing;
-}
-
-.logo-holder.active{
-  .close{
-    opacity: 1;
-    height: $close-size;
-    color: $light-grey;
-  }
-}
-.logo-holder:hover{
-  .close{
-    animation: leftIconAnimation 0.8s both;
-  }
-}
-
-.logo-holder.page-nav{
-  display: none;
-}
-
-body.active{
-  .logo-holder.home-nav{ display: none}
-  .logo-holder.page-nav{ display: block}
-
-}
 
 
 

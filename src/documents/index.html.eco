@@ -2,7 +2,5 @@
 layout: "main"
 ---
     <div class="wrapper"  section-holder>
-        <%- @partial('pages/about')%>
         <%- @partial('pages/home')%>
-        <%- @partial('pages/work')%>
     </div>

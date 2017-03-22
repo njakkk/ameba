@@ -1,35 +1,27 @@
 <header class="header" data-drop="main-menu">
 
-    <div class="fl logo-holder home-nav" data-scroll-trigger="home">
+    <a class="logo-holder" page-close>
         <div class="logo">
             <img src="<%= @site.url %>/images/logo.svg" alt=""/>
             <img src="<%= @site.url %>/images/logo-white.svg" alt=""/>
         </div>
-    </div>
-
-    <div class="fl logo-holder page-nav" page-close>
-        <!--<div class="close icon-arrow-left" page-close></div>-->
-        <div class="logo">
-            <img src="<%= @site.url %>/images/logo.svg" alt=""/>
-            <img src="<%= @site.url %>/images/logo-white.svg" alt=""/>
-        </div>
-    </div>
+    </a>
 
     <nav class="main-menu" data-drop="main-menu">
         <ul>
             <li>
                 <h1>Work.</h1>
-                <p class="uppercase desc">Branding / Design / Frontend / Digital art</p>
+                <p class="uppercase desc">Branding / Design / Frontend</p>
                 <span class="line"></span>
-                <a page-close data-scroll-trigger="work" class="full-action"></a>
-                <!--<a data-href="work.html" data-hash="work" class="full-action"></a>-->
+                <!--<a page-close data-scroll-trigger="work" class="full-action"></a>-->
+                <a data-href="work.html" data-hash="work" class="full-action"></a>
             </li>
             <li>
                 <h1>About.</h1>
                 <p class="uppercase desc">About Marija Matović</p>
                 <span class="line"></span>
-                <a page-close data-scroll-trigger="about" class="full-action"></a>
-                <!--<a data-href="about.html" data-hash="about" class="full-action"></a>-->
+                <!--<a page-close data-scroll-trigger="about" class="full-action"></a>-->
+                <a data-href="about.html" data-hash="about" class="full-action"></a>
             </li>
             <li>
                 <h2>Say hello.</h2>
@@ -38,14 +30,13 @@
             </li>
             <li>
                 <h2>Ameba online.</h2>
-                <p>on <a href="#" class="link">Twitter</a></p>
                 <p>on <a href="#" class="link">Facebook</a></p>
                 <p>on <a href="#" class="link">Linkedin</a></p>
                 <p>on <a href="#" class="link">Behance</a></p>
             </li>
         </ul>
     </nav>
-    <div class="main-menu-overlay"></div>
+    <div class="main-menu-overlay" data-drop-close="main-menu"></div>
 
     <div class="hamburger" data-trigger="main-menu"><span></span></div>
 </header>

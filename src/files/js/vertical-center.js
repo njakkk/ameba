@@ -3,7 +3,7 @@ $.fn.verticalCenter = function() {
 
     function centerElement(){
         $element.each(function() {
-            var h = $(this).height();
+            var h = $(this).outerHeight();
 
             $(this).css({'margin-top': -h/2})
         });

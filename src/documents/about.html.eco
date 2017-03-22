@@ -13,9 +13,11 @@ color: "#3c64ff"
 
 <div class="row about" set-width>
     <div class="column-3 show-up right">
-        <h1 data-color="<%= @document.color %>">Ameba's name is Marija, she is a Designer & Developer.</h1>
-        <p>I design and build websites to communicate a feeling of comfort that shall invite the user to come back. For me, it's not only the Design, but also the frontend development including HTML & CSS, JS.</p>
-        <p>The development is really important to me, because while developing design I made, I constantly improve my skills and stay up-to-date with the technology.</p>
+        <h1 data-color="<%= @document.color %>">Ameba's name is Marija</h1>
+        <h2 class="strong-font">she is a Designer & Developer based in Belgrade, Serbia.</h2>
+        <p>I'm a UX/UI designer with more than 8 years of professional experience as a freelancer and also as a part of the team. For me, it's not only about the Design, but also about the frontend development including HTML, CSS & JS.</p>
+        <p>The development is really important to me, because while developing design I made, I constantly trying to improve my skills and stay up-to-date with the technology.</p>
+        <p>Oh and... I like to draw all sorts on amebas during my spare time :)</p>
         <br/>
         <br/>
         <a class="btn dark" href="mailto:matovic.marija@gmail.com">Say hello</a>
@@ -88,7 +90,7 @@ color: "#3c64ff"
 
     <div class="column-6 show-up right">
         <div class="exp">
-            <h3>jQuery</h3>
+            <h3>JS and jQuery</h3>
             <p>Creating custom UX/UI, using frameworks [ pro ]</p>
         </div>
         <div class="exp">

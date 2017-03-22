@@ -10,13 +10,13 @@
             <span class="letters">The core of simplicity</span>
         </h1>
         <aside class="slide-content-txt">
-            <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions she also likes to design and develop.</h2>
-            <a href="#" class="btn " tabindex="1" data-scroll-trigger="about" ><i class="icon-arrow-left left-icc"></i> about ameba</a>
-            <a href="#" class="btn" tabindex="1" data-scroll-trigger="work" >view work <i class="icon-arrow-right right-icc"></i></a>
+            <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions, she also likes to design and develop.</h2>
+
+            <!--<a href="#" class="btn " tabindex="1" data-scroll-trigger="about" ><i class="icon-arrow-left left-icc"></i> about ameba</a>-->
+            <!--<a href="#" class="btn" tabindex="1" data-scroll-trigger="work" >view work <i class="icon-arrow-right right-icc"></i></a>-->
 
 
-            <!--<a class="btn" data-href="about.html" data-hash="about"><i class="icon-arrow-left left-icc"></i> about ameba</a>-->
-            <!--<a class="btn" data-href="work.html" data-hash="work">view work <i class="icon-arrow-right right-icc"></i></a>-->
+            <a class="btn white" data-href="work.html" data-hash="work">view work</a>
         </aside>
     </div>
 </section>

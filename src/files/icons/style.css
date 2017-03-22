@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'ameba';
-  src:  url('fonts/ameba.eot?ytw76f');
-  src:  url('fonts/ameba.eot?ytw76f#iefix') format('embedded-opentype'),
-    url('fonts/ameba.ttf?ytw76f') format('truetype'),
-    url('fonts/ameba.woff?ytw76f') format('woff'),
-    url('fonts/ameba.svg?ytw76f#ameba') format('svg');
+  src:  url('fonts/ameba.eot?6n3avr');
+  src:  url('fonts/ameba.eot?6n3avr#iefix') format('embedded-opentype'),
+    url('fonts/ameba.ttf?6n3avr') format('truetype'),
+    url('fonts/ameba.woff?6n3avr') format('woff'),
+    url('fonts/ameba.svg?6n3avr#ameba') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,6 +44,9 @@
 }
 .icon-arrow-down:before {
   content: "\e905";
+}
+.icon-arrow-out:before {
+  content: "\e90b";
 }
 .icon-sailing-boat-water:before {
   content: "\ea8c";
