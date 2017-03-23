@@ -1,4 +1,4 @@
-<section class="home-slide pattern-strong" page-section data-scroll-target="home">
+<section class="home-slide pattern-strong" page-section>
     <div class="lines"></div>
     <!--<div class="video-mask"></div>-->
     <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">

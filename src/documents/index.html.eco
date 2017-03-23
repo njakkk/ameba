@@ -1,6 +1,6 @@
 ---
 layout: "main"
 ---
-    <div class="wrapper"  section-holder>
+    <div class="wrapper">
         <%- @partial('pages/home')%>
     </div>
