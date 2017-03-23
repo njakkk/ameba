@@ -9,10 +9,7 @@
             <span class="border-top"></span><span class="border-right"></span><span class="border-bottom"></span><span class="border-left"></span>
             <img src="<%= @site.url %>/images/big-logo.svg" alt="ameba-logo"/>
             <h1><span class="letters">The core of simplicity</span></h1>
-            <a class="btn white-border big-spacing" data-href="work.html" data-hash="work">
-                <span class="top"></span><span class="right"></span><span class="bottom"></span><span class="left"></span>
-                view work
-            </a>
+            <a class="btn white big-spacing" data-href="work.html" data-hash="work">view work</a>
         </div>
         <aside class="slide-content-txt">
             <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions, she also likes to design and develop.</h2>

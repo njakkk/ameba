@@ -6,35 +6,44 @@
             <img src="<%= @site.url %>/images/logo-white.svg" alt=""/>
         </div>
     </a>
-
-    <nav class="main-menu" data-drop="main-menu">
-        <ul>
-            <li>
-                <h1>Work.</h1>
-                <p class="uppercase desc">Branding / Design / Frontend</p>
-                <span class="line"></span>
-                <a data-href="work.html" data-hash="work" class="full-action"></a>
-            </li>
-            <li>
-                <h1>About.</h1>
-                <p class="uppercase desc">About Marija Matović</p>
-                <span class="line"></span>
-                <a data-href="about.html" data-hash="about" class="full-action"></a>
-            </li>
-            <li>
-                <h2>Say hello.</h2>
-                <p><a href="mailto:matovic.marija@gmail.com">matovic.marija@gmail.com</a></p>
-                <p><a href="#">(+381) 60 0497 350</a></p>
-            </li>
-            <li>
-                <h2>Ameba online.</h2>
-                <p>on <a href="#" class="link">Facebook</a></p>
-                <p>on <a href="#" class="link">Linkedin</a></p>
-                <p>on <a href="#" class="link">Behance</a></p>
-            </li>
-        </ul>
-    </nav>
-    <div class="main-menu-overlay" data-drop-close="main-menu"></div>
-
     <div class="hamburger" data-trigger="main-menu"><span></span></div>
 </header>
+
+<header class="header-mobile" data-drop="main-menu">
+
+    <a class="logo-holder fr" page-close>
+        <div class="logo">
+            <img src="<%= @site.url %>/images/logo-mobile.svg" alt=""/>
+        </div>
+    </a>
+    <div class="hamburger" data-trigger="main-menu"><span></span></div>
+</header>
+
+<nav class="main-menu" data-drop="main-menu">
+    <ul>
+        <li>
+            <h1>Work.</h1>
+            <p class="uppercase desc">Branding / Design / Frontend</p>
+            <span class="line"></span>
+            <a data-href="work.html" data-hash="work" class="full-action"></a>
+        </li>
+        <li>
+            <h1>About.</h1>
+            <p class="uppercase desc">About Marija Matović</p>
+            <span class="line"></span>
+            <a data-href="about.html" data-hash="about" class="full-action"></a>
+        </li>
+        <li>
+            <h2>Say hello.</h2>
+            <p><a href="mailto:matovic.marija@gmail.com">matovic.marija@gmail.com</a></p>
+            <p><a href="#">(+381) 60 0497 350</a></p>
+        </li>
+        <li>
+            <h2>Ameba online.</h2>
+            <p>on <a href="https://www.linkedin.com/in/njakkk" class="link" target="_blank">Linkedin</a></p>
+            <p>on <a href="https://www.facebook.com/mnjakk" class="link" target="_blank">Facebook</a></p>
+            <p>on <a href="http://be.net/njakkk" class="link" target="_blank">Behance</a></p>
+        </li>
+    </ul>
+</nav>
+<div class="main-menu-overlay" data-drop-close="main-menu"></div>

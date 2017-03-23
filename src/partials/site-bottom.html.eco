@@ -1,17 +1,8 @@
 </div><!--canvas end-->
-
-<!--<div class="static-lines">-->
-    <!--<line></line>-->
-    <!--<line></line>-->
-    <!--<line></line>-->
-    <!--<line></line>-->
-    <!--<line></line>-->
-<!--</div>-->
-
 <div page>
     <div page-content></div>
     <div page-loader>
-        <!--<img src="<%= @site.url %>/images/ameba-loader.svg" alt=""/>-->
+        <img src="<%= @site.url %>/images/ameba-loader.svg" alt=""/>
     </div>
 </div>
 

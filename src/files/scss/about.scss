@@ -69,13 +69,22 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 
 @media screen and (max-width: 1200px){
-  .float-me{
-    display: none;
-  }
   .about{
     p{
       font-size: 13px;
       line-height: 1.6em;
     }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .about{
+    .column-6 {
+      width: 280px;
+    }
+    .column-3 {
+      width: 360px;
+    }
+
   }
 }

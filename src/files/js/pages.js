@@ -19,6 +19,10 @@ function pageAction(body, trigger,page, canvas, content, id, pageLoader, close, 
 
 
     function beforeShowPage(){
+        setTimeout(function (){
+            pageLoader.fadeIn(loaderTime);
+        }, loaderTime*2);
+
         $('#bg-video').get(0).pause();
 
         $([canvas, page, content]).each(function () {

@@ -216,8 +216,21 @@
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 800px){
+  .project-header{
+    > article{
+      padding: 0 30px;
+    }
 
+    .more-projects{
+      padding: 30px;
+    }
+  }
+  .project-content{
+    img {
+      max-height: 70vh;
+    }
+  }
 }
 
 @media screen and (max-width: 500px){

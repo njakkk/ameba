@@ -168,10 +168,10 @@ h4 { font-size: 100%; font-weight: 600; text-transform: uppercase; margin-bottom
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 280px;
-    height: 280px;
-    margin-top: -140px;
-    margin-left: -140px;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
   }
 }
 .scroll-h{
@@ -296,10 +296,6 @@ body.dark-page{
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 
 @media screen and (max-width: 1200px){
-
-  .wrapper{
-    overflow: initial;
-  }
 
   .scroll-show, .project-tip {
     transform: none !important;

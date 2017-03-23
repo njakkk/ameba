@@ -15,8 +15,8 @@ color: "#3c64ff"
     <div class="column-3 show-up right">
         <h1 data-color="<%= @document.color %>">Ameba's name is Marija</h1>
         <h2 class="strong-font">she is a Designer & Developer based in Belgrade, Serbia.</h2>
-        <p>I'm a UX/UI designer with more than 8 years of professional experience as a freelancer and also as a part of the team. For me, it's not only about the Design, but also about the frontend development including HTML, CSS & JS.</p>
-        <p>The development is really important to me, because while developing design I made, I constantly trying to improve my skills and stay up-to-date with the technology.</p>
+        <p>I'm a UX/UI designer with more than 8 years of professional experience as a freelancer and also as a part of the team. I enjoy creating beautiful interfaces, and I also enjoy developing them.</p>
+        <p>I'm constantly trying to improve my skills and stay up-to-date with the technology.</p>
         <p>Oh and... I like to draw all sorts on amebas during my spare time :)</p>
         <br/>
         <br/>

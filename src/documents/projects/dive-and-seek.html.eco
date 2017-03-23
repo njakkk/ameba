@@ -16,15 +16,24 @@ thumb: "dive-and-seek/thumb.jpg"
 color: "#2a84ff"
 
 dev: "true"
+brand: "true"
 
 hasExternalLink: "true"
 externalLinkTitle: "view template"
 externalLink: "http://dev.ameba.rs/ds"
 ---
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-00.jpg" alt="" class="full"/>
+</article>
 
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.jpg" alt="" class="full scroll-show"/>
+</article>
+
+<space></space>
 <div class="project-tip"><span>Homepage, gallery of most popular images</span></div>
 <article>
-    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.png" alt="" class=""/>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.png" alt="" class="scroll-show"/>
 </article>
 
 <space></space>
