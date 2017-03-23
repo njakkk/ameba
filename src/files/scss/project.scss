@@ -61,14 +61,14 @@
       font-weight: 300;
     }
     h3{
-      font-family: $thin;
+      font-family: $strong;
       font-size: 2.4em;
       line-height: 1em;
       letter-spacing: -0.02em;
       position: absolute;
       left: 0;
       top: -1em;
-      opacity: 0.2;
+//      opacity: 0.2;
     }
     p{
       font-size: 14px;
@@ -168,10 +168,6 @@
   img.full {
     height: $vh;
     max-height: $vh;
-  }
-
-  .scroll-to-start{
-//    margin-left: $vw/5.5;
   }
 
 }

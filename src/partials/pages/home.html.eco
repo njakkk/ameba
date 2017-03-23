@@ -1,22 +1,21 @@
-<section class="home-slide pattern" page-section data-scroll-target="home">
+<section class="home-slide pattern-strong" page-section data-scroll-target="home">
     <div class="lines"></div>
     <!--<div class="video-mask"></div>-->
     <video autoplay muted loop poster="<%= @site.url %>/images/video-cover.jpg" class="video-background" id="bg-video">
         <source src="<%= @site.url %>/images/ameba.mp4" type="video/mp4">
     </video>
     <div class="slide-content">
-        <span class="border-top"></span><span class="border-right"></span><span class="border-bottom"></span><span class="border-left"></span>
-        <h1>
-            <span class="letters">The core of simplicity</span>
-        </h1>
+        <div class="slide-content-box">
+            <span class="border-top"></span><span class="border-right"></span><span class="border-bottom"></span><span class="border-left"></span>
+            <img src="<%= @site.url %>/images/big-logo.svg" alt="ameba-logo"/>
+            <h1><span class="letters">The core of simplicity</span></h1>
+            <a class="btn white-border big-spacing" data-href="work.html" data-hash="work">
+                <span class="top"></span><span class="right"></span><span class="bottom"></span><span class="left"></span>
+                view work
+            </a>
+        </div>
         <aside class="slide-content-txt">
             <h2>Ameba is a single-celled organism which moves by extending finger-like projections of protoplasm. On occasions, she also likes to design and develop.</h2>
-
-            <!--<a href="#" class="btn " tabindex="1" data-scroll-trigger="about" ><i class="icon-arrow-left left-icc"></i> about ameba</a>-->
-            <!--<a href="#" class="btn" tabindex="1" data-scroll-trigger="work" >view work <i class="icon-arrow-right right-icc"></i></a>-->
-
-
-            <a class="btn white" data-href="work.html" data-hash="work">view work</a>
         </aside>
     </div>
 </section>

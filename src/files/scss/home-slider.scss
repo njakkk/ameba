@@ -88,15 +88,13 @@
   .slide-content{
     @include clearfix;
     color: $light-grey;
-    text-align: center;
+    text-align: left;
     position: absolute;
     top: 50%;
     left:  50%;
     @include translate(-50%, 0);
     width: 70vw;
-    max-width: $vw/5*2;
-    padding: $spacing*2 $spacing;
-    border: solid 1px rgba(0,0,0,0.1);
+    max-width: 47vmin;
     z-index: 2;
 
     &.dark-text{
@@ -105,40 +103,51 @@
     &.light-text{
       color: $light-grey;
     }
-
     .slide-content-txt{
+      margin-top: $spacing;
+    }
+
+    .slide-content-txt, .btn{
       opacity: 0;
       @include translate(0,50px);
       @include basicTransition(0.5s);
-      &.active{
-        opacity: 1;
-        @include translate(0,0);
-      }
+    }
+    .btn{ transition-delay: 300ms}
+    .slide-content-txt{ transition-delay: 500ms}
+
+    img{
+      max-width: 100px;
+      height: auto;
     }
 
     h1{
-      font-size: 11vmin;
+      font-size: 12vmin;
       line-height: 0.7em;
       pointer-events: none;
       font-family: $strong;
       letter-spacing: -0.01em;
+      margin: $spacing*2 0;
       span{
         white-space: normal;
       }
     }
     h2{
       clear: right;
-      font-size: 17px;
-      line-height: 1.2em;
-      opacity: 0.8;
-      width: 70%;
-      margin: auto;
+      font-size: 14px;
+      line-height: 1.5em;
+      opacity: 0.6;
+      width: 85%;
+      margin: 0;
       pointer-events: none;
     }
-    .btn{
-      margin-top: $spacing*2;
-    }
   }
+  .slide-content-box{
+    position: relative;
+    padding: $spacing*2;
+    padding-right: 0;
+    border: solid $fat-border-size rgba(0,0,0,0.3);
+  }
+
   letter {
     left: -10px;
     opacity: 0;
@@ -151,46 +160,53 @@
   }
 }
 
+.slide-content.active{
+  .slide-content-txt, .btn{
+    opacity: 1;
+    @include noTransform;
+  }
+
+}
 .slide-content{
   .border-top,
   .border-bottom{
     position: absolute;
-    height: 5px;
-    width: 100%;
+    height: $fat-border-size;
+    width: 50%;
     background-color: $light-grey;
     @include basicTransition(0.5s);
-    @include scale(0.2,1);
+    @include scale(0.3,1);
   }
 
   .border-right,
   .border-left{
     position: absolute;
-    width: 5px;
-    height:100% ;
+    width: $fat-border-size;
+    height:50% ;
     background-color: $light-grey;
     @include basicTransition(0.5s);
-    @include scale(1,0.2);
+    @include scale(1,0.3);
   }
 
   .border-top{
-    left: 0;
-    top: 0;
-    transform-origin: 0 0;
+    right: -$fat-border-size;
+    top: -$fat-border-size;
+    transform-origin: 100% 0;
   }
   .border-right{
-    top: 0;
-    right: 0;
-    transform-origin: 100% 100%;
+    top: -$fat-border-size;
+    right: -$fat-border-size;
+    transform-origin: 0 0;
   }
   .border-bottom{
-    right: 0;
-    bottom: 0;
-    transform-origin: 100% 100%;
+    left: -$fat-border-size;
+    bottom: -$fat-border-size;
+    transform-origin: 0 0;
   }
   .border-left{
-    bottom: 0;
-    left: 0;
-    transform-origin: 0 0;
+    bottom: -$fat-border-size;
+    left: -$fat-border-size;
+    transform-origin: 0 100%;
   }
 }
 
@@ -233,118 +249,6 @@
   }
 }
 
-/****home slider navigation****/
-
-.home-slider{
-//  pagination
-  .owl-pagination{
-    color: $light-grey;
-    position: absolute;
-    top: 50%;
-    right: $spacing;
-    text-align: center;
-    width: 25px;
-    @include translate(0, -50%);
-    .owl-page{
-      display: block;
-    }
-    .slide-preview{
-      position: absolute;
-      white-space: nowrap;
-      font-size: 10px;
-      text-transform: uppercase;
-      right: 60px;
-      letter-spacing: 0.17em;
-      *{
-        font-size: 10px;
-        letter-spacing: 0.17em;
-      }
-    }
-  }
-//  buttons
-  .owl-buttons{
-    color: $light-grey;
-    position: absolute;
-    top: 50%;
-    right: $spacing;
-    text-align: center;
-  }
-  .owl-buttons > div {
-    display: block;
-    width: $ui-el-size;
-    height: $ui-el-size;
-    line-height: $ui-el-size;
-    position: relative;
-    margin: auto;
-    border: solid 1px rgba(255,255,255,0.2);
-    margin-top: -1px;
-    overflow: hidden;
-    @include basicTransition(0.4s);
-    &:before, &:after{
-      display: block;
-      width: 100%;
-      height: 100%;
-      line-height: $ui-el-size;
-      font-family: 'ameba';
-      font-size: $ui-el-size/1.6;
-      text-align: center;
-      @include basicTransition(0.4s);
-    }
-  }
-  .owl-buttons > div:hover{
-    border-color: $white;
-    background: rgba(0,0,0,0.1);
-    &:before{
-      margin-top: -$ui-el-size;
-    }
-  }
-  .owl-buttons > div:before  {
-    opacity: 0.4;
-  }
-
-  .owl-buttons > div.owl-prev:before,
-  .owl-buttons > div.owl-prev:after
-  {
-    content: '\e902';
-  }
-  .owl-buttons > div.owl-next:before,
-  .owl-buttons > div.owl-next:after
-  {
-    content: '\e905';
-  }
-
-  .owl-buttons > article{
-    span{
-      display: inline-block;
-      vertical-align: baseline;
-      line-height: 0.6em;
-    }
-    .active-slide{
-      font-family: $strong;
-      font-size: 40px;
-      width: 1em;
-      text-align: right;
-    }
-    .slides-count{
-      font-size: 32px;
-      position: relative;
-      margin-left: 15px;
-      font-weight: 100;
-      &:before{
-        content:'';
-        position: absolute;
-        width: 2em;
-        height: 1px;
-        background: $white;
-        top: 10px;
-        left: -30px;
-        @include rotate(-50deg);
-      }
-    }
-  }
-}
-
-
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 
 @media screen and (max-width: 1200px){
@@ -354,12 +258,6 @@
       max-width: 70vw;
       padding: 20px;
       background: none;
-      .border-left, .border-right{
-        width: 3px;
-      }
-      .border-bottom, .border-top{
-        height: 3px;
-      }
       h1{
         font-size: 12.4vmin;
       }
@@ -395,20 +293,6 @@
       width: 100%;
       animation: none;
     }
-    .slide-content{
-      .slide-num{
-        top: 20px;
-        span{
-          color: $white !important;
-        }
-        span:nth-child(2), span:nth-child(3){
-          display: none;
-        }
-      }
-      .btn{
-        float: none;
-      }
-    }
   }
 
   .static-lines{
@@ -424,14 +308,6 @@
       h1{
         white-space: normal;
       }
-    }
-  }
-
-  /****home slider navigation****/
-
-  .home-slider{
-    .owl-buttons, .owl-pagination{
-      display: none;
     }
   }
 }

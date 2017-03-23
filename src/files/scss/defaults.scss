@@ -92,6 +92,14 @@ tiny-space{
     }
 }
 
+.pattern-strong{
+  position: relative;
+  &:before{
+    @include noiz;
+    opacity: 0.06;
+  }
+}
+
 [data-display=""], [data-display="false"]{
   display: none !important;
 }
@@ -122,11 +130,12 @@ tiny-space{
 .scroll-to-start{
   position: relative;
   float: left;
-  width: 80px;
+  width: 60px;
   height: $vh;
-  background: $light-grey;
+  background: $lightest-grey;
   border-left: $dark-border;
   cursor: pointer;
+  @include basicTransition(0.5s);
   i{
     position: relative;
     margin-top: $spacing*2;
@@ -135,10 +144,16 @@ tiny-space{
     font-size: 29px;
   }
   &:hover{
+    background: $dark;
+    color: $lightest-grey;
     i{
       animation: leftIconAnimation 0.5s
     }
   }
+}
+
+.relative{
+  position: relative;
 }
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
