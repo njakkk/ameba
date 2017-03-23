@@ -13,7 +13,7 @@
 }
 
 .header.active{
-  background: darken($dark,0.5);
+  background: darken($dark,3);
   .logo img{
     &:nth-child(1){display: none;}
     &:nth-child(2){display: block;}
@@ -245,7 +245,7 @@ body.active{
 .main-menu-overlay{
   position: fixed;
   top: 0;
-  left: 0;
+  left: $nav-size;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -259,50 +259,6 @@ body.active{
   opacity: 1;
   visibility: visible;
 }
-
-//** close*//
-.close{
-  position: relative;
-  opacity: 0;
-  @include basicTransition(.5s);
-  display: inline-block;
-  vertical-align: middle;
-  width: $close-size;
-  height: 0;
-  line-height: $close-size;
-  cursor: pointer;
-  font-size: 31px;
-  color: $dark;
-  overflow: hidden;
-  text-align: center;
-  span{
-    display: inline-block;
-    width: 0;
-    overflow: hidden;
-    font-size: 12px;
-    text-transform: uppercase;
-    vertical-align: text-top;
-    line-height: $close-size;
-    font-family: $main-font;
-    letter-spacing: 0.06em;
-    margin-left: 0;
-    @include basicTransition(0.4s);
-  }
-  &.active{
-    opacity: 1;
-    height: $close-size;
-  }
-  &:hover{
-    span{
-      animation: leftIconAnimation 0.5s;
-    }
-  }
-
-}
-
-
-
-
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 

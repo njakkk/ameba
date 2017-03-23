@@ -2554,11 +2554,14 @@ tiny-space {
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%); }
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+  -webkit-mix-blend-mode: overlay; }
 
 .home-slide {
   position: relative;
-  background-color: #fbfbfb; }
+  background-color: #3c64ff; }
   .home-slide .home-background-holder {
     position: absolute;
     top: 0;
@@ -2795,7 +2798,7 @@ tiny-space {
   border-right: solid 1px rgba(0, 0, 0, 0.06); }
 
 .header.active {
-  background: #282a30; }
+  background: #222429; }
   .header.active .logo img:nth-child(1) {
     display: none; }
   .header.active .logo img:nth-child(2) {
@@ -2993,7 +2996,7 @@ body.active .header.filled {
 .main-menu-overlay {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 45px;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -3005,44 +3008,6 @@ body.active .header.filled {
 .main-menu.active + .main-menu-overlay {
   opacity: 1;
   visibility: visible; }
-
-.close {
-  position: relative;
-  opacity: 0;
-  -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  -moz-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  /* custom */
-  display: inline-block;
-  vertical-align: middle;
-  width: 45px;
-  height: 0;
-  line-height: 45px;
-  cursor: pointer;
-  font-size: 31px;
-  color: #292b31;
-  overflow: hidden;
-  text-align: center; }
-  .close span {
-    display: inline-block;
-    width: 0;
-    overflow: hidden;
-    font-size: 12px;
-    text-transform: uppercase;
-    vertical-align: text-top;
-    line-height: 45px;
-    font-family: "Exo 2", sans-serif;
-    letter-spacing: 0.06em;
-    margin-left: 0;
-    -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -moz-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-    /* custom */ }
-  .close.active {
-    opacity: 1;
-    height: 45px; }
-  .close:hover span {
-    animation: leftIconAnimation 0.5s; }
 
 @media screen and (max-width: 1300px) {
   .main-menu {

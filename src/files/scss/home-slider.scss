@@ -49,11 +49,15 @@
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+  -webkit-mix-blend-mode: overlay;
+
 }
 
 .home-slide{
   position: relative;
-  background-color: $lightest-grey;
+  background-color: $main;
 
   .home-background-holder{
     position: absolute;
