@@ -14,13 +14,11 @@ function dropDown() {
             $outerDrop.not('[data-drop= '+ $data +']').removeClass(activeClass);
             $(document).find('[data-drop= '+ $data +']').toggleClass(activeClass);
             self.toggleClass(activeClass);
-            return false
         });
     });
 
     $(document).bind('click', function(e) {
         if($(e.target).closest($outerDrop).length != 0) {
-            return false
        }
         else{
             $outerDrop.removeClass(activeClass);
@@ -36,7 +34,6 @@ function dropDown() {
             $(document).find('[data-drop= '+ $data +']').removeClass(activeClass);
             $(document).find('[data-trigger= '+ $data +']').removeClass(activeClass);
             self.removeClass(activeClass);
-            return false
         });
     });
 }
