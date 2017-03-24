@@ -11,7 +11,7 @@
   width: $vw;
   @include basicTransition(0.5s);
   border-bottom: $dark-border;
-  background: $lightest-grey;
+  background: $dark;
 
   .logo-holder{
     cursor: pointer;
@@ -39,45 +39,33 @@
     height: $nav-size;
     margin-top: -$nav-size/2;
     float: right;
-    filter: drop-shadow(0px 1px 0px $light-grey);
-    -webkit-filter: drop-shadow(0px 1px 0px $light-grey);
     span{
       position: absolute;
       top: 50%;
-      height: 20px;
-      margin-top: -10px;
+      height: 1px;
       left: 50%;
-      width: 1px;
-      background: $dark;
+      margin-left: -10px;
+      width: 20px;
+      background: $light-grey;
 
       &:before, &:after{
         content:'';
         position: absolute;
-        width: 1px;
+        width: 20px;
         height: 100%;
-        background: $dark;
+        background: $light-grey;
         @include basicTransition(0.2s);
       }
 
       &:before{
-        left: -6px;
+        top: -6px;
       }
       &:after{
-        right: -6px;
+        top: 6px;
       }
     }
   }
-  .hamburger:hover{
-    span{
-      &:before{
-        left: -2px;
-      }
-      &:after{
-        right: -2px;
-      }
-    }
 
-  }
   /***color when page opened***/
   .hamburger.active{
     filter: none;
@@ -86,7 +74,7 @@
       background: transparent !important;
 
       &:before, &:after{
-        left: 50%;
+        top: 50%;
       }
 
       &:before{
