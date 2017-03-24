@@ -29,7 +29,7 @@ docpadConfig = {
     production:
       templateData:
         site:
-          url: "http://www.ameba.rs"
+          url: "http://ameba.rs"
     staging:
       templateData:
         site:
