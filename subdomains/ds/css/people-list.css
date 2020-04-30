@@ -1,0 +1,152 @@
+/*UI elements*/
+/* line 3, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+.people-list {
+  width: 100%;
+  padding: 10px;
+  margin-top: -10px;
+  padding-top: 0;
+  position: relative;
+  zoom: 1; }
+  /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .people-list:before, .people-list:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .people-list:after {
+    clear: both; }
+
+/* line 12, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+.member-item {
+  display: block;
+  float: left;
+  width: calc(20% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background: #fbfbfc;
+  border-radius: 3px;
+  overflow: hidden;
+  border: solid 1px #F4F4F5; }
+  /* line 22, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-item header {
+    margin-bottom: 20px; }
+  /* line 25, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-item footer {
+    margin-top: 20px; }
+
+/* line 30, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+.member-info {
+  text-align: left; }
+  /* line 32, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-info .avatar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    /* line 40, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+    .member-info .avatar:hover {
+      -ms-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      -moz-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1); }
+  /* line 44, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-info .member-text {
+    width: calc(100% - 75px);
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    /* line 51, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+    .member-info .member-text h3 {
+      margin: 0;
+      font-weight: 400;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+    .member-info .member-text p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1em;
+      margin: 0; }
+
+/* line 65, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+.member-images {
+  zoom: 1; }
+  /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .member-images:before, .member-images:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .member-images:after {
+    clear: both; }
+
+/* line 69, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+.member-img {
+  width: calc(33.333% - 6px);
+  margin: 3px;
+  height: 70px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px; }
+  /* line 77, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-img span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  /* line 87, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-img:first-child {
+    width: calc(100% - 6px);
+    height: 140px; }
+  /* line 91, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-img:hover span {
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
+
+@media screen and (max-width: 1600px) {
+  /* line 99, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-item {
+    width: calc(25% - 20px); } }
+@media screen and (max-width: 1400px) {
+  /* line 105, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-item {
+    width: calc(33.333% - 20px); } }
+@media screen and (max-width: 960px) {
+  /* line 111, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-item {
+    width: calc(50% - 20px); } }
+@media screen and (max-width: 600px) {
+  /* line 117, E:/RADOVI/dive_and_seek/DEV/source/css/people-list.css.scss */
+  .member-item {
+    padding: 20px 0;
+    background: #fff;
+    width: calc(100% - 20px); } }

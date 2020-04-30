@@ -1,0 +1,108 @@
+/*UI elements*/
+/* line 3, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+.search {
+  float: right;
+  position: relative;
+  height: 44px;
+  line-height: 44px; }
+  /* line 9, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+  .search .holder {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  /* line 15, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+  .search #search {
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+    color: #2a84ff;
+    background: #fbfbfc;
+    border: solid 1px #f2f2f2;
+    border-radius: 5px;
+    padding: 0 44px;
+    width: 300px;
+    box-shadow: inset 0px 80px 0px #fbfbfc; }
+    /* line 28, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search #search::-webkit-input-placeholder {
+      color: #2a84ff;
+      opacity: 1; }
+    /* line 32, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search #search:-moz-placeholder {
+      color: #2a84ff;
+      opacity: 1; }
+    /* line 36, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search #search::-moz-placeholder {
+      color: #2a84ff;
+      opacity: 1; }
+    /* line 40, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search #search:-ms-input-placeholder {
+      color: #2a84ff;
+      opacity: 1; }
+  /* line 45, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+  .search label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 44px;
+    line-height: 44px;
+    color: #2a84ff; }
+    /* line 52, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search label i, .search label span {
+      vertical-align: middle;
+      display: inline-block; }
+    /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search label i {
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      font-size: 140%; }
+  /* line 65, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+  .search button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 44px;
+    line-height: 44px;
+    color: #2a84ff; }
+    /* line 72, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search button i {
+      display: block;
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      font-size: 140%; }
+  /* line 81, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+  .search #search:focus {
+    width: 450px; }
+  /* line 85, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+  .search #search:focus ~ label span {
+    display: none; }
+
+@media screen and (max-width: 960px) {
+  /* line 93, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+  .search {
+    float: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; }
+    /* line 100, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search .holder {
+      position: relative;
+      right: inherit;
+      top: inherit; }
+    /* line 105, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search #search {
+      width: 100%;
+      border-radius: 0; }
+    /* line 110, E:/RADOVI/dive_and_seek/DEV/source/css/search.css.scss */
+    .search #search:focus {
+      width: 100%; } }

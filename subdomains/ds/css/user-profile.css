@@ -1,0 +1,122 @@
+/*UI elements*/
+/* line 3, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+.user-profile-header {
+  padding: 40px 0;
+  margin-bottom: 20px;
+  background: #fbfbfc;
+  border-bottom: solid 1px #F4F4F5; }
+
+/* line 10, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+.profile-avatar-holder {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+  /* line 14, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-avatar-holder .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  /* line 21, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-avatar-holder .upload-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100%;
+    background: rgba(42, 132, 255, 0.9);
+    color: #fff;
+    text-align: center;
+    font-size: 22.5px;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  /* line 36, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-avatar-holder:hover .upload-avatar {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    bottom: 5px;
+    right: 5px; }
+
+/* line 46, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+.profile-text {
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  /* line 52, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-text h2 {
+    color: #3d4044;
+    margin: 0;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  /* line 58, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-text p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+    margin: 0; }
+  /* line 63, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-text ul {
+    margin-top: 20px;
+    display: inline-block; }
+  /* line 67, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-text li {
+    display: inline-block;
+    border-right: solid 1px #d9d9dd;
+    color: #2a84ff;
+    padding: 0 10px;
+    text-align: center; }
+    /* line 73, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+    .profile-text li:first-child {
+      border-left: solid 1px #d9d9dd; }
+    /* line 76, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+    .profile-text li span, .profile-text li small {
+      display: block;
+      font-weight: 400; }
+    /* line 80, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+    .profile-text li span {
+      font-size: 30px;
+      font-weight: 600; }
+  /* line 86, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-text .toggle-buttons {
+    margin-right: 20px; }
+
+@media screen and (max-width: 800px) {
+  /* line 94, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-avatar-holder {
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center; }
+    /* line 98, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+    .profile-avatar-holder .avatar {
+      display: inline-block; }
+
+  /* line 102, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+  .profile-text {
+    padding-left: 0;
+    display: block;
+    text-align: center; }
+    /* line 107, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+    .profile-text .toggle-buttons {
+      margin-right: 10px; }
+      /* line 109, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+      .profile-text .toggle-buttons .btn {
+        min-width: 40px;
+        padding: 0; }
+      /* line 113, E:/RADOVI/dive_and_seek/DEV/source/css/user-profile.css.scss */
+      .profile-text .toggle-buttons span {
+        display: none; } }

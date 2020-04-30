@@ -1,0 +1,122 @@
+/*UI elements*/
+/* line 3, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+.item-overlay {
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 66%, rgba(0, 0, 0, 0.6) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 66%, rgba(0, 0, 0, 0.6) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 66%, rgba(0, 0, 0, 0.6) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 );
+  /* IE6-9 */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -ms-transform: translate(0, 50px);
+  -webkit-transform: translate(0, 50px);
+  -moz-transform: translate(0, 50px);
+  transform: translate(0, 50px); }
+  /* line 18, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+  .item-overlay aside {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    color: #fff; }
+    /* line 24, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+    .item-overlay aside i, .item-overlay aside span {
+      font-size: 215%;
+      display: inline-block;
+      line-height: 1.02em;
+      vertical-align: middle;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    /* line 31, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+    .item-overlay aside p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    /* line 34, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+    .item-overlay aside a {
+      color: #fff; }
+      /* line 36, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+      .item-overlay aside a:hover {
+        text-decoration: underline; }
+
+/**homepage gallery*****/
+/* line 43, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+.horizontal-grid-gallery, .masonry-grid-gallery {
+  margin: 10px;
+  margin-top: -10px;
+  position: relative; }
+  /* line 47, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+  .horizontal-grid-gallery:after, .masonry-grid-gallery:after {
+    content: '';
+    display: block;
+    clear: both; }
+  /* line 52, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+  .horizontal-grid-gallery .item:hover .item-overlay, .masonry-grid-gallery .item:hover .item-overlay {
+    opacity: 1;
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+  .horizontal-grid-gallery .item:hover img, .masonry-grid-gallery .item:hover img {
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
+  /* line 60, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+  .horizontal-grid-gallery .item, .masonry-grid-gallery .item {
+    float: left;
+    margin: 5px;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 3px; }
+    /* line 73, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+    .horizontal-grid-gallery .item img, .masonry-grid-gallery .item img {
+      display: block;
+      transition: transform .5s ease;
+      -webkit-transition: transform .5s ease; }
+    /* line 78, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+    .horizontal-grid-gallery .item.active, .masonry-grid-gallery .item.active {
+      -ms-transform: scale(0.9, 0.9);
+      -webkit-transform: scale(0.9, 0.9);
+      -moz-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9); }
+
+/**user profile gallery*****/
+/* line 86, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+.masonry-grid-gallery .item {
+  width: calc(20% - 10px);
+  margin: 5px; }
+
+@media screen and (max-width: 1600px) {
+  /* line 94, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+  .masonry-grid-gallery .item {
+    width: calc(25% - 10px); } }
+@media screen and (max-width: 1200px) {
+  /* line 98, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+  .masonry-grid-gallery .item {
+    width: calc(33% - 10px); } }
+@media screen and (max-width: 800px) {
+  /* line 102, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+  .masonry-grid-gallery .item {
+    width: calc(50% - 10px); } }
+@media screen and (max-width: 500px) {
+  /* line 106, E:/RADOVI/dive_and_seek/DEV/source/css/galleries.css.scss */
+  .masonry-grid-gallery .item {
+    width: calc(100% - 10px); } }

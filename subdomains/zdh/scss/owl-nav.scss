@@ -1,0 +1,107 @@
+@import 'variables';
+
+.meni-slider{
+  width: 80vw;
+  position: relative;
+  min-height: 70vh;
+
+  .owl-wrapper-outer.autoHeight{
+    transition: none;
+    -webkit-transition: none;
+  }
+}
+
+
+//  buttons
+.owl-nav{
+  color: $light-grey;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: -$ui-el-size/2;
+  @include clearfix;
+}
+.owl-nav > div {
+  display: block;
+  width: $ui-el-size;
+  height: $ui-el-size;
+  line-height: $ui-el-size;
+  position: relative;
+  margin: auto;
+  border: solid 1px rgba(255,255,255,0.2);
+  margin-top: -1px;
+  overflow: hidden;
+  @include basicTransition(0.4s);
+  &:before, &:after{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: $ui-el-size;
+    font-family: 'icomoon';
+    font-size: $ui-el-size/1.6;
+    text-align: center;
+    @include basicTransition(0.4s);
+  }
+  &.disabled{
+    display: none;
+  }
+}
+.owl-nav > div:hover{
+  border-color: $white;
+  background: rgba(0,0,0,0.1);
+  &:before{
+    margin-top: -$ui-el-size;
+  }
+}
+.owl-nav > div:before  {
+  opacity: 0.4;
+}
+
+.owl-nav > div.owl-prev{
+  float: left;
+  margin-left: $spacing;
+}
+
+.owl-nav > div.owl-next{
+  float: right;
+  margin-right: $spacing;
+}
+
+.owl-nav > div.owl-prev:before,
+.owl-nav > div.owl-prev:after
+{
+  content: '\e408';
+}
+.owl-nav > div.owl-next:before,
+.owl-nav > div.owl-next:after
+{
+  content: '\e409';
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+@media screen and (max-width: $smallDesktop){
+  .meni-slider{
+    width: 90vw;
+  }
+}
+
+
+@media screen and (max-width: $tabLandscape){
+  .meni-slider{
+    width: 100vw;
+  }
+}
+
+
+@media screen and (max-width: $tabPortrait)  {
+  .owl-nav{
+    display: none !important;
+  }
+
+}
+

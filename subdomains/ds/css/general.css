@@ -1,0 +1,271 @@
+/*UI elements*/
+/*setup***********************************************************************************/
+/* line 6, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+*, *:after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 12, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+html, body, .container, .scroller {
+  height: 100%; }
+
+/*style*/
+/* line 19, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+body {
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  color: #6e7279;
+  font-size: 16.5px;
+  line-height: 1.5em;
+  cursor: default;
+  word-wrap: break-word;
+  font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff; }
+
+/* line 34, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+/* line 37, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+*:focus, *:active {
+  outline: none; }
+
+/*general element styles************************************************************************/
+/* line 42, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+a {
+  text-decoration: none;
+  color: #2a84ff; }
+
+/* line 47, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+a:focus, a:active {
+  outline: none; }
+
+/* line 51, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+p {
+  line-height: 1.5em;
+  margin: 0.2em 0; }
+
+/* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+b {
+  font-weight: 600; }
+
+/* line 60, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+h1, h2, h3 {
+  font-weight: 300;
+  line-height: 1.5em; }
+  /* line 63, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  h1 b, h2 b, h3 b {
+    font-weight: 500; }
+
+/* line 67, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+h4, h5, h6 {
+  font-weight: 400; }
+  /* line 69, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  h4 b, h5 b, h6 b {
+    font-weight: 600; }
+
+/* line 74, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+h1 {
+  font-size: 35px;
+  margin: 0.5em 0; }
+
+/* line 79, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+h2 {
+  font-size: 26px; }
+
+/* line 83, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+h3 {
+  font-size: 20px; }
+
+/* line 86, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+button {
+  background: transparent;
+  border: none;
+  color: inherit; }
+
+/* line 91, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+img {
+  max-width: 100%; }
+
+/* line 94, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+/*general classes*********************************************************************************/
+/* line 100, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+*.display-none {
+  display: none; }
+
+/* line 103, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.bg-img {
+  display: none; }
+
+/* line 106, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.link {
+  line-height: 25px;
+  display: block;
+  color: #2a84ff; }
+  /* line 110, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .link span {
+    text-decoration: underline; }
+  /* line 113, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .link i {
+    color: #6e7279;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 19px; }
+
+/* line 120, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.link-group {
+  margin-bottom: 20px;
+  text-align: left; }
+
+/* line 124, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+[data-href] {
+  cursor: pointer; }
+
+/*layout**********************************************************************************************/
+/* line 129, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+body.popup-open .site-wrapper,
+body.popup-open [data-page],
+.site-wrapper.active {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px); }
+
+/* line 137, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.site-wrapper {
+  overflow: hidden;
+  margin: auto;
+  min-height: 100vh; }
+
+/* line 142, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.content-wrapper {
+  margin: auto;
+  display: block;
+  max-width: 1440px; }
+
+/* line 148, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.content {
+  position: relative;
+  margin: auto;
+  max-width: 600px;
+  clear: left;
+  zoom: 1; }
+  /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .content:before, .content:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .content:after {
+    clear: both; }
+
+/* line 156, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.color-main {
+  color: #2a84ff; }
+
+/* line 159, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.screen {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-height: calc(100vh - 70px); }
+
+/* line 165, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.y-padding {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* line 169, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.x-padding {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/* line 174, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+.y-height {
+  position: relative; }
+  /* line 176, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._10 {
+    height: 10vh; }
+  /* line 177, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._15 {
+    height: 15vh; }
+  /* line 178, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._20 {
+    height: 20vh; }
+  /* line 179, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._25 {
+    height: 25vh; }
+  /* line 180, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._30 {
+    height: 30vh; }
+  /* line 181, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._35 {
+    height: 35vh; }
+  /* line 182, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._40 {
+    height: 40vh; }
+  /* line 183, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._45 {
+    height: 45vh; }
+  /* line 184, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._50 {
+    height: 50vh; }
+  /* line 185, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._55 {
+    height: 55vh; }
+  /* line 186, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._60 {
+    height: 60vh; }
+  /* line 187, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._65 {
+    height: 65vh; }
+  /* line 188, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._70 {
+    height: 70vh; }
+  /* line 189, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._75 {
+    height: 75vh; }
+  /* line 190, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._80 {
+    height: 80vh; }
+  /* line 191, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._85 {
+    height: 85vh; }
+  /* line 192, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._90 {
+    height: 90vh; }
+  /* line 193, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._95 {
+    height: 95vh; }
+  /* line 194, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  .y-height._100 {
+    height: 100vh; }
+
+/************************************************************************************************************/
+/************************************************************************************************************/
+@media screen and (min-width: 960px) {
+  /* line 202, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  ::-webkit-scrollbar {
+    width: 6px; }
+
+  /* line 206, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2); }
+
+  /* line 211, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2); } }
+@media screen and (max-width: 1200px) {
+  /* line 219, E:/RADOVI/dive_and_seek/DEV/source/css/general.css.scss */
+  body {
+    font-size: 14px; } }

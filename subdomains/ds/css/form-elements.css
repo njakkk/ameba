@@ -1,0 +1,359 @@
+/*UI elements*/
+/* line 6, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #6e7279;
+  opacity: 0.8; }
+/* line 10, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+input[type="text"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="password"]:-moz-placeholder, textarea:-moz-placeholder {
+  color: #6e7279;
+  opacity: 0.8; }
+/* line 14, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="password"]::-moz-placeholder, textarea::-moz-placeholder {
+  color: #6e7279;
+  opacity: 0.8; }
+/* line 18, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #6e7279;
+  opacity: 0.8; }
+/* line 23, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+input[type="text"]:focus::-webkit-input-placeholder, input[type="email"]:focus::-webkit-input-placeholder, input[type="password"]:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: transparent !important; }
+/* line 24, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+input[type="text"]:focus:-moz-placeholder, input[type="email"]:focus:-moz-placeholder, input[type="password"]:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
+  color: transparent !important; }
+/* line 25, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+input[type="text"]:focus::-moz-placeholder, input[type="email"]:focus::-moz-placeholder, input[type="password"]:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: transparent !important; }
+/* line 26, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+input[type="text"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-input-placeholder, input[type="password"]:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+  color: transparent !important; }
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/* line 33, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+input:focus, textarea:focus {
+  outline: none; }
+
+/* line 38, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+.form {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: left; }
+  /* line 43, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .form .btn {
+    margin: 20px 0 20px 0; }
+
+/*input**********************************************************************************************/
+/* line 79, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+.input {
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px; }
+  /* line 86, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input .error-message, .input .valid-message {
+    left: 0;
+    margin-top: 50px;
+    line-height: 40px;
+    text-align: left;
+    width: 100%;
+    font-size: 100%;
+    font-weight: 400;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    /* line 87, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+    .input .error-message:before, .input .valid-message:before {
+      font-family: 'diveandseek';
+      font-size: 32px;
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 10px; }
+  /* line 105, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input .error-message {
+    color: #e24343; }
+    /* line 106, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+    .input .error-message:before {
+      content: '\e90f'; }
+  /* line 112, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input .valid-message {
+    color: #2fc28c; }
+    /* line 113, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+    .input .valid-message:before {
+      content: '\e91b'; }
+  /* line 119, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input .input-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #6e7279;
+    z-index: 1; }
+  /* line 132, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    padding: 0 20px 0 40px;
+    text-align: left;
+    color: #6e7279;
+    border: none;
+    border-radius: 5px; }
+  /* line 135, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input input:focus {
+    color: #2a84ff; }
+  /* line 138, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input input:focus ~ .input-icon {
+    color: #2a84ff; }
+  /* line 142, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input input[data-required] ~ .required {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #e24343;
+    font-size: 120%;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+    font-weight: 900; }
+
+/* line 156, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+.input.large {
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  height: 60px; }
+  /* line 160, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input.large .error-message, .input.large .valid-message {
+    margin-top: 70px; }
+  /* line 164, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input.large .input-icon {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    font-size: 30px; }
+  /* line 171, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input.large input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    padding: 0 40px 0 60px;
+    text-align: left;
+    color: #6e7279;
+    border: none;
+    border-radius: 7px; }
+
+/*checkbox**********************************************************************************************/
+/* line 177, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+.checkbox {
+  margin: 20px 0 20px 0;
+  display: inline-block;
+  position: relative;
+  height: 25px; }
+  /* line 183, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .checkbox input {
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer; }
+  /* line 193, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .checkbox label {
+    padding-left: 33.75px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    display: inline-block; }
+  /* line 201, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .checkbox label:before, .checkbox label:after {
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-family: 'telekom-sso';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px; }
+  /* line 213, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .checkbox label:before {
+    content: '';
+    border: solid 1px #bdbfc3;
+    border-radius: 2px; }
+  /* line 218, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .checkbox label:after {
+    content: '\e90d';
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0; }
+  /* line 223, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .checkbox input:checked + label:after {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1; }
+
+/*radio**********************************************************************************************/
+/* line 230, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+.radio {
+  margin: 20px 0 20px 0;
+  display: inline-block;
+  position: relative;
+  height: 25px; }
+  /* line 236, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .radio input {
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer; }
+  /* line 246, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .radio label {
+    padding-left: 33.75px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    display: inline-block; }
+  /* line 254, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .radio label:before, .radio label:after {
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-family: 'telekom-sso';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 100%; }
+  /* line 268, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .radio label:before {
+    content: '';
+    border: solid 1px #bdbfc3; }
+  /* line 272, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .radio label:after {
+    content: '';
+    background-color: #6e7279;
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0; }
+  /* line 278, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .radio input:checked + label:after {
+    -ms-transform: scale(0.4, 0.4);
+    -webkit-transform: scale(0.4, 0.4);
+    -moz-transform: scale(0.4, 0.4);
+    transform: scale(0.4, 0.4);
+    opacity: 1; }
+
+/*Select**********************************************************************************************/
+/* line 285, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+.select {
+  margin: 20px 0 20px 0;
+  display: block;
+  position: relative;
+  height: 40px;
+  cursor: pointer; }
+  /* line 292, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .select select {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    color: #6e7279;
+    font-size: 15px;
+    background-color: transparent; }
+  /* line 304, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .select:before {
+    content: '\e5cf';
+    font-family: 'telekom-sso';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 38px;
+    line-height: 38px;
+    background: #fff;
+    color: #2fc28c;
+    z-index: 1;
+    text-align: center;
+    font-size: 22px;
+    pointer-events: none; }
+  /* line 320, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .select option {
+    padding: 15px; }
+  /* line 323, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .select select:focus ~ border:after {
+    width: 100%;
+    left: 0; }
+
+@media screen and (max-width: 960px) {
+  /* line 341, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+  .input.large {
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    height: 40px; }
+    /* line 345, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+    .input.large .error-message, .input.large .valid-message {
+      margin-top: 50px; }
+    /* line 349, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+    .input.large .input-icon {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      font-size: 15px; }
+    /* line 356, E:/RADOVI/dive_and_seek/DEV/source/css/form-elements.css.scss */
+    .input.large input {
+      height: 40px;
+      line-height: 40px;
+      font-size: 15px;
+      padding: 0 40px 0 40px;
+      border-radius: 5px; } }

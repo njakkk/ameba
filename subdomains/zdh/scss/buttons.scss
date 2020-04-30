@@ -1,0 +1,87 @@
+@import 'variables';
+
+
+.btn{
+  display: inline-block;
+  min-width: $btn-size*2;
+  height: $btn-size;
+  line-height: $btn-size;
+  padding: 0 $ui-el-size/1.2;
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  background: darken($dark, 6);
+  border-radius: 2px;
+  font-family: $thin;
+  font-weight: 100;
+  border: solid 1px transparent;
+  @include basicTransition(0.4s);
+  >*{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+  i{
+    font-size: $ui-el-size/2 - 1px;
+  }
+  i.right-icc{
+    margin-left: 10px;
+    margin-right: -10px;
+  }
+  i.left-icc{
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+
+  &.white {
+    color: $dark;
+    background: $light-grey;
+    &:hover{
+      border-color: rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.1);
+    }
+  }
+  &.small{
+    min-width: $btn-size-small*2;
+    height: $btn-size-small;
+    line-height: $btn-size-small;
+    padding: 0 $ui-el-size/2;
+    font-size: 10px;
+    i{
+      font-size: $ui-el-size/3.2 - 1px;
+    }
+  }
+}
+
+.btn:hover, .btn:focus{
+  border-color: rgba(255,255,255,0.2);
+}
+
+.btn:hover{
+  .right-icc{
+    animation: rightIconAnimation 0.8s both;
+  }
+  .left-icc{
+    animation: leftIconAnimation 0.8s both;
+  }
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media screen and (max-width: 1200px){
+
+  .btn{
+    min-width: $btn-size-small*2;
+    height: $btn-size-small;
+    line-height: $btn-size-small;
+    padding: 0 $ui-el-size/2;
+    font-size: 10px;
+    i{
+      font-size: $ui-el-size/3.2 - 1px;
+    }
+  }
+}

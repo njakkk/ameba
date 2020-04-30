@@ -21,8 +21,8 @@
 }
 
 .project-header{
-  min-width: 300px;
-  width: 300px;
+  width: 380px; 
+  min-width: 380px;
   height: 100%;
   top: 0;
   background: $white;
@@ -218,6 +218,9 @@
 
 @media screen and (max-width: 800px){
   .project-header{
+    width: 280px; 
+    min-width: 280px;
+
     > article{
       padding: 0 30px;
     }

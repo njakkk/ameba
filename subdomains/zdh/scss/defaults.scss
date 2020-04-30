@@ -1,0 +1,252 @@
+@import 'variables';
+
+p{
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+}
+b{
+  font-weight: 800;
+}
+
+.clearfix{
+  @include clearfix;
+}
+
+.link{
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.strong-font{
+  font-family: $strong;
+  font-weight: 300;
+}
+
+.big-padding{
+  padding: $spacing*6;
+}
+
+.big-padding-x{
+  padding-left: $spacing*6;
+  padding-right: $spacing*6;
+}
+
+.big-padding-y{
+  padding-top: $spacing*6;
+  padding-bottom: $spacing*6;
+}
+
+.vertical-center{
+  position: relative;
+  top: $vh/2;
+}
+
+.vh{
+  min-height: $vh;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.spaced-caption{
+  font-size: 4.5vmin;
+  font-family: $thin;
+  font-weight: 100;
+  letter-spacing: 0.4em;
+  line-height: 1.5em;
+}
+
+.title{
+  text-align: center;
+  font-size: 2.6vmin;
+  font-family: $thin;
+  font-weight: 100;
+  letter-spacing: 0.4em;
+  line-height: 1.3em;
+}
+
+.subtitle{
+  font-size: 20px;
+  font-family: $strong;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+
+  p{
+    font-family: $main-font;
+  }
+}
+
+.spacer{
+  display: block;
+  height: 1px;
+  background: transparent;
+  border: none;
+  position: relative;
+  margin: $spacing 0;
+  span {
+    width: 150px;
+    display: block;
+    height: 1px;
+    background: $main;
+  }
+  &.tc span{
+    margin: auto;
+  }
+}
+
+.tc{
+  text-align: center;
+}
+.tl{
+  text-align: left;
+}
+.tr{
+  text-align: right;
+}
+
+.z1{ z-index: 1}
+.z2{ z-index: 2}
+.z3{ z-index: 3}
+
+.pattern{
+  position: relative;
+    &:before{
+      @include noiz;
+    }
+}
+
+.phone{
+  display: block;
+  padding: $spacing 0;
+  font-size: 3.3vmin;
+  font-family: $thin;
+  font-weight: 100;
+  i,span{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  i{
+    font-size: 3.6vmin;
+  }
+  &:hover, &:focus{
+    color: $main;
+  }
+}
+
+.down{
+  cursor: pointer;
+  i{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 46px;
+    margin-left: -22px;
+    @include basicTransition(0.4s);
+  }
+  span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 7.2pt;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    font-family: $thin;
+    font-weight: 100;
+    opacity: 0.4;
+  }
+  &:hover{
+    i{
+      -webkit-animation-duration: 0.6s;
+      animation-duration: 0.6s;
+      -webkit-animation-name: bounceInDownSmall;
+      animation-name: bounceInDownSmall;
+    }
+  }
+}
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media screen and (max-width: $smallDesktop){
+  .big-padding{
+    padding: 8vmin;
+  }
+
+  .big-padding-x{
+    padding-left: 8vmin;
+    padding-right: 8vmin;
+  }
+
+  .big-padding-y{
+    padding-top: 8vmin;
+    padding-bottom: 8vmin;
+  }
+
+}
+
+@media screen and (max-width: $tabLandscape){
+
+  .vertical-center{
+    top: 0;
+    margin-top: $spacing*4;
+    margin-bottom: $spacing*4;
+  }
+
+  .vh{
+    min-height: 10px;
+  }
+
+  .big-padding{
+    padding: 5vmin;
+  }
+
+  .big-padding-x{
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+  }
+
+  .big-padding-y{
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+  }
+
+}
+
+@media screen and (max-width: $tabPortrait){
+
+  .spaced-caption{
+    font-size: 28px;
+    letter-spacing: 0.3em;
+    line-height: 1.2em;
+  }
+
+  .title{
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    line-height: 1.2em;
+  }
+
+  .spacer{
+    span {
+      width: 90px;
+    }
+  }
+
+  .phone{
+    font-size: 26px;
+    i{
+      font-size: 23px;
+    }
+  }
+
+}

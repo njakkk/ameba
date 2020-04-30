@@ -1,0 +1,106 @@
+/*UI elements*/
+/*---Popup element---*/
+/*-------------------------------------------------*/
+/* overlay at start */
+/* overlay at start */
+/* line 7, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease; }
+
+/* overlay animate in */
+/* line 14, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+/* overlay animate out */
+/* line 18, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+/* line 23, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-fade.mfp-wrap {
+  opacity: 0;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease; }
+
+/* content animate it */
+/* line 31, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-fade.mfp-wrap.mfp-ready {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1); }
+
+/* content animate out */
+/* line 37, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-fade.mfp-wrap.mfp-removing {
+  opacity: 0;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8); }
+
+/*-------------------------------------------------*/
+/* line 44, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-close-btn-in .mfp-close {
+  color: #fff;
+  display: none; }
+
+/* line 48, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-wrap {
+  cursor: url("../images/cursor-close.png"), auto;
+  overflow: hidden !important; }
+
+/* line 53, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: auto;
+  min-width: 250px;
+  max-height: 100%;
+  overflow: hidden;
+  margin-left: -10px; }
+
+/* line 65, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.mfp-content {
+  background: #1d2b41;
+  color: #fff;
+  padding: 0;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  left: 20px;
+  padding-right: 20px; }
+
+/* default popup*/
+/* line 79, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.default-popup {
+  padding: 20px 80px;
+  min-height: 100vh;
+  display: inline-block;
+  width: 100%;
+  min-width: 300px;
+  text-align: center;
+  position: relative;
+  max-width: inherit; }
+
+/* line 90, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+.default-popup.auto-height {
+  min-height: auto; }
+
+@media screen and (max-width: 1200px) {
+  /* line 98, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+  .default-popup {
+    padding: 0 20px;
+    min-width: 300px; } }
+@media screen and (max-width: 960px) {
+  /* line 106, E:/RADOVI/dive_and_seek/DEV/source/css/popup.css.scss */
+  .mfp-close-btn-in .mfp-close {
+    display: block; } }

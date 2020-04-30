@@ -1,0 +1,54 @@
+/*UI elements*/
+/* line 3, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+.message {
+  text-align: center;
+  padding: 30px 20px;
+  margin: 20px auto;
+  max-width: 70vw;
+  border: solid 1px #F4F4F5;
+  color: #888c92;
+  border-radius: 5px; }
+  /* line 12, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message > *:not(.btn) {
+    max-width: 800px;
+    display: block;
+    margin: auto; }
+  /* line 17, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message .message-caption {
+    margin-bottom: 20px; }
+  /* line 20, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message .btn {
+    margin: 20px; }
+  /* line 23, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message p {
+    color: #a2a5ab; }
+  /* line 27, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message > i {
+    font-size: 40px;
+    margin-bottom: 20px !important; }
+  /* line 32, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message.main {
+    border: solid 1px #2a84ff;
+    color: #2a84ff; }
+  /* line 37, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message.danger {
+    border: solid 1px #e24343;
+    color: #e24343; }
+  /* line 41, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message.ok {
+    border: solid 1px #2fc28c;
+    color: #2fc28c; }
+  /* line 45, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message.full-width {
+    max-width: inherit;
+    margin: 20px; }
+
+@media screen and (max-width: 1200px) {
+  /* line 55, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+  .message {
+    max-width: inherit;
+    margin: 20px; }
+    /* line 59, E:/RADOVI/dive_and_seek/DEV/source/css/messages.css.scss */
+    .message .btn {
+      width: auto;
+      display: block; } }

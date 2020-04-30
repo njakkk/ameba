@@ -29,11 +29,11 @@ docpadConfig = {
     production:
       templateData:
         site:
-          url: "http://ameba.rs"
+          url: "http://ameba.one"
     staging:
       templateData:
         site:
-          url: "http://dev.ameba.rs/ameba"
+          url: "http://dev.ameba.one/ameba"
 
   events:
     serverExtend: (opts) ->

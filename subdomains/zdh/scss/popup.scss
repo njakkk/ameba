@@ -1,0 +1,156 @@
+@import 'variables';
+
+/*---Popup element---*/
+/*-------------------------------------------------*/
+/* overlay at start */
+/* overlay at start */
+
+.mfp-bg{
+  background: #000;
+  opacity: 0.4;
+
+}
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.4;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+
+
+.mfp-fade.mfp-wrap .mfp-content{
+  opacity: 0;
+//  transform: scale(.8) translateY(-100px);
+//  -webkit-transform: scale(.8) translateY(-100px);
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content{
+  opacity: 1;
+//  transform: none;
+//  -webkit-transform: none;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content{
+  opacity: 0;
+//  transform: scale(.8) translateY(100px);
+//  -webkit-transform: scale(.8) translateY(100px);
+}
+/*-------------------------------------------------*/
+
+.mfp-close{
+  font-size: 17px;
+}
+
+.mfp-close-btn-in .mfp-close{
+  color: $white;
+}
+.mfp-wrap{
+  position: fixed !important;
+  overflow-y: auto;
+  text-align: center;
+  top: 0 !important;
+}
+
+.mfp-container{
+  position: relative;
+  display: inline-block;
+  width: auto;
+  min-width: 250px;
+}
+
+.mfp-content{
+  overflow: hidden;
+  padding: 0;
+}
+
+/*----------------------------------------------*/
+
+//  buttons
+.mfp-arrow {
+  display: block;
+  width: $ui-el-size;
+  height: $ui-el-size;
+  line-height: $ui-el-size;
+  position: fixed;
+  margin: 0 !important;
+  border: solid 1px rgba(255,255,255,0.2) !important;
+  overflow: hidden !important;
+  top: 50%;
+  margin-top: -$ui-el-size/2;
+  @include basicTransition(0.4s);
+
+  &:before, &:after{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: $ui-el-size;
+    font-family: 'icomoon';
+    font-size: $ui-el-size/1.6;
+    text-align: center;
+    margin: 0;
+    top: 0;
+    border: none;
+    position: relative;
+    color: $light-grey;
+    @include basicTransition(0.4s);
+  }
+}
+.mfp-arrow:hover{
+  border-color: $white !important;
+  background: rgba(0,0,0,0.1);
+  &:before{
+    margin-top: -$ui-el-size;
+  }
+}
+.mfp-arrow:before  {
+  opacity: 0.4;
+}
+
+.mfp-arrow.mfp-arrow-left{
+  left: $spacing;
+}
+
+.mfp-arrow.mfp-arrow-right{
+  right: $spacing;
+}
+
+.mfp-arrow.mfp-arrow-left:before,
+.mfp-arrow.mfp-arrow-left:after
+{
+  content: '\e408';
+}
+.mfp-arrow.mfp-arrow-right:before,
+.mfp-arrow.mfp-arrow-right:after
+{
+  content: '\e409';
+}
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+@media screen and (max-width: $tabPortrait)  {
+
+  .mfp-close-btn-in .mfp-close{
+    display: block;
+  }
+
+  .mfp-arrow{
+    display: none !important;
+  }
+
+}

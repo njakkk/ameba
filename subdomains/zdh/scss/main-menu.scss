@@ -1,0 +1,162 @@
+@import 'variables';
+
+.main-logo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $nav-height;
+  height: $nav-height;
+  padding: 7px;
+  z-index: 3;
+  opacity: 0;
+  @include basicTransition(0.5s);
+  img{
+    width: 100%;
+  }
+  &.scrolled{
+    opacity: 1;
+  }
+}
+
+.main-menu {
+  position: fixed;
+  left: 0;
+  top: 100%;
+  z-index: 2;
+  @include rotate(-90deg);
+  transform-origin: left top;
+  width: $vh;
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  height: $nav-height;
+  @include basicTransition(0.4s);
+
+  &:hover, &:focus{
+    background: rgba(0,0,0,0.4);
+  }
+
+  ul{
+    display: block;
+    table-layout: fixed;
+    width: calc(#{$vh} - #{$nav-height});
+    border-spacing: $spacing 0;
+    position: relative;
+    @include clearfix;
+  }
+
+  li{
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+    line-height: $nav-height;
+    @include basicTransition(0.4s);
+    overflow: hidden;
+    &.active{
+      opacity: 1;
+      a{
+        opacity: 1;
+      }
+      a:after{
+        opacity: 0.13;
+        letter-spacing: 0.03em;
+     }
+    }
+    &:hover{
+      a{
+        opacity: 1;
+      }
+    }
+  }
+
+  li.progress{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    background: $main;
+    width: 20%;
+    @include basicTransition(0.4s);
+    transition-delay: 0.2s;
+    opacity:0
+  }
+  a{
+    display: block;
+    position: relative;
+    opacity: 0.3;
+    white-space: nowrap;
+    @include basicTransition(0.4s);
+  }
+  a:after{
+    content: ""attr(data-num)"";
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    font-size: $nav-height/1.1;
+    font-family: $thin;
+    font-weight: 100;
+    opacity: 0;
+    @include basicTransition(0.4s);
+  }
+}
+
+.main-menu.active-2 {
+  color: $dark;
+  border-bottom-color:rgba(0,0,0,0.08);
+  &:hover{
+    background: $white;
+  }
+
+  a{
+    color: $dark;
+  }
+}
+
+
+.main-menu li:nth-child(5).active ~ li.progress{ right: 0; opacity:1}
+.main-menu li:nth-child(4).active ~ li.progress{ right: 20%; opacity:1}
+.main-menu li:nth-child(3).active ~ li.progress{ right: 40%; opacity:1}
+.main-menu li:nth-child(2).active ~ li.progress{ right: 60%; opacity:1}
+.main-menu li:nth-child(1).active ~ li.progress{ right: 80%; opacity:1}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+.lang-menu{
+  position: absolute;
+  top: $spacing;
+  right: $spacing;
+  z-index: 10;
+  li{
+    display: inline-block;
+    margin-left: -6px;
+    a{
+      display: block;
+      font-weight: 400;
+      opacity: 0.7;
+      font-size: 13px;
+      line-height: 40px;
+      padding: 0 10px;
+      border: solid 1px $white;
+      position: relative;
+    }
+    a.active{
+      font-weight: 600;
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media screen and (max-width: $tabLandscape){
+
+  .main-menu {
+    display: none !important;
+  }
+}

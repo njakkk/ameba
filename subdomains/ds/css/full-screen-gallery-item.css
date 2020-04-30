@@ -1,0 +1,216 @@
+/*UI elements*/
+/*---Gallery item---*/
+/*-------------------------------------------------*/
+/* line 7, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+.full-screen-gallery .owl-wrapper-outer {
+  pointer-events: none; }
+
+/* line 12, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+.full-screen-gallery .item {
+  min-height: 100vh;
+  padding: 0;
+  position: relative; }
+  /* line 17, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .full-screen-gallery .item .item-image {
+    position: relative;
+    height: calc(100vh - 90px); }
+    /* line 20, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .item-image img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-height: 95%;
+      pointer-events: auto;
+      cursor: move;
+      border-radius: 3px; }
+  /* line 29, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .full-screen-gallery .item .item-info {
+    pointer-events: auto;
+    background: #fbfbfc;
+    border-bottom: solid 1px #F4F4F5;
+    zoom: 1;
+    padding: 0 20px;
+    min-height: 90px; }
+    /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+    .full-screen-gallery .item .item-info:before, .full-screen-gallery .item .item-info:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+    .full-screen-gallery .item .item-info:after {
+      clear: both; }
+  /* line 38, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .full-screen-gallery .item .author, .full-screen-gallery .item .likes {
+    padding: 10px 0; }
+  /* line 41, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .full-screen-gallery .item .author {
+    float: left; }
+    /* line 43, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .author .avatar {
+      display: inline-block;
+      vertical-align: middle;
+      height: 70px;
+      width: 70px;
+      border-radius: 100%;
+      margin-right: 10px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -moz-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      /* line 52, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+      .full-screen-gallery .item .author .avatar:hover {
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1); }
+    /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .author .author-text {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left; }
+      /* line 60, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+      .full-screen-gallery .item .author .author-text a {
+        font-size: 130%; }
+        /* line 62, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+        .full-screen-gallery .item .author .author-text a i {
+          font-size: 120%;
+          margin: 0 10px; }
+      /* line 67, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+      .full-screen-gallery .item .author .author-text h3 {
+        margin: 0;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        /* line 71, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+        .full-screen-gallery .item .author .author-text h3 a {
+          color: #3d4044; }
+  /* line 78, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .full-screen-gallery .item .likes {
+    float: right; }
+    /* line 80, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .likes > * {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0; }
+    /* line 85, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .likes h1 {
+      font-size: 45px;
+      color: #2a84ff;
+      line-height: 1em;
+      margin-right: 20px;
+      font-weight: 500; }
+      /* line 91, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+      .full-screen-gallery .item .likes h1 span {
+        display: block;
+        font-size: 15px;
+        color: #6e7279;
+        line-height: 1em;
+        font-weight: 400; }
+    /* line 99, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .likes .btn {
+      min-width: 120px;
+      padding: 0; }
+      /* line 102, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+      .full-screen-gallery .item .likes .btn i {
+        margin-left: 0; }
+
+/* line 110, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+.image-details {
+  background: #fff;
+  padding: 20px;
+  margin-top: -1px; }
+
+/*---Image details---*/
+/*-------------------------------------------------*/
+/* line 121, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+.image-details .image-sharing > * {
+  display: inline-block; }
+/* line 124, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+.image-details .image-sharing .btn {
+  margin-right: 20px; }
+/* line 128, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+.image-details .image-tags a:hover {
+  text-decoration: underline; }
+
+/* line 133, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+.more-images {
+  display: block; }
+  /* line 136, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .more-images .cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 140px;
+    width: calc(25% - 10px);
+    margin: 0 10px 10px 0;
+    border-radius: 3px;
+    overflow: hidden; }
+    /* line 144, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .more-images .cover:last-child {
+      margin-right: 0; }
+
+@media screen and (max-width: 1200px) {
+  /* line 152, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .full-screen-gallery .item {
+    min-height: 100vh; }
+    /* line 154, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .item-image {
+      height: calc(100vh - 63.75px); }
+    /* line 159, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .author .avatar {
+      height: 43.75px;
+      width: 43.75px; }
+    /* line 164, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .author .author-text a {
+      font-size: 100%; }
+      /* line 166, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+      .full-screen-gallery .item .author .author-text a i {
+        font-size: 120%;
+        margin: 0 10px; }
+    /* line 174, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .likes h1 {
+      font-size: 30px; } }
+@media screen and (max-width: 600px) {
+  /* line 183, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .full-screen-gallery .item .author, .full-screen-gallery .item .likes {
+    float: none;
+    text-align: left;
+    zoom: 1; }
+    /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+    .full-screen-gallery .item .author:before, .full-screen-gallery .item .author:after, .full-screen-gallery .item .likes:before, .full-screen-gallery .item .likes:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+    .full-screen-gallery .item .author:after, .full-screen-gallery .item .likes:after {
+      clear: both; }
+  /* line 189, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .full-screen-gallery .item .likes {
+    border-top: solid 1px #F4F4F5; }
+    /* line 191, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .likes h1 {
+      font-size: 30px;
+      line-height: 40px; }
+      /* line 194, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+      .full-screen-gallery .item .likes h1 span {
+        display: inline-block;
+        vertical-align: middle; }
+    /* line 199, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+    .full-screen-gallery .item .likes .btn {
+      float: right; }
+
+  /* line 206, E:/RADOVI/dive_and_seek/DEV/source/css/full-screen-gallery-item.css.scss */
+  .more-images .cover {
+    width: calc(50% - 10px); } }

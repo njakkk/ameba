@@ -1,0 +1,92 @@
+/*UI elements*/
+/*OWL SLIDER DEFAULTS*/
+/* line 5, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* line 14, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+/* line 20, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+/* line 26, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+/* line 34, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.owl-item {
+  float: left; }
+
+/* line 38, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.owl-page, .owl-controls .owl-buttons div {
+  cursor: pointer; }
+
+/* line 42, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 51, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.grabbing {
+  cursor: move; }
+
+/* line 55, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.owl-wrapper, .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0); }
+
+/*OWL SLIDER DEFAULTS END*/
+/****************owl pagination******************/
+/* line 67, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+.owl-pagination {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center; }
+  /* line 73, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+  .owl-pagination .owl-page {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 0 5px;
+    background-color: transparent;
+    border: solid 2px white;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  /* line 83, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+  .owl-pagination .owl-page:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.4); }
+  /* line 87, E:/RADOVI/dive_and_seek/DEV/source/css/owl-carousel.css.scss */
+  .owl-pagination .owl-page.active {
+    background-color: white;
+    border-color: white; }

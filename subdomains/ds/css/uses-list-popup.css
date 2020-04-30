@@ -1,0 +1,71 @@
+/*UI elements*/
+/* line 4, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+.users-list-popup li {
+  list-style: none;
+  text-align: left;
+  zoom: 1;
+  padding: 20px 0;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.05);
+  min-width: 600px; }
+  /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .users-list-popup li:before, .users-list-popup li:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .users-list-popup li:after {
+    clear: both; }
+  /* line 11, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+  .users-list-popup li:last-child {
+    border-bottom: none; }
+/* line 15, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+.users-list-popup .avatar {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  vertical-align: middle; }
+/* line 24, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+.users-list-popup h3 {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff; }
+  /* line 30, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+  .users-list-popup h3 a {
+    color: #fff; }
+/* line 34, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+.users-list-popup .toggle-buttons {
+  float: right;
+  margin-top: 20px; }
+
+@media screen and (max-width: 800px) {
+  /* line 44, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+  .users-list-popup li {
+    min-width: 300px; }
+  /* line 47, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+  .users-list-popup .avatar {
+    width: 43.75px;
+    height: 43.75px; }
+  /* line 51, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+  .users-list-popup h3 {
+    font-size: 115%;
+    max-width: 150px; }
+  /* line 55, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+  .users-list-popup .toggle-buttons {
+    margin-top: 10px; }
+    /* line 57, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+    .users-list-popup .toggle-buttons .btn {
+      min-width: 40px;
+      padding: 0; }
+    /* line 61, E:/RADOVI/dive_and_seek/DEV/source/css/uses-list-popup.css.scss */
+    .users-list-popup .toggle-buttons span {
+      display: none; } }

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?pbo4ru');
+  src:  url('fonts/icomoon.eot?pbo4ru#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pbo4ru') format('truetype'),
+    url('fonts/icomoon.woff?pbo4ru') format('woff'),
+    url('fonts/icomoon.svg?pbo4ru#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-down-thin:before {
+  content: "\e906";
+}
+.icon-phone:before {
+  content: "\e905";
+}
+.icon-close:before {
+  content: "\e5cd";
+}
+.icon-close-thin:before {
+  content: "\e901";
+}
+.icon-bbq:before {
+  content: "\e907";
+}
+.icon-meal:before {
+  content: "\e908";
+}
+.icon-salad:before {
+  content: "\e909";
+}
+.icon-addons:before {
+  content: "\e90a";
+}
+.icon-drink:before {
+  content: "\e90b";
+}
+.icon-drink-addons:before {
+  content: "\e90c";
+}
+.icon-chicken:before {
+  content: "\e900";
+}
+.icon-pizza:before {
+  content: "\e903";
+}
+.icon-pancake:before {
+  content: "\e902";
+}
+.icon-sandwich:before {
+  content: "\e904";
+}
+.icon-remove:before {
+  content: "\e15b";
+}
+.icon-add:before {
+  content: "\e145";
+}
+.icon-arrow_back:before {
+  content: "\e5c4";
+}
+.icon-arrow_downward:before {
+  content: "\e5db";
+}
+.icon-arrow_drop_down:before {
+  content: "\e5c5";
+}
+.icon-arrow_drop_up:before {
+  content: "\e5c7";
+}
+.icon-arrow_forward:before {
+  content: "\e5c8";
+}
+.icon-arrow_upward:before {
+  content: "\e5d8";
+}
+.icon-check:before {
+  content: "\e5ca";
+}
+.icon-navigate_before:before {
+  content: "\e408";
+}
+.icon-navigate_next:before {
+  content: "\e409";
+}
+.icon-expand_less:before {
+  content: "\e5ce";
+}
+.icon-expand_more:before {
+  content: "\e5cf";
+}
+.icon-keyboard_backspace:before {
+  content: "\e317";
+}
+

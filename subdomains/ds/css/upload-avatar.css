@@ -1,0 +1,72 @@
+/*UI elements*/
+/* line 6, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+.upload-avatar-dropzone {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.05);
+  border: dashed 2px rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 100%;
+  margin-bottom: 60px; }
+  /* line 16, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+  .upload-avatar-dropzone .avatar-submit {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -20px; }
+
+/* line 24, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+.dropzone.dz-drag-hover, .dropzone:not(.dz-max-files-reached):hover {
+  background: rgba(0, 0, 0, 0.1);
+  border: dashed 2px white; }
+
+/* line 30, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+.dropzone .dz-preview {
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 35, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+.dropzone .dz-preview .dz-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden; }
+
+/* line 42, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+.dropzone .dz-preview.dz-image-preview {
+  background: transparent; }
+
+/* line 46, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+.dropzone .dz-preview .dz-image img {
+  width: 100%; }
+
+/* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+.dz-message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 !important; }
+  /* line 53, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+  .dz-message i {
+    display: block;
+    font-size: 60px;
+    opacity: 0.2;
+    margin-bottom: 20px;
+    text-align: center; }
+
+/* line 61, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+.dz-remove {
+  margin-top: 20px; }
+
+@media screen and (max-width: 960px) {
+  /* line 68, E:/RADOVI/dive_and_seek/DEV/source/css/upload-avatar.css.scss */
+  .upload-avatar-dropzone {
+    width: 250px;
+    height: 250px;
+    padding: 40px; } }

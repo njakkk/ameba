@@ -14,8 +14,8 @@ color: "#3c64ff"
 <div class="row about" set-width>
     <div class="column-3 show-up right">
         <h1 data-color="<%= @document.color %>">Ameba's name is Marija</h1>
-        <h2 class="strong-font">she is a Designer & Developer based in Belgrade, Serbia.</h2>
-        <p>I'm a UX/UI designer with more than 8 years of professional experience as a freelancer and also as a part of the team. I enjoy creating beautiful interfaces, and I also enjoy developing them.</p>
+        <h2 class="strong-font">she is a Designer & Developer based in Amsterdam, Netherlands.</h2>
+        <p>I'm a Senior UX/UI designer with more than 10 years of professional experience as a freelancer and also as a part of the team. I enjoy creating beautiful interfaces, and I also enjoy developing them.</p>
         <p>I'm constantly trying to improve my skills and stay up-to-date with the technology.</p>
         <p>Oh and... I like to draw all sorts on amebas during my spare time :)</p>
         <br/>
@@ -24,8 +24,8 @@ color: "#3c64ff"
     </div>
 
     <div class="column-6"></div>
-
-    <div class="column-6 show-up right">
+    
+    <div class="column-5 show-up right">
         <h2 class="strong-font">Work experience</h2>
         <div class="exp">
             <h3>2007</h3>
@@ -43,13 +43,13 @@ color: "#3c64ff"
             <h3>2009 - 2010</h3>
             <p>Graphic Designer at “LMG”, Belgrade</p>
         </div>
-    </div>
-
-    <div class="column-6 show-up right">
         <div class="exp">
             <h3>2010 - 2012</h3>
             <p>Web Designer and Frontent developer at “Fonlider”, Belgrade</p>
         </div>
+    </div>
+
+    <div class="column-5 show-up right">
         <div class="exp">
             <h3>2012 - 2014</h3>
             <p>UX/UI Designer and Frontend developer at “Carnation Group”, Beglrade - Budapest</p>
@@ -59,8 +59,16 @@ color: "#3c64ff"
             <p>Free-lance UX/UI Designer & frontent Developer; Photoshop Teacher at “Škola modernog poslovanja”, Belgrade</p>
         </div>
         <div class="exp">
-            <h3>2014 - present</h3>
+            <h3>2014 - 2017</h3>
             <p>Lead UX/UI Designer and Frontend developer at “AllThingsTalk”, Serbia - Belgium</p>
+        </div>
+        <div class="exp">
+            <h3>2017 - 2019</h3>
+            <p>UX Designer at Booking.com, Amsterdam, Netherlands</p>
+        </div>
+        <div class="exp">
+            <h3>20179 - present</h3>
+            <p>Senior UX Designer at Booking.com, Amsterdam, Netherlands</p>
         </div>
     </div>
 
@@ -68,42 +76,32 @@ color: "#3c64ff"
         <img src="<%= @site.url %>/images/ameba-loader.svg" alt=""/>
     </div>
 
-    <div class="column-6 show-up right">
+    <div class="column-5 show-up right">
         <h2 class="strong-font">Skills</h2>
         <div class="exp">
-            <h3>Graphic editing</h3>
+            <h3>UX & Design proces</h3>
+            <p>Conducting & analysing user research [ pro ]</p>
+            <p>Preparing & analysing surveys [ pro ]</p>
+            <p>Facilitating brainstorms & journey mapping sessions [ pro ]</p>
+            <p>Defining UI rules & creating design systems [ pro ]</p>
+            <p>Developing UX visions and transition plans [ pro ]</p>
+        </div>
+        <div class="exp">
+            <h3>Design tools</h3>
             <p>Adobe Photoshop CC [ pro ]</p>
-        </div>
-        <div class="exp">
-            <h3>Vector editing</h3>
             <p>Adobe Illustrator CC [ pro ]</p>
-        </div>
-        <div class="exp">
-            <h3>Video editing</h3>
-            <p>Adobe After effects CC [ beginner ]</p>
-        </div>
-        <div class="exp">
-            <h3>HTML5</h3>
-            <p>DOM organisation and manipulation [ pro ]</p>
+            <p>Sketch [ pro ]</p>
+            <p>Figma [ pro ]</p>
         </div>
     </div>
 
-    <div class="column-6 show-up right">
+    <div class="column-5 show-up right">
         <div class="exp">
-            <h3>JS and jQuery</h3>
-            <p>Creating custom UX/UI, using frameworks [ pro ]</p>
-        </div>
-        <div class="exp">
-            <h3>CSS3, CSS preprocessors</h3>
-            <p>Sass, Less, Creating custom responsive layouts, using frameworks such as Bootstrap, Foundation... [ pro ]</p>
-        </div>
-        <div class="exp">
-            <h3>Templating engines</h3>
-            <p>Middleman - ruby, Docpad - Node.js [ pro ]</p>
-        </div>
-        <div class="exp">
-            <h3>SPA Frameworks</h3>
-            <p>Angular.js [ baginner ]</p>
+            <h3>Development</h3>
+            <p>DOM organisation and manipulation [ pro ]</p>
+            <p>Developing WCAG compliant, accessible web [ pro ]</p>
+            <p>CSS, SASS, LESS [ pro ]</p>
+            <p>JS, jQuery, Angular & React [ intermediate ]</p>
         </div>
     </div>
 

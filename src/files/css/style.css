@@ -2744,6 +2744,12 @@ tiny-space {
 .owl-item.active .slide-content .border-left {
   transform: scale(1, 0.2); }
 
+@media screen and (max-width: 1400px) {
+  .home-slide .slide-content {
+    width: 45vw;
+    max-width: 45vw;
+    background: none; } }
+
 @media screen and (max-width: 1200px) {
   .home-slide .slide-content {
     width: 70vw;
@@ -3022,8 +3028,8 @@ tiny-space {
   z-index: 2; }
 
 .project-header {
-  min-width: 300px;
-  width: 300px;
+  width: 380px;
+  min-width: 380px;
   height: 100%;
   top: 0;
   background: #fff;
@@ -3184,10 +3190,13 @@ tiny-space {
       background: #6f7484; }
 
 @media screen and (max-width: 800px) {
-  .project-header > article {
-    padding: 0 30px; }
-  .project-header .more-projects {
-    padding: 30px; }
+  .project-header {
+    width: 280px;
+    min-width: 280px; }
+    .project-header > article {
+      padding: 0 30px; }
+    .project-header .more-projects {
+      padding: 30px; }
   .project-content img {
     max-height: 70vh; } }
 

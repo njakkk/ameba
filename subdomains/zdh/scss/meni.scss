@@ -1,0 +1,301 @@
+@import 'variables';
+
+.meni{}
+
+.meni-title{
+  margin-top: -$nav-height;
+}
+
+.meni-item{
+  padding: 0 $spacing*2;
+  cursor: pointer;
+
+  .pict{
+    position: relative;
+    svg{
+      height: 19vmin;
+      width: auto;
+      min-height: 105px;
+      margin: $spacing 0;
+      @include basicTransition(0.5s);
+
+      path{
+        fill:none;
+        stroke:$white;
+        stroke-width:1;
+        opacity: 0.3;
+        stroke-dasharray: 0;
+        stroke-dashoffset: 10;
+        @include basicTransition(0.2s);
+      }
+    }
+    i{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      font-size: 8.5vmin;
+      z-index: 1;
+      @include translate(-50%, -50%);
+      @include basicTransition(0.5s);
+    }
+  }
+  h2{
+    font-family: $thin;
+    font-weight: 100;
+    font-size: .9em;
+    line-height: 1.3em;
+    height: 2.6em;
+    letter-spacing: 0.2em;
+    opacity: 0.4;
+  }
+}
+
+.meni-item:hover, .meni-item:focus{
+  .pict{
+    svg{
+      path{
+        fill:rgba(0,0,0,0.2);
+        stroke:$main;
+        opacity: 1;
+        stroke-dashoffset: 500;
+        stroke-dasharray: 10;
+      }
+    }
+    i{
+      color: $main;
+    }
+  }
+  h2{
+    opacity: 1;
+  }
+}
+
+//meni midal-------------------------------------------
+
+.meni-modal{
+  background: $dark;
+  width: 80vw;
+  position: relative;
+  min-height: 70vh;
+}
+
+.meni-modal-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  z-index: 0;
+  max-height: $vh;
+}
+
+
+.meni-modal-title{
+  position: relative;
+  z-index: 1;
+  display: block;
+  float: left;
+  width: 40%;
+  padding: $spacing*2;
+  text-align: center;
+  h1{
+    font-family: $thin;
+    font-weight: 100;
+    font-size: 4.5vmin;
+    letter-spacing: 0.3em;
+  }
+}
+
+.meni-modal-txt{
+  position: relative;
+  z-index: 1;
+  display: block;
+  float: left;
+  width: 60%;
+  padding: $spacing*2;
+//  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .subtitle{
+    margin-top: $spacing*2;
+  }
+}
+
+.meni-list-item{
+  margin-bottom: 20px;
+  position: relative;
+  @include clearfix;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+  article{
+    position: relative;
+    @include clearfix;
+    h4{
+      float: left;
+      position: relative;
+      z-index: 1;
+      opacity: 1;
+      line-height: 20px;
+      max-width: 80%;
+      span{
+        background: $dark;
+      }
+    }
+  }
+
+  h4{
+    clear: both;
+    font-size: 110%;
+    margin-bottom: 5px;
+  }
+  p{
+    float: left;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    color: darken($white, 50);
+    line-height: 20px;
+    max-width: 57%;
+    span{
+      background: $dark;
+    }
+  }
+  h5, h6{
+    float: right;
+    background: $dark;
+    font-size: 110%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    padding-left: 5px;
+    line-height: 20px;
+    font-weight: 600;
+
+    &.size{
+      font-weight: 400;
+      opacity: 0.6;
+      font-style: italic;
+    }
+
+    span{
+      float: left;
+      margin-left: 20px;
+      width: 70px;
+      text-align: right;
+    }
+    span:first-child{
+      margin-left: 0;
+    }
+  }
+
+  h6{
+    font-size: 95%;
+  }
+
+  aside{
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 13px;
+    opacity: 0.3;
+    &:after{
+      content:' . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . '
+    }
+  }
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+@media screen and (max-width: $smallDesktop){
+  .meni-modal{
+    width: 90vw;
+  }
+}
+
+
+@media screen and (max-width: $tabLandscape){
+  .meni-slider .owl-nav{
+    display: none;
+  }
+
+  .meni-modal{
+    width: 100vw;
+  }
+
+  .meni-title{
+    margin-top: 0;
+  }
+
+  .meni-modal-img {
+    opacity: 0.15;
+  }
+
+  .meni-modal-title, .meni-modal-txt{
+    width: 100%;
+    float: none;
+  }
+  .meni-modal-txt{
+    max-height: initial;
+  }
+
+  .meni-list-item{
+    p{
+      float: none;
+      max-width: 100%;
+      span{
+        background: transparent;
+      }
+    }
+    h5, h6{
+      float: none;
+      background: transparent;
+      font-size: 100%;
+      padding-left: 0px;
+      margin-top: 10px;
+    }
+    aside{
+      position: absolute;
+      top: initial;
+      bottom: -10px;
+    }
+    article{
+      h4{
+        float: none;
+        span{
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $mobile){
+
+  .meni-item{
+    padding: 0 $spacing;
+    .pict{
+      i{
+        font-size: 55px;
+      }
+    }
+    h2{
+      font-size: .95em;
+    }
+  }
+
+}

@@ -253,6 +253,15 @@
 }
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
+@media screen and (max-width: 1400px){
+  .home-slide{
+    .slide-content{
+      width: 45vw;
+      max-width: 45vw;
+      background: none;
+    }
+  }
+}
 
 @media screen and (max-width: 1200px){
   .home-slide{

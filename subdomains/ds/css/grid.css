@@ -1,0 +1,105 @@
+/*UI elements*/
+/*positions*/
+/* line 5, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.cl {
+  zoom: 1; }
+  /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .cl:before, .cl:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .cl:after {
+    clear: both; }
+
+/* line 9, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.fl {
+  float: left; }
+
+/* line 13, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.fr {
+  float: right; }
+
+/* line 16, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.tl {
+  text-align: left !important; }
+
+/* line 19, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.tr {
+  text-align: right !important; }
+
+/* line 22, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.tc {
+  text-align: center !important; }
+
+/*grid*/
+/* line 26, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.grid {
+  zoom: 1; }
+  /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .grid:before, .grid:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .grid:after {
+    clear: both; }
+  /* line 28, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+  .grid [class^="col-"], .grid [class*="col-"] {
+    display: block;
+    float: left;
+    text-align: left; }
+  /* line 33, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+  .grid [class^="col-"].tr, .grid [class*="col-"].tr {
+    text-align: right; }
+  /* line 37, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+  .grid [class^="col-"].fr, .grid [class*="col-"].fr {
+    float: right; }
+
+/* line 43, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.inline-grid [class^="col-"], .inline-grid [class*="col-"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -5px;
+  text-align: left;
+  float: none; }
+
+/*columns*/
+/* line 53, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.col-20 {
+  width: 20%; }
+
+/* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.col-30 {
+  width: 33.3%; }
+
+/* line 59, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.col-40 {
+  width: 40%; }
+
+/* line 62, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.col-50 {
+  width: 50%; }
+
+/* line 65, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+.col-60 {
+  width: 60%; }
+
+@media screen and (max-width: 960px) {
+  /* line 72, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+  .col-20 {
+    width: 33.3%; }
+
+  /* line 75, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+  .col-30 {
+    width: 50%; }
+
+  /* line 78, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+  .col-40 {
+    width: 100%; }
+
+  /* line 81, E:/RADOVI/dive_and_seek/DEV/source/css/grid.css.scss */
+  .col-50 {
+    width: 100%; } }

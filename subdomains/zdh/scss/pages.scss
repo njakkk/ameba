@@ -1,0 +1,164 @@
+@import 'variables';
+
+//home-----------------------------------------------------
+
+img.home-logo {
+  height: 20vmin;
+  max-height: 200px;
+  min-height: 100px;
+  margin-top: -10vmin;
+  width: auto;
+}
+
+.home-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 70%;
+  height: auto;
+}
+
+//delivery-----------------------------------------------------
+
+
+.delivery-img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+//contact-----------------------------------------------------
+
+.location-map{
+  position: relative;
+  width: 100%;
+  height: $vh;
+}
+
+.map-nav{
+  position:  absolute;
+  right: $spacing;
+  top: $spacing;
+  @include clearfix;
+  button{
+    background: transparent;
+    color: $white;
+    width: $ui-el-size;
+    height: $ui-el-size;
+    line-height: $ui-el-size;
+    font-size: $ui-el-size/2;
+    outline: none;
+    float: left;
+    border: solid 1px #404040;
+    margin-left: -1px;
+    @include basicTransition(0.4s);
+    i{
+      opacity: 0.5;
+    }
+    &:hover{
+      background: rgba(0,0,0,0.2);
+      i{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.contact-info{
+  position: absolute;
+  right: -25vw;
+  top: 50%;
+  padding: $spacing*2;
+  width: 25vw;
+  @include basicTransition(1s);
+  h1{
+    font-family: $strong;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    font-size: 3vmin;
+  }
+  p{
+    letter-spacing: initial;
+    opacity: 0.85;
+    font-size: 1.1em;
+  }
+}
+
+.map-section.current{
+  .contact-info{
+    right: 0;
+  }
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+
+@media screen and (max-width: $tabLandscape){
+
+  img.home-logo {
+    margin-top: 0;
+  }
+
+  .map-nav{
+    right: 52vw;
+  }
+  .location-map{
+    width: $vw/2;
+  }
+  .contact-info{
+    height: $vh;
+    width: $vw/2;
+    top: 0;
+    right: 0;
+    max-width: initial;
+    margin: 0;
+    padding: $spacing*4;
+    background: $white;
+    h1{
+      font-size: 26px;
+    }
+    p{
+      font-size: 1em;
+    }
+  }
+
+}
+
+@media screen and (max-width: $tabPortrait){
+
+  .home-img, .delivery-img{
+    opacity: 0.35;
+  }
+
+  .location-map{
+    height: $vh/2;
+    width: 100%;
+  }
+
+  .map-nav{
+    display: none;
+  }
+
+  .contact-info{
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+    right: initial;
+    top: initial;
+    max-width: initial;
+    margin: 0;
+    padding: $spacing*4;
+    background: $white;
+    h1{
+      font-size: 26px;
+    }
+    p{
+      font-size: 1em;
+    }
+  }
+
+}

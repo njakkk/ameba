@@ -1,0 +1,39 @@
+@import 'variables';
+
+/**homepage gallery*****/
+
+.horizontal-grid-gallery{
+  margin-top: $spacing;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .item:hover img, .item:focus img{
+    @include scale(1.1, 1.1);
+  }
+
+  .item{
+    float: left;
+    margin: 10px;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 3px;
+
+
+    img{
+      display: block;
+      transition: transform .5s ease;
+      -webkit-transition: transform .5s ease;
+      max-width: 100%;
+      border-radius: 3px;
+    }
+  }
+}
+

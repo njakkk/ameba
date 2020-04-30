@@ -1,0 +1,135 @@
+/*UI elements*/
+/* line 4, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn {
+  border: none;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-color: #2a84ff;
+  color: #fff !important; }
+  /* line 9, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn:hover {
+    background-color: #0068f6;
+    text-decoration: none !important; }
+  /* line 13, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn i {
+    line-height: 40px;
+    height: 40px;
+    font-size: 170%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px; }
+
+/* line 22, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn.large {
+  height: 60px;
+  line-height: 60px;
+  font-size: 22.5px;
+  padding: 0 40px;
+  border-radius: 7px; }
+
+/* line 29, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn.block {
+  display: block;
+  width: 100%; }
+
+/* line 33, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn.inline {
+  display: inline-block;
+  margin: 3px; }
+
+/* line 38, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn.lowercase {
+  text-transform: none; }
+
+/* line 42, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn.white {
+  background-color: #fff;
+  color: #6e7279 !important; }
+  /* line 45, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn.white:hover {
+    background-color: #e6e6e6; }
+
+/* line 49, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn.danger {
+  background-color: #e24343;
+  color: #fff !important; }
+  /* line 52, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn.danger:hover {
+    background-color: #d22020; }
+
+/* line 57, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn.ok {
+  background-color: #2fc28c;
+  color: #fff !important; }
+  /* line 60, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn.ok:hover {
+    background-color: #25996e; }
+
+/* line 65, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn.outline {
+  background-color: transparent;
+  color: #2a84ff !important;
+  border: solid 1px #2a84ff; }
+  /* line 70, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn.outline:hover {
+    background-color: rgba(0, 0, 0, 0.06); }
+
+/* line 75, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn.outline-white {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.06), 0 5px 5px rgba(0, 0, 0, 0.06), 0 10px 10px rgba(0, 0, 0, 0.06);
+  background-color: transparent;
+  color: #fff !important;
+  border: solid 1px #fff; }
+  /* line 81, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn.outline-white:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
+/* line 86, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.toggle-buttons {
+  display: inline-block;
+  height: 40px;
+  overflow: hidden; }
+  /* line 90, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .toggle-buttons .btn {
+    padding: 0 10px;
+    min-width: 130px;
+    display: block; }
+  /* line 95, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .toggle-buttons .btn:nth-child(1) {
+    margin-top: 0; }
+  /* line 98, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .toggle-buttons.active .btn:nth-child(1) {
+    margin-top: -40px; }
+
+/* line 102, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+.btn-group .btn {
+  margin: 3px; }
+
+@media screen and (max-width: 1200px) {
+  /* line 109, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn {
+    font-size: 14px; } }
+@media screen and (max-width: 1200px) {
+  /* line 115, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn {
+    width: 100%; } }
+@media screen and (max-width: 960px) {
+  /* line 121, E:/RADOVI/dive_and_seek/DEV/source/css/buttons.css.scss */
+  .btn.large {
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    padding: 0 20px;
+    border-radius: 5px; } }

@@ -163,11 +163,11 @@ function setScrollH(){
 
     $('.scroll-h').mCustomScrollbar({
         theme:"rounded-dark",
-        scrollInertia: 700,
+        scrollInertia:700,
         axis: "x",
         mouseWheel:{
-            scrollAmount: 400,
-            deltaFactor: 400
+            scrollAmount: 150,
+            deltaFactor: 150
         },
         callbacks:{
             whileScrolling: scrollShowElement
@@ -184,6 +184,8 @@ function scrollBack(){
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 $(window).on( 'load', function() {
+
+    window.history.pushState({}, document.title, "/");
 
 });
 

@@ -1,0 +1,697 @@
+<!doctype html>
+<html>
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>Dive & Seek</title>
+
+  <!--Favicons-->
+  <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="images/favicons/favicon-228x228.png" sizes="228x228">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+
+
+  <link href="icon/style.css" media="all" rel="stylesheet" type="text/css" >
+  <link href='https://fonts.googleapis.com/css?family=Exo:400,500italic,500,400italic,300italic,300,200italic,200,100italic,100,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+
+  <!--<link href="/css/style.css" rel="stylesheet" type="text/css" />-->
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" >
+
+  <!--<script src="/js/vendor/jquery-2.1.3.min.js" type="text/javascript"></script>-->
+
+  <script type="text/javascript" src="js/vendor/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.easing.min.js"></script>
+
+  <body>
+  
+
+<div id="share-photo-popup" class="mfp-hide narrow-form-popup auto-height">
+    <h1><span>Share</span></h1>
+    <p>Let's talk about this photo, just choose where :)</p>
+    <div class="sharing-icons">
+        <div class="share-fb tooltip-bottom" data-tooltip="share on Facebook">
+            <i class="icon-fb-circle"></i>
+            <span class='st_facebook_large' displayText='Facebook'></span>
+        </div>
+        <div class="share-tw tooltip-bottom" data-tooltip="share on Facebook">
+            <i class="icon-tw-circle"></i>
+            <span class='st_twitter_large' displayText='Twitter'></span>
+        </div>
+        <div class="share-gp tooltip-bottom" data-tooltip="share on Facebook">
+            <i class="icon-gp-circle"></i>
+            <span class='st_googleplus_large' displayText='Google +'></span>
+        </div>
+    </div>
+</div>
+
+
+  <div data-page>
+      <div data-page-close class="close"></div>
+      <div data-page-loader class="main-loader"><img src="images/loaders/puff.svg" alt=""/></div>
+      <div data-page-content></div>
+      <div data-page-details></div>
+  </div>
+  <section class="site-wrapper" data-canvas>
+      <!--Login register popups-->
+<div id="login-popup" class="mfp-hide narrow-form-popup">
+    <h1><span>Login</span></h1>
+    <p>Login to Dive and Seek by using your social media accounts</p>
+    <ul class="social-links">
+        <li><a href="" class="icon-fb-circle tooltip-bottom" data-tooltip="Login using Facebook"></a></li>
+        <li><a href="" class="icon-tw-circle tooltip-bottom" data-tooltip="Login using Twitter"></a></li>
+        <li><a href="" class="icon-gp-circle tooltip-bottom" data-tooltip="Login using Google"></a></li>
+        <li><a href="" class="icon-is-circle tooltip-bottom" data-tooltip="Login using Instagram"></a></li>
+   </ul>
+    <p>Or by using your email account</p>
+
+    <form class="narrow-form" action="">
+        <div class="input large">
+            <input type="text" placeholder="enter your email"/>
+            <i class="input-icon icon-mail"></i>
+        </div>
+        <div class="input large">
+            <input type="password" placeholder="enter your password"/>
+            <i class="input-icon icon-lock"></i>
+        </div>
+
+        <div class="input large">
+            <button type="submit" class="btn large block ok lowercase">Login</button>
+        </div>
+        <div class="input">
+            <a href="#pass-recovery-popup" data-inline-popup>Forgot password?</a>
+        </div>
+    </form>
+
+    <footer>
+        <p>You don't have an account yet?</p>
+        <div class="input large">
+            <a class="btn large block lowercase" href="#register-popup" data-inline-popup>Create account</a>
+        </div>
+    </footer>
+</div>
+<div id="register-popup" class="mfp-hide narrow-form-popup">
+    <h1><span>Register <aside>it's free</aside></span></h1>
+    <p>Please complete the registrer process by filling all required fields bellow...</p>
+    <form class="narrow-form" action="">
+        <div class="input large">
+            <input type="text" placeholder="choose username" data-required/>
+            <i class="input-icon icon-user-outline"></i>
+            <span class="required">&#9913;</span>
+            <p class="error-message">Required field</p>
+        </div>
+
+        <div class="input large">
+            <input type="text" placeholder="enter your email" data-required/>
+            <i class="input-icon icon-mail"></i>
+            <span class="required">&#9913;</span>
+        </div>
+        <div class="input large">
+            <input type="password" placeholder="enter your password" data-required/>
+            <i class="input-icon icon-lock"></i>
+            <span class="required">&#9913;</span>
+            <p class="valid-message">Valid password</p>
+        </div>
+        <div class="input large">
+            <input type="password" placeholder="confirm password" data-required/>
+            <i class="input-icon icon-lock-ok"></i>
+            <span class="required">&#9913;</span>
+        </div>
+
+        <div class="input large">
+            <button type="submit" class="btn large block ok lowercase" data-close-popup>Create account</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>Already have an account?</p>
+        <div class="input large">
+            <a class="btn large block lowercase" href="#login-popup" data-inline-popup>Login</a>
+        </div>
+    </footer>
+</div>
+<div id="pass-recovery-popup" class="mfp-hide narrow-form-popup">
+    <h1><span>Pasword recovery</span></h1>
+    <p>Type in your email or username. We'll send you temporary password to your email address.</p>
+
+    <form class="narrow-form" action="">
+        <div class="input large">
+            <input type="text" placeholder="enter your email or username"/>
+            <i class="input-icon icon-mail"></i>
+        </div>
+        <div class="input large">
+            <button type="submit" class="btn large block ok lowercase">Recover password</button>
+        </div>
+    </form>
+</div>
+<div id="upload-photo-popup" class="mfp-hide  narrow-form-popup default-popup">
+    <div class="upload-photo">
+    <h1><span>Upload <aside>photos</aside></span></h1>
+    <p>Please complete the upload process by filling form bellow...</p>
+
+        <div class="grid">
+            <article class="col-50">
+                <form action="/target"class="upload-photo-dropzone dropzone" data-photo-upload>
+                    <div class="dz-message">
+                        <i class="icon-camera"></i>
+                        <span>Drop image here to upload</span>
+                    </div>
+                </form>
+            </article>
+            <article class="col-50">
+                <form action="" class="upload-photo-info">
+                    <label> Image description</label>
+                    <textarea placeholder="e.g. giant shark"></textarea>
+                    <label> Image tags</label>
+                    <textarea placeholder="e.g. #blue, #sea..."></textarea>
+                </form>
+            </article>
+        </div>
+        <div class="upload-photo-submit display-none" data-upload-photo-submit >
+            <button  data-ripple type="submit" class="btn large">Upload</button>
+        </div>
+</div>
+</div>
+
+
+<!--mobile header trigger-->
+<header class="ds-header-mobile">
+    <i class="icon-dehaze hamburger" data-trigger="header"></i>
+    <img src="images/ds_logo_big.svg" alt="" class="ds-logo-small"/>
+</header>
+
+<header class="ds-header" data-drop="header">
+    <a class="ds-logo fl" href="index.html">
+    <img src="images/ds_logo_big.svg" alt=""/>
+</a>
+    <nav class="main-menu fl">
+    <ul>
+        <li><a href="index.html" data-ripple><span>Photos</span></a></li>
+        <li><a href="people.html" data-ripple><span>People</span></a></li>
+    </ul>
+</nav>
+
+    <nav class="ds-user fr">
+        <!--User is NOT logged in-->
+<ul class="ds-login">
+    <li><a href="#login-popup" data-inline-popup data-ripple class="btn outline"><span>Sign in</span></a></li>
+</ul>
+    </nav>
+    <nav class="ds-user fr">
+        <ul class="ds-upload-photo">
+    <li><a href="#upload-photo-popup" data-inline-popup data-ripple class="btn"><i class="icon-upload-outline"></i><span>Upload photo</span></a></li>
+</ul>
+
+
+    </nav>
+</header>
+<div class="overlay"></div>
+<div class="ds-header-spacer"></div>
+<section class="tab-menu">
+    <nav class="tabs">
+        <ul>
+            <li><a href="#" data-ripple class="current"><i class="icon-dive-outline"></i><span>Discover</span></a></li>
+            <li><a href="#" data-ripple><i class="icon-like-outline"></i><span>Most liked</span></a></li>
+        </ul>
+    </nav>
+    <form class="search">
+        <div class="holder">
+            <input type="text" id="search" placeholder="Search people..."/>
+            <label for="search"><i class="icon-user-outline"></i></label>
+            <button type="submit"><i class="icon-search-outline"></i></button>
+        </div>
+    </form>
+</section>
+
+<div class="main-loader" data-items-loader><img src="images/loaders/puff-blue.svg" alt=""/></div>
+<section class="people-list show-items">
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/avatar-default.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Alexander Popularius</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+           </a>
+        </footer>
+   </div>
+
+    <div class="member-item">
+        <header class="member-info">
+            <a href="user-profile.html" class="avatar"><img src="images/temp/user-avatar.jpg" alt="" class="bg-img"/></a>
+            <article class="member-text">
+                <h3><a href="user-profile.html">Joana Anderson</a></h3>
+                <p>Crete, Greece</p>
+            </article>
+        </header>
+        <div class="member-images">
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_01.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_02.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_03.jpg" alt="" class="bg-img"/></span></div>
+            <div class="member-img" data-href="load__page-people.html"><span><img src="images/temp/s/d_04.jpg" alt="" class="bg-img"/></span></div>
+        </div>
+        <footer>
+            <a class="toggle-buttons active" data-btn-toggler>
+                <button class="btn outline lowercase"><span>Follow</span><i class="icon-follow"></i></button>
+                <button class="btn lowercase"><span>Following</span><i class="icon-followed"></i></button>
+            </a>
+        </footer>
+    </div>
+</section>
+
+<div class="message full-width main">
+    <i class="icon-dive-outline"></i>
+    <h2><b>No more results</b></h2>
+</div>
+  </section>
+
+
+  <script type="text/javascript" src="js/vendor/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.flex-images.js"></script>
+  <script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/vendor/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="js/vendor/dropzone.js"></script>
+
+  <script type="text/javascript" src="js/popups.js"></script>
+  <script type="text/javascript" src="js/forms.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/app-calls.js"></script>
+
+  <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "b4836274-96f0-459b-aec1-9c5947afbbed", doNotHash: true, doNotCopy: false, hashAddressBar: true});</script>
+  </body>
+</html>

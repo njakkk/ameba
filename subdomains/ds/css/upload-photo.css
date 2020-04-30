@@ -1,0 +1,101 @@
+/*UI elements*/
+/* line 6, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+.upload-photo {
+  min-width: 70vw; }
+  /* line 8, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo .grid {
+    margin: 40px 0; }
+  /* line 11, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo .col-50:nth-child(1) {
+    padding-right: 20px; }
+  /* line 14, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo .col-50:nth-child(2) {
+    padding-left: 20px; }
+
+/* line 19, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+.upload-photo-dropzone {
+  display: inline-block;
+  width: 100%;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.05);
+  border: dashed 2px rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px; }
+  /* line 28, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo-dropzone.dz-drag-hover {
+    background: rgba(0, 0, 0, 0.1);
+    border: dashed 2px white; }
+  /* line 33, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo-dropzone .dz-preview .dz-image {
+    border-radius: 5px;
+    position: relative; }
+  /* line 38, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo-dropzone .dz-preview .dz-image img {
+    border-radius: 5px;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+/**upload photo info***/
+/* line 55, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+.upload-photo-info label, .upload-photo-info textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px; }
+/* line 61, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+.upload-photo-info label {
+  color: #8496b3;
+  font-size: 120%; }
+/* line 65, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+.upload-photo-info textarea {
+  padding: 20px;
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 245px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: #2a84ff; }
+  /* line 76, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo-info textarea::-webkit-input-placeholder {
+    color: #2a84ff; }
+  /* line 79, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo-info textarea:-moz-placeholder {
+    color: #2a84ff; }
+  /* line 82, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo-info textarea::-moz-placeholder {
+    color: #2a84ff; }
+  /* line 85, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo-info textarea:-ms-input-placeholder {
+    color: #2a84ff; }
+
+/* line 92, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+.upload-photo-submit .btn {
+  min-width: 250px; }
+
+@media screen and (max-width: 960px) {
+  /* line 100, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo-dropzone {
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 20px; }
+
+  /* line 106, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+  .upload-photo {
+    min-width: 80vw; }
+    /* line 109, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+    .upload-photo .col-50:nth-child(1) {
+      padding-right: 0; }
+    /* line 112, E:/RADOVI/dive_and_seek/DEV/source/css/upload-photo.css.scss */
+    .upload-photo .col-50:nth-child(2) {
+      padding-left: 0; } }

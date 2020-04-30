@@ -1,0 +1,561 @@
+/*UI elements*/
+/* line 37, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.ds-header-mobile,
+.ds-avatar-mobile {
+  display: none; }
+
+/* line 42, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.ds-header {
+  zoom: 1;
+  background-color: #1d2b41;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 80; }
+  /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .ds-header:before, .ds-header:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .ds-header:after {
+    clear: both; }
+  /* line 53, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header li {
+    display: inline-block;
+    list-style: none; }
+  /* line 57, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header .btn {
+    display: inline-block;
+    vertical-align: middle; }
+
+/* line 62, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.ds-header-spacer {
+  height: 70px; }
+
+/* line 66, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.ds-logo {
+  display: block;
+  height: 70px;
+  margin: 0 20px; }
+  /* line 70, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-logo img {
+    width: 175px;
+    display: inline-block;
+    vertical-align: middle; }
+
+/* line 77, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.main-menu {
+  display: inline-block;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300; }
+  /* line 83, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .main-menu ul li a {
+    display: inherit;
+    color: #fff;
+    vertical-align: middle;
+    padding: 0 20px;
+    opacity: 0.4;
+    font-weight: 400;
+    font-size: 15px;
+    position: relative; }
+    /* line 93, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .main-menu ul li a span {
+      line-height: 40px;
+      height: 40px;
+      display: inline-block;
+      vertical-align: middle; }
+    /* line 99, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .main-menu ul li a i {
+      line-height: 40px;
+      height: 40px;
+      font-size: 170%;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 8px; }
+    /* line 107, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .main-menu ul li a:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      width: 100%;
+      height: 0;
+      background: #2a84ff;
+      -moz-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+    /* line 117, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .main-menu ul li a.current:after {
+      height: 4px; }
+    /* line 120, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .main-menu ul li a.current {
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.05); }
+
+/* line 128, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.ds-login, .ds-upload-photo {
+  padding-right: 20px; }
+  /* line 130, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-login li, .ds-upload-photo li {
+    margin-right: 20px; }
+    /* line 132, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-login li:last-child, .ds-upload-photo li:last-child {
+      margin-right: 0; }
+
+/* line 139, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.ds-header-drop {
+  display: inline-block;
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+  border-left: solid 1px rgba(255, 255, 255, 0.1); }
+  /* line 148, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header-drop .trigger {
+    padding: 0 24px;
+    cursor: pointer; }
+  /* line 152, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header-drop .trigger.active {
+    background: #253753; }
+  /* line 155, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header-drop .drop {
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    position: absolute;
+    max-height: calc(100vh - 70px);
+    max-width: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    right: 0;
+    top: 100%;
+    min-width: 100%;
+    background: #253753;
+    text-align: left;
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    transform: scale(1, 0); }
+    /* line 172, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header-drop .drop li {
+      display: block;
+      padding: 0 20px;
+      border-top: solid 1px rgba(255, 255, 255, 0.06);
+      -moz-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+    /* line 178, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header-drop .drop li:hover {
+      background: #2a84ff; }
+    /* line 181, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header-drop .drop a {
+      color: #fff; }
+  /* line 185, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header-drop .drop.active {
+    opacity: 1;
+    visibility: visible;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1); }
+
+/* line 193, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.ds-notifications .trigger i {
+  line-height: 40px;
+  height: 40px;
+  font-size: 180%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+  /* line 200, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-notifications .trigger i .notifications-count {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -3px;
+    line-height: 25px;
+    min-width: 25px;
+    font-size: 14px;
+    padding: 0 8px;
+    border-radius: 15px;
+    background: #2a84ff; }
+
+/* line 215, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.ds-user-details {
+  font-size: 17px;
+  font-weight: 300; }
+  /* line 218, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details .avatar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 46.66667px;
+    height: 46.66667px;
+    margin-right: 20px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    /* line 227, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-user-details .avatar img {
+      display: none; }
+  /* line 231, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details .trigger:after {
+    content: '\e5c5';
+    font-family: 'diveandseek';
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: bottom; }
+  /* line 238, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details .trigger.active:after {
+    content: '\e5c7'; }
+  /* line 241, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details .username {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  /* line 248, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details ul li {
+    white-space: nowrap; }
+  /* line 251, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details ul li a {
+    padding: 0 20px;
+    display: block; }
+    /* line 254, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-user-details ul li a i {
+      font-size: 160%;
+      margin-right: 15px;
+      vertical-align: middle; }
+
+/* line 263, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.ds-avatar-mobile {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  padding: 40px 0;
+  background: url("../images/mobile-avatar-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  /* line 269, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-avatar-mobile .avatar {
+    display: block;
+    margin: auto;
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    /* line 278, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-avatar-mobile .avatar img {
+      display: none; }
+  /* line 282, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-avatar-mobile .username {
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1em;
+    margin-top: 20px; }
+
+/* line 291, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+.notification-list {
+  min-width: 400px; }
+  /* line 293, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .notification-list li:hover {
+    background: none !important; }
+  /* line 296, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .notification-list li {
+    padding: 20px !important; }
+  /* line 299, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .notification-list li p {
+    margin: 0; }
+  /* line 302, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .notification-list li a {
+    color: #2a84ff !important; }
+    /* line 304, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .notification-list li a:hover {
+      text-decoration: underline; }
+
+@media screen and (max-width: 1400px) {
+  /* line 314, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details .avatar {
+    margin-right: 10px; }
+  /* line 317, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details .username {
+    display: none; } }
+@media screen and (max-width: 1200px) {
+  /* line 328, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header-mobile,
+  .ds-avatar-mobile {
+    display: block; }
+
+  /* line 333, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-logo {
+    display: none; }
+
+  /* line 337, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header-spacer {
+    height: 55px; }
+
+  /* line 341, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header-mobile {
+    zoom: 1;
+    background-color: #1d2b41;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 80; }
+    /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+    .ds-header-mobile:before, .ds-header-mobile:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+    .ds-header-mobile:after {
+      clear: both; }
+    /* line 353, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header-mobile .hamburger {
+      height: 55px;
+      line-height: 55px;
+      width: 55px;
+      text-align: center;
+      font-size: 22px;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    /* line 365, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header-mobile .ds-logo-small {
+      width: 120px;
+      display: inline-block;
+      vertical-align: middle; }
+    /* line 371, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header-mobile .ds-notifications {
+      position: absolute;
+      right: 0;
+      top: 0; }
+      /* line 375, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+      .ds-header-mobile .ds-notifications .trigger {
+        margin: 0;
+        padding: 0 20px; }
+      /* line 379, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+      .ds-header-mobile .ds-notifications .trigger i {
+        line-height: 55px;
+        height: 55px;
+        font-size: 160%; }
+        /* line 383, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+        .ds-header-mobile .ds-notifications .trigger i .notifications-count {
+          position: absolute;
+          right: 15px;
+          top: 0;
+          margin-top: 16px; }
+      /* line 390, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+      .ds-header-mobile .ds-notifications .drop {
+        -moz-transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        opacity: 0;
+        visibility: hidden;
+        height: 100vh;
+        max-height: 100vh;
+        position: fixed;
+        overflow-x: hidden;
+        overflow-y: auto;
+        top: 0;
+        width: 80%;
+        max-width: 400px;
+        z-index: 100;
+        text-align: left;
+        padding: 0 20px;
+        right: -100%;
+        transform: none;
+        min-width: auto; }
+      /* line 397, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+      .ds-header-mobile .ds-notifications .drop.active {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        right: 0; }
+      /* line 401, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+      .ds-header-mobile .ds-notifications .drop.active + .overlay {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: 95;
+        background: #000000;
+        opacity: 0.7; }
+
+  /* line 407, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header {
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+    width: 80%;
+    max-width: 400px;
+    z-index: 100;
+    text-align: left;
+    padding: 0 20px;
+    left: -100%;
+    line-height: 60px; }
+    /* line 412, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header li {
+      display: block; }
+    /* line 415, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header .fl, .ds-header .fr {
+      float: none; }
+    /* line 418, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header .ds-notifications {
+      display: none; }
+
+  /* line 422, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header.active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    left: 0; }
+
+  /* line 426, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header.active + .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 95;
+    background: #000000;
+    opacity: 0.7; }
+
+  /* line 430, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .main-menu {
+    display: block;
+    font-size: 14px; }
+    /* line 434, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .main-menu ul li a.current {
+      background: none; }
+    /* line 437, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .main-menu ul li a:after {
+      width: 0;
+      height: 100%; }
+    /* line 441, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .main-menu ul li a.current:after {
+      width: 3px;
+      height: 30px;
+      bottom: 50%;
+      margin-bottom: -15px; }
+
+  /* line 450, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-login, .ds-upload-photo {
+    padding-right: 0; }
+    /* line 452, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-login li, .ds-upload-photo li {
+      margin-right: 0; }
+
+  /* line 457, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-header-drop {
+    height: auto;
+    line-height: 55px;
+    display: block;
+    float: none;
+    position: relative;
+    border-left: none; }
+    /* line 465, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header-drop .trigger {
+      padding: 0; }
+    /* line 468, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-header-drop .drop {
+      -moz-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      position: relative;
+      right: inherit;
+      top: inherit;
+      min-width: 100%;
+      opacity: 1;
+      visibility: visible;
+      transform: none; }
+      /* line 477, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+      .ds-header-drop .drop li {
+        padding: 0;
+        border-top: none; }
+      /* line 481, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+      .ds-header-drop .drop li:hover {
+        background: transparent; }
+
+  /* line 488, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details .trigger, .ds-user-details .drop {
+    background: transparent; }
+  /* line 491, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details .trigger {
+    display: none; }
+  /* line 494, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .ds-user-details ul li a {
+    padding: 0;
+    display: block; }
+    /* line 497, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+    .ds-user-details ul li a i {
+      font-size: 140%;
+      margin: 0 8px;
+      vertical-align: middle; }
+
+  /* line 506, E:/RADOVI/dive_and_seek/DEV/source/css/header.css.scss */
+  .notification-list {
+    min-width: auto; } }

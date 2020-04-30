@@ -1,0 +1,148 @@
+/*UI elements*/
+/*---Login/register element---*/
+/*-------------------------------------------------*/
+/* line 6, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+.narrow-form-popup {
+  padding: 0 80px;
+  min-height: 100vh;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  min-width: 400px;
+  text-align: center;
+  position: relative; }
+  /* line 16, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form-popup h1 {
+    font-size: 5vmin;
+    font-weight: 600;
+    position: relative;
+    margin: 1em 0;
+    line-height: 0.9em; }
+    /* line 22, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+    .narrow-form-popup h1 span {
+      position: relative; }
+    /* line 25, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+    .narrow-form-popup h1 aside {
+      position: absolute;
+      right: 0;
+      bottom: -0.5em;
+      font-size: 50%;
+      color: #2a84ff;
+      font-weight: 400;
+      line-height: 1em; }
+  /* line 35, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form-popup p {
+    font-size: 120%;
+    font-weight: 300;
+    color: #8496b3; }
+  /* line 41, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form-popup footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #141d2c;
+    padding: 40px 80px; }
+
+/* line 51, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+.narrow-form-popup.auto-height {
+  min-height: auto; }
+
+/* line 55, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+.social-links {
+  margin: 40px 0; }
+  /* line 57, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .social-links li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px; }
+    /* line 61, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+    .social-links li a {
+      font-size: 58.33333px;
+      color: #35517b;
+      -moz-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      position: relative; }
+      /* line 66, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+      .social-links li a:hover {
+        color: #2a84ff; }
+
+/* line 73, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+.narrow-form {
+  margin: 20px 0 40px 0; }
+  /* line 78, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form input[type="text"]::-webkit-input-placeholder, .narrow-form input[type="email"]::-webkit-input-placeholder, .narrow-form input[type="password"]::-webkit-input-placeholder, .narrow-form textarea::-webkit-input-placeholder {
+    color: #35517b;
+    opacity: 0.8; }
+  /* line 82, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form input[type="text"]:-moz-placeholder, .narrow-form input[type="email"]:-moz-placeholder, .narrow-form input[type="password"]:-moz-placeholder, .narrow-form textarea:-moz-placeholder {
+    color: #35517b;
+    opacity: 0.8; }
+  /* line 86, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form input[type="text"]::-moz-placeholder, .narrow-form input[type="email"]::-moz-placeholder, .narrow-form input[type="password"]::-moz-placeholder, .narrow-form textarea::-moz-placeholder {
+    color: #35517b;
+    opacity: 0.8; }
+  /* line 90, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form input[type="text"]:-ms-input-placeholder, .narrow-form input[type="email"]:-ms-input-placeholder, .narrow-form input[type="password"]:-ms-input-placeholder, .narrow-form textarea:-ms-input-placeholder {
+    color: #35517b;
+    opacity: 0.8; }
+  /* line 95, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form input[type="text"]:focus::-webkit-input-placeholder, .narrow-form input[type="email"]:focus::-webkit-input-placeholder, .narrow-form input[type="password"]:focus::-webkit-input-placeholder, .narrow-form textarea:focus::-webkit-input-placeholder {
+    color: transparent !important; }
+  /* line 96, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form input[type="text"]:focus:-moz-placeholder, .narrow-form input[type="email"]:focus:-moz-placeholder, .narrow-form input[type="password"]:focus:-moz-placeholder, .narrow-form textarea:focus:-moz-placeholder {
+    color: transparent !important; }
+  /* line 97, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form input[type="text"]:focus::-moz-placeholder, .narrow-form input[type="email"]:focus::-moz-placeholder, .narrow-form input[type="password"]:focus::-moz-placeholder, .narrow-form textarea:focus::-moz-placeholder {
+    color: transparent !important; }
+  /* line 98, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form input[type="text"]:focus:-ms-input-placeholder, .narrow-form input[type="email"]:focus:-ms-input-placeholder, .narrow-form input[type="password"]:focus:-ms-input-placeholder, .narrow-form textarea:focus:-ms-input-placeholder {
+    color: transparent !important; }
+  /* line 102, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form .input input {
+    color: #3a5886;
+    background: #151f2f;
+    box-shadow: inset 0px 120px 0px #151f2f; }
+  /* line 108, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form .input input:focus {
+    color: #2a84ff; }
+  /* line 112, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form .input .input-icon {
+    color: #3a5886; }
+
+@media screen and (max-height: 1000px) {
+  /* line 125, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form-popup footer {
+    position: relative;
+    padding: 40px 80px;
+    margin-left: -80px;
+    width: calc(100% + 160px); } }
+@media screen and (max-width: 1200px) {
+  /* line 136, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .narrow-form-popup {
+    padding: 0 20px;
+    min-width: 300px; }
+    /* line 140, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+    .narrow-form-popup h1 {
+      font-size: 30px; }
+    /* line 143, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+    .narrow-form-popup footer {
+      position: relative;
+      padding: 40px 20px;
+      margin-left: -20px;
+      width: calc(100% + 40px); } }
+@media screen and (max-width: 960px) {
+  /* line 154, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+  .social-links {
+    margin: 20px 0; }
+    /* line 156, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+    .social-links li {
+      display: inline-block;
+      list-style: none;
+      padding: 6.66667px; }
+      /* line 160, E:/RADOVI/dive_and_seek/DEV/source/css/narrow-form-popup.css.scss */
+      .social-links li a {
+        font-size: 35px; } }

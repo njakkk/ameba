@@ -1,0 +1,50 @@
+/*UI elements*/
+/*---Read more element---*/
+/*-------------------------------------------------*/
+/* line 6, E:/RADOVI/dive_and_seek/DEV/source/css/read-more.css.scss */
+.read-more {
+  position: relative;
+  margin-bottom: 50px; }
+  /* line 9, E:/RADOVI/dive_and_seek/DEV/source/css/read-more.css.scss */
+  .read-more .trigger {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    color: #6e7279;
+    text-align: left;
+    padding-top: 40px;
+    cursor: pointer;
+    z-index: 1;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, white 63%, white 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, white 63%, white 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, white 63%, white 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-9 */ }
+    /* line 24, E:/RADOVI/dive_and_seek/DEV/source/css/read-more.css.scss */
+    .read-more .trigger.active {
+      color: #2a84ff;
+      background: transparent;
+      padding-top: 0; }
+  /* line 30, E:/RADOVI/dive_and_seek/DEV/source/css/read-more.css.scss */
+  .read-more .drop {
+    overflow: hidden;
+    max-height: 150px; }
+    /* line 33, E:/RADOVI/dive_and_seek/DEV/source/css/read-more.css.scss */
+    .read-more .drop.active {
+      max-height: inherit;
+      height: auto; }
+  /* line 38, E:/RADOVI/dive_and_seek/DEV/source/css/read-more.css.scss */
+  .read-more .drop + .btn-group {
+    display: none;
+    margin: 20px 0; }
+  /* line 39, E:/RADOVI/dive_and_seek/DEV/source/css/read-more.css.scss */
+  .read-more .drop.active + .btn-group {
+    display: block; }
+
+/* line 41, E:/RADOVI/dive_and_seek/DEV/source/css/read-more.css.scss */
+[contenteditable]:hover {
+  cursor: text; }

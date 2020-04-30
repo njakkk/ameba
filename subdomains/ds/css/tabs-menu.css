@@ -1,0 +1,77 @@
+/*UI elements*/
+/* line 3, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+.tab-menu {
+  padding: 20px;
+  zoom: 1; }
+  /* line 50, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .tab-menu:before, .tab-menu:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  /* line 56, E:/RADOVI/dive_and_seek/DEV/source/css/variables.scss */
+  .tab-menu:after {
+    clear: both; }
+  /* line 7, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+  .tab-menu .tabs {
+    display: inline-block; }
+    /* line 9, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+    .tab-menu .tabs ul {
+      display: table;
+      table-layout: fixed; }
+    /* line 14, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+    .tab-menu .tabs li {
+      list-style: none;
+      display: table-cell; }
+      /* line 17, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+      .tab-menu .tabs li a {
+        display: block;
+        height: 44px;
+        line-height: 44px;
+        font-size: 15px;
+        color: #2a84ff;
+        text-align: center;
+        border: solid 1px #2a84ff;
+        padding: 0 20px;
+        margin-left: -1px;
+        text-transform: uppercase;
+        min-width: 200px; }
+        /* line 29, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+        .tab-menu .tabs li a i, .tab-menu .tabs li a span {
+          display: inline-block;
+          vertical-align: middle;
+          height: 44px;
+          line-height: 44px; }
+        /* line 35, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+        .tab-menu .tabs li a i {
+          font-size: 140%;
+          margin: 0 8px; }
+      /* line 40, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+      .tab-menu .tabs li a.current {
+        background: #2a84ff;
+        color: #fff; }
+    /* line 45, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+    .tab-menu .tabs li:first-child a {
+      border-radius: 5px 0 0 5px; }
+    /* line 48, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+    .tab-menu .tabs li:last-child a {
+      border-radius: 0 5px 5px 0; }
+
+@media screen and (max-width: 1200px) {
+  /* line 57, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+  .tab-menu .tabs {
+    float: left; } }
+@media screen and (max-width: 960px) {
+  /* line 66, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+  .tab-menu .tabs {
+    float: none; }
+  /* line 69, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+  .tab-menu .tabs ul {
+    width: 100%; }
+  /* line 72, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+  .tab-menu .tabs li a {
+    padding: 0 10px;
+    min-width: auto; }
+    /* line 75, E:/RADOVI/dive_and_seek/DEV/source/css/tabs-menu.css.scss */
+    .tab-menu .tabs li a span {
+      display: none; } }
