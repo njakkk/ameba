@@ -7,7 +7,7 @@
     "docpad-plugin-cleanurls": "~2.8.1",
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-partials": "~2.9.2",
-    "express": "3.0.0",
+    "express": "4.17.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-minify": "0.0.5",
