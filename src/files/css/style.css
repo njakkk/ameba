@@ -3461,11 +3461,15 @@ tiny-space {
 
 @media screen and (max-width: 800px) {
   .main-menu {
-    left: 0;
+    left: auto;
+    right: 0;
     top: 45px;
-    height: calc(100vh - 45px); }
+    height: calc(100vh - 45px);
+    transform-origin: 100% 0; }
     .main-menu li:nth-child(1), .main-menu li:nth-child(2) {
-      padding-top: 6vh; } }
+      padding-top: 6vh; }
+  .main-menu-overlay {
+    left: 0; } }
 
 @media screen and (max-width: 600px) {
   .main-menu {
@@ -3605,7 +3609,7 @@ tiny-space {
   .header-mobile .hamburger {
     position: absolute;
     top: 50%;
-    left: 0;
+    right: 0;
     width: 45px;
     height: 45px;
     margin-top: -22.5px;
@@ -3651,8 +3655,6 @@ tiny-space {
         -ms-transform: rotate(45deg); }
 
 @media screen and (max-width: 800px) {
-  .main-menu {
-    left: 0; }
   .project-box {
     min-height: calc(100vh - 45px) !important; }
   .project-header {

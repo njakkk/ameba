@@ -132,14 +132,21 @@
 @media screen and (max-width: 800px){
 
   .main-menu{
-    left: 0;
+    left: auto;
+    right: 0;
     top: $nav-size;
     height: calc(#{$vh} - #{$nav-size});
+    transform-origin: 100% 0;
 
     li:nth-child(1), li:nth-child(2){
       padding-top: 6vh;
     }
   }
+
+  .main-menu-overlay{
+    left: 0;
+  }
+  
 
 }
 

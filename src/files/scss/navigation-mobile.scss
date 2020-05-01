@@ -34,7 +34,7 @@
   .hamburger{
     position: absolute;
     top: 50%;
-    left: 0;
+    right: 0;
     width: $nav-size;
     height: $nav-size;
     margin-top: -$nav-size/2;
@@ -90,10 +90,6 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 
 @media screen and (max-width: 800px){
-
-  .main-menu{
-    left: 0;
-  }
 
   .project-box{
     min-height: calc(#{$vh} - #{$nav-size}) !important;
