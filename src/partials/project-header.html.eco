@@ -13,9 +13,9 @@
                 <li data-display="<%= @document.dev %>"><i class="icon-development"></i> <span>Frontend development</span></li>
                 <li data-display="<%= @document.graphic %>"><i class="icon-target-arrow"></i> <span>Graphic design</span></li>
             </ul>
+            <aside class="show-up more-projects left" data-display="<%= @document.hasExternalLink %>">
+                <a href="<%= @document.externalLink %>" target="_blank" class="btn dark small"><%= @document.externalLinkTitle %> <i class="icon-arrow-right right-icc"></i></a>
+            </aside>
         </aside>
     </article>
-    <aside class="show-up more-projects left" data-display="<%= @document.hasExternalLink %>">
-        <a href="<%= @document.externalLink %>" target="_blank" class="btn dark small"><%= @document.externalLinkTitle %> <i class="icon-arrow-right right-icc"></i></a>
-    </aside>
 </header>
