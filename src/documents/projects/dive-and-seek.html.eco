@@ -1,6 +1,6 @@
 ---
 layout: "project"
-order: 3
+order: 4
 isFeatured: true
 isProject: true
 isPublished: true
@@ -10,7 +10,7 @@ year: 2016
 name: "dive-and-seek"
 title: "Dive & Seek"
 description: "Platform for diving lovers."
-longDescription: "Platform allows diving lovers to easilly share their experiences, with other members with same interests. Will still be further developed to support browsing and booking for diving tours worldwide."
+longDescription: "Platform allows diving lovers to easilly share their experiences, with other members with same interests, browsing and booking for diving tours worldwide."
 slide: "dive-and-seek/slide.jpg"
 thumb: "dive-and-seek/thumb.jpg"
 color: "#2a84ff"

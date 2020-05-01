@@ -2744,10 +2744,10 @@ tiny-space {
 .owl-item.active .slide-content .border-left {
   transform: scale(1, 0.2); }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
   .home-slide .slide-content {
-    width: 45vw;
-    max-width: 45vw;
+    width: 40vw;
+    max-width: 40vw;
     background: none; } }
 
 @media screen and (max-width: 1200px) {

@@ -14,10 +14,10 @@ color: "#3c64ff"
 <div class="row about" set-width>
     <div class="column-3 show-up right">
         <h1 data-color="<%= @document.color %>">Ameba's name is Marija</h1>
-        <h2 class="strong-font">she is a Designer & Developer based in Amsterdam, Netherlands.</h2>
+        <h2 class="strong-font">she is a Senior Designer based in Amsterdam, Netherlands.</h2>
         <p>I'm a Senior UX/UI designer with more than 10 years of professional experience as a freelancer and also as a part of the team. I enjoy creating beautiful interfaces, and I also enjoy developing them.</p>
         <p>I'm constantly trying to improve my skills and stay up-to-date with the technology.</p>
-        <p>Oh and... I like to draw all sorts on amebas during my spare time :)</p>
+        <p>Oh and... I like to draw all sorts of amebas during my spare time :)</p>
         <br/>
         <br/>
         <a class="btn dark" href="mailto:matovic.marija@gmail.com">Say hello</a>
@@ -27,10 +27,6 @@ color: "#3c64ff"
     
     <div class="column-5 show-up right">
         <h2 class="strong-font">Work experience</h2>
-        <div class="exp">
-            <h3>2007</h3>
-            <p>Free-lance Graphic Designer</p>
-        </div>
         <div class="exp">
             <h3>2008</h3>
             <p>Graphic Designer and Illustrator at “Green Leaf”, Belgrade</p>
@@ -67,7 +63,7 @@ color: "#3c64ff"
             <p>UX Designer at Booking.com, Amsterdam, Netherlands</p>
         </div>
         <div class="exp">
-            <h3>20179 - present</h3>
+            <h3>2019 - present</h3>
             <p>Senior UX Designer at Booking.com, Amsterdam, Netherlands</p>
         </div>
     </div>
@@ -98,9 +94,9 @@ color: "#3c64ff"
     <div class="column-5 show-up right">
         <div class="exp">
             <h3>Development</h3>
-            <p>DOM organisation and manipulation [ pro ]</p>
-            <p>Developing WCAG compliant, accessible web [ pro ]</p>
+            <p>HTML [ pro ]</p>
             <p>CSS, SASS, LESS [ pro ]</p>
+            <p>Developing accessible web [ pro ]</p>
             <p>JS, jQuery, Angular & React [ intermediate ]</p>
         </div>
     </div>
