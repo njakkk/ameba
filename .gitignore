@@ -1,3 +1,5 @@
 node_modules/
 out/
 .idea/
+src/files/css/style.css
+src/files/js/app-bundle.min.js
