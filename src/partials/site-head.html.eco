@@ -11,9 +11,9 @@
     <meta name="description" content="Matovic Marija portfolio"/>
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Matovic Marija portfolio | ameba.rs" />
+    <meta property="og:title" content="Matovic Marija portfolio | ameba.one" />
     <meta property="og:description" content="Matovic Marija portfolio" />
-    <meta property="og:url" content="http://ameba.rs" />
+    <meta property="og:url" content="http://ameba.one" />
 
     <!--no caching-->
     <meta http-equiv="cache-control" content="max-age=0" />
