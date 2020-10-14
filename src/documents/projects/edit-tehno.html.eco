@@ -1,9 +1,9 @@
 ---
 layout: "project"
-order: 7
-isFeatured: false
+order: 10
+isFeatured: true
 isProject: true
-isPublished: false
+isPublished: true
 year: 2016
 
 

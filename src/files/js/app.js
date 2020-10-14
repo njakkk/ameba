@@ -163,11 +163,11 @@ function setScrollH(){
 
     $('.scroll-h').mCustomScrollbar({
         theme:"rounded-dark",
-        scrollInertia:700,
+        scrollInertia:800,
         axis: "x",
         mouseWheel:{
-            scrollAmount: 150,
-            deltaFactor: 150
+            scrollAmount: 80,
+            deltaFactor: 80
         },
         callbacks:{
             whileScrolling: scrollShowElement

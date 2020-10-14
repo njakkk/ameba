@@ -15,12 +15,15 @@ color: "#3c64ff"
     <div class="column-3 show-up right">
         <h1 data-color="<%= @document.color %>">Ameba's name is Marija</h1>
         <h2 class="strong-font">she is a Senior Designer based in Amsterdam, Netherlands.</h2>
-        <p>I'm a Senior UX/UI designer with more than 10 years of professional experience as a freelancer and also as a part of the team. I enjoy creating beautiful interfaces, and I also enjoy developing them.</p>
+        <p>I'm a Senior designer with more than 10 years of professional experience in the industry. Over the years I worked with various teams as well as a freelancer, directly and indirectly communicating with stakeholders. I enjoy creating functional and beautiful interfaces, and I also enjoy developing them. </p>
         <p>I'm constantly trying to improve my skills and stay up-to-date with the technology.</p>
         <p>Oh and... I like to draw all sorts of amebas during my spare time :)</p>
         <br/>
         <br/>
+        <a class="btn dark" target="_blank" href="https://drive.google.com/file/d/11a3GivRGDJcIDQYjUtuFdv2wFj9mjN8e/view?usp=sharing">View Full CV</a>
         <a class="btn dark" href="mailto:matovic.marija@gmail.com">Say hello</a>
+
+        
     </div>
 
     <div class="column-6"></div>
@@ -41,7 +44,7 @@ color: "#3c64ff"
         </div>
         <div class="exp">
             <h3>2010 - 2012</h3>
-            <p>Web Designer and Frontent developer at “Fonlider”, Belgrade</p>
+            <p>Graphic / Web Designer and Frontent developer at “Fonlider”, Belgrade</p>
         </div>
     </div>
 
@@ -76,28 +79,33 @@ color: "#3c64ff"
         <h2 class="strong-font">Skills</h2>
         <div class="exp">
             <h3>UX & Design proces</h3>
-            <p>Conducting & analysing user research [ pro ]</p>
-            <p>Preparing & analysing surveys [ pro ]</p>
-            <p>Facilitating brainstorms & journey mapping sessions [ pro ]</p>
-            <p>Defining UI rules & creating design systems [ pro ]</p>
-            <p>Developing UX visions and transition plans [ pro ]</p>
+            <p>Conducting & analysing user research </p>
+            <p>Analysing data and making data-informed decisions </p>
+            <p>Facilitating brainstorms, co-working  & journey mapping sessions</p>
+            <p>Developing UX visions and transition plans</p>
+            <p>Problem solving & Idea generation</p>
+            <p>Identifying design patterns </p>
+            <p>Designing cross platform solutions</p>
+            <p>Defining UI rules & creating design systems
+
         </div>
         <div class="exp">
             <h3>Design tools</h3>
-            <p>Adobe Photoshop CC [ pro ]</p>
-            <p>Adobe Illustrator CC [ pro ]</p>
-            <p>Sketch [ pro ]</p>
-            <p>Figma [ pro ]</p>
+            <p>Figma </p>
+            <p>Sketch </p>
+            <p>Adobe Photoshop </p>
+            <p>Adobe Illustrator</p>
+            <p>Invision and other prototyping tools</p>         
         </div>
     </div>
 
     <div class="column-5 show-up right">
         <div class="exp">
             <h3>Development</h3>
-            <p>HTML [ pro ]</p>
-            <p>CSS, SASS, LESS [ pro ]</p>
-            <p>Developing accessible web [ pro ]</p>
-            <p>JS, jQuery, Angular & React [ intermediate ]</p>
+            <p>HTML</p>
+            <p>CSS, SASS, LESS</p>
+            <p>Developing accessible web - WCAG 2.1</p>
+            <p>JS, jQuery, Angular & React [ beginner to intermediate ]</p>
         </div>
     </div>
 

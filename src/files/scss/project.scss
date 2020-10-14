@@ -146,16 +146,14 @@
 .project-content{
   position: relative;
   top: 0;
-//  margin-left: $vw/4;
   height: $vh;
   overflow: hidden;
-  display: table;
-  table-layout: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   >*{
     position: relative;
     z-index: 1;
-    display: table-cell;
-    vertical-align: middle;
   }
 
   img {
@@ -198,18 +196,30 @@
     display: block;
     padding: 0 $spacing;
     background: $lightest-grey;
-    white-space: nowrap;
+    min-width: 150px;
+    max-width: 450px;
+
+    b {
+      font-family: $strong;
+    }
 
     &:before{
       content:'';
       position: absolute;
       bottom: -10px;
-      right: $spacing;
+      left: $spacing;
       height: 1px;
       width: 40px;
       background: lighten($dark,30);
     }
   }
+}
+
+.project-text {
+  background: $lightest-grey;
+  padding: $spacing;
+  min-width: 600px;
+  max-width: 800px;
 }
 
 
@@ -234,6 +244,11 @@
       max-height: 70vh;
     }
   }
+  .project-text {
+    min-width: 90vw;
+    max-width: 90vw;
+  }
+  
 }
 
 @media screen and (max-width: 500px){

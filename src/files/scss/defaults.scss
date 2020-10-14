@@ -109,6 +109,10 @@ tiny-space{
   -webkit-filter: drop-shadow(0 0 15px rgba(0,0,0,0.1));
 }
 
+.lightest-bg {
+  background-color: $lightest-grey
+}
+
 .default-content{
   padding: $spacing*5 $spacing $spacing $spacing;
 }

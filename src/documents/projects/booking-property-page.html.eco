@@ -1,0 +1,102 @@
+---
+layout: "project"
+order: 1
+isFeatured: true
+isProject: true
+isPublished: true
+year: 2020
+
+
+name: "booking-property-page"
+title: "Hotel Page"
+description: "Redesigning Booking.com Hotel page"
+longDescription: "Developing a framerowk for displaying content on hotel page."
+slide: "booking-property-page/slide.jpg"
+thumb: "booking-property-page/thumb.jpg"
+color: "#003680"
+
+ux: "true"
+dev: "true"
+branding: "false"
+---
+
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-00.jpg" alt="" class="full"/>
+</article>
+<space></space>
+<div class="project-text">
+    <h2 class="strong-font">The chellenge</h2>
+    <p>Booking.com Hotel page is a product of over 20 years of experimentation and optimisation. With a need to meet the expectations of various hotel segments and user groups, the page has become overloaded with information. Different teams are using different approaches to grab users attention and get them into their funnel.
+    We want to help users make the decision while reducing cognitive and increasing confidence to book.  
+    </p>
+    <br>
+    <h2 class="strong-font">The solution</h2>
+    <p>Build a framework using Machine Learning to rank and display different content on the page based on user intent. 
+    </p>
+    <p>Build modular and scalable page layout and develop clear patterns and design guidelines for other parts of business to use.
+    </p>
+</div>
+<space></space>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-01.png" alt="" class="scroll-show"/>
+</article>
+
+<space></space>
+<div class="project-text">
+    <h2 class="strong-font">The process</h2>
+    <p><b>Step 01</b> - Audit of a current state and Content mapping workshop</p>
+    <p><b>Step 02</b> - Identify UI and interaction patterns</p>
+    <p><b>Step 03</b> - Develop basic UI rules and guidelines</p>
+    <p><b>Step 03</b> - Co-design & feedback sessions to fine-tune guidelines</p>
+    <p><b>Step 05</b> - Use guidelines to design the page vision</p>
+    <p><b>Step 06</b> - Prepare and conduct user testing sessions</p>
+    <p><b>Step 07</b> - Analyse feedback and iterate on design</p>
+    <p><b>Step 08</b> - Develop the transition plan from current state towards the vision</p>
+</div>
+
+<space></space>
+<div class="project-tip"><span>Fullscreen Gallery view</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.png" alt="" class="scroll-show"/>
+</article>
+
+<space></space>
+<div class="project-tip"><span>Definining layout patterns</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.png" alt="" class="lightest-bg scroll-show"/>
+</article>
+
+<space></space>
+<div class="project-tip"><span><b>Mobile web:</b><br> Applaying framework & guidelines</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-04.png" alt="" class="full scroll-show"/>
+</article>
+
+<space></space>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-05.png" alt="" class="lightest-bg full scroll-show"/>
+</article>
+
+<space></space>
+<div class="project-tip"><span><b>Desktop web:</b> <br> Applaying framework & guidelines</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-06.png" alt="" class="scroll-show"/>
+</article>
+
+<space></space>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-07.png" alt="" class="scroll-show"/>
+</article>
+
+<space></space>
+<div class="project-tip"><span><b>The result:</b> Hotel page sections within framework</span></div>
+<article>
+    <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-08.jpg" alt="" class="full drop-shadow scroll-show"/>
+</article>
+
+
+
+
+
+
+
