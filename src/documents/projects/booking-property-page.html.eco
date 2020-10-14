@@ -27,7 +27,7 @@ branding: "false"
 <div class="project-text">
     <h2 class="strong-font">The chellenge</h2>
     <p>Booking.com Hotel page is a product of over 20 years of experimentation and optimisation. With a need to meet the expectations of various hotel segments and user groups, the page has become overloaded with information. Different teams are using different approaches to grab users attention and get them into their funnel.
-    We want to help users make the decision while reducing cognitive and increasing confidence to book.  
+    We want to help users make the decision while reducing cognitive load and increasing confidence to book.  
     </p>
     <br>
     <h2 class="strong-font">The solution</h2>
@@ -60,11 +60,11 @@ branding: "false"
     <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-02.png" alt="" class="scroll-show"/>
 </article>
 
-<space></space>
+<!-- <space></space>
 <div class="project-tip"><span>Definining layout patterns</span></div>
 <article>
     <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-03.png" alt="" class="lightest-bg scroll-show"/>
-</article>
+</article> -->
 
 <space></space>
 <div class="project-tip"><span><b>Mobile web:</b><br> Applaying framework & guidelines</span></div>
@@ -89,7 +89,7 @@ branding: "false"
 </article>
 
 <space></space>
-<div class="project-tip"><span><b>The result:</b> Hotel page sections within framework</span></div>
+<div class="project-tip"><span><b>The result:</b> <br> Vision of a page within the framework</span></div>
 <article>
     <img src="<%= @site.url %>/images/projects/<%= @document.name %>/project-08.jpg" alt="" class="full drop-shadow scroll-show"/>
 </article>

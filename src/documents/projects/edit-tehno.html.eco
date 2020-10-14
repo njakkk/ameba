@@ -3,7 +3,7 @@ layout: "project"
 order: 10
 isFeatured: true
 isProject: true
-isPublished: true
+isPublished: false
 year: 2016
 
 
